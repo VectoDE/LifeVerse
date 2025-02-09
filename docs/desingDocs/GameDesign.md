@@ -1,100 +1,152 @@
-# **LifeVerse Game Design Dokument**
+Hier ist das Game Design Document (GDD) für LifeVerse im Markdown-Format:
 
-## **1. Einleitung**
-LifeVerse ist ein Open-World Life-Simulation-Spiel, das ein realistisches Abbild des echten Lebens darstellt. Spieler erleben eine Welt, in der sie in jeder Phase ihres Lebens Entscheidungen treffen, Berufe ausüben, Beziehungen aufbauen, wirtschaftliche Strukturen gestalten und sich mit anderen Spielern sowie NPCs in einer dynamischen, lebendigen Welt interagieren können.
+Game Design Document (GDD) – LifeVerse
 
-Das Spiel beginnt bei der Geburt des Charakters und simuliert das Leben eines Individuums von der Kindheit bis ins Erwachsenenalter. Die Spieler schlüpfen in die Rolle eines Charakters, der in einem realistisch simulierten Universum lebt, das seine eigenen Regeln und Systeme hat – eine exakte Kopie des echten Lebens.
+1. Allgemeine Informationen
 
-## **2. Vision des Spiels**
-LifeVerse strebt an, das Leben in seiner vollen Tiefe zu simulieren. Jeder Aspekt des Lebens – von der Geburt über das Erwachsenwerden, die Ausbildung, das Arbeitsleben, den Umgang mit der Gesellschaft bis hin zu persönlichen und globalen Ereignissen – wird detailgetreu im Spiel abgebildet.
+1.1. Spielname:
 
-### **Wichtigste Merkmale:**
-- **Echte Lebenssimulation:** Spieler erleben ein Leben, das realistisch und detailgetreu wie das echte Leben abläuft.
-- **Dynamische Welt:** Alle Entscheidungen des Spielers beeinflussen die Welt, in der sie leben. Vom Kauf eines Hauses bis hin zu globalen wirtschaftlichen Krisen – jede Entscheidung hat Auswirkungen.
-- **Echtzeit-Gaming:** Das Spiel ist in Echtzeit strukturiert, aber für jede Lebensphase erfolgt eine zeitliche Beschleunigung von 2 Jahren, die in realer Zeit 20 Minuten dauert.
+LifeVerse
 
-## **3. Gameplay-Mechaniken**
+1.2. Genre:
+	•	Open-World RPG
+	•	Action-Adventure
+	•	Survival & Simulation
 
-### **Lebensphasen und Entwicklung**
-- **Geburt:** Der Spieler wird als Neugeborenes ins Spiel eingeführt. Eine kurze Einführung zeigt das Leben der Eltern und die Entwicklung des Charakters bis zum Alter von 12 Jahren.
-- **Kindheit und Jugend (12-24 Jahre):** Der Spieler übernimmt die Kontrolle über den Charakter ab dem Alter von 12 Jahren. Die ersten 12 Jahre werden in einem kurzen Film zusammengefasst. Die Spieler erleben dann das Leben des Charakters in Schritten von 2 Jahren, wobei jede Phase 20 Minuten realer Zeit dauert.
-- **Erwachsenenalter und die Hauptgeschichte:** Ab dem Alter von 24 Jahren beginnt die eigentliche Story des Spiels. Es wird eine tiefgreifende Handlung mit moralischen Entscheidungen, beruflichen Herausforderungen und sozialen Dynamiken eingeführt.
+1.3. Plattformen:
+	•	PC (Windows, Linux, macOS)
+	•	PlayStation 5
+	•	Xbox Series X/S
 
-### **Wirtschaftssystem**
-Das Wirtschaftssystem von LifeVerse ist realistisch und funktional. Es deckt alle Aspekte des Lebens ab:
-- **Berufsausbildung:** Spieler müssen sich bewerben und durch Bewerbungsverfahren in verschiedene Berufe einsteigen (z.B. Arzt, Anwalt, Lehrer).
-- **Gehalt und Finanzen:** Es gibt ein monatliches Gehalt, das je nach Beruf und Karriere fortschreitend wächst.
-- **Einkaufen und Konsum:** Spieler können Lebensmittel, Kleidung und andere Dinge kaufen oder jagen, um ihre Bedürfnisse zu decken.
-- **Unternehmensgründung:** Spieler können Unternehmen gründen, in allen Bereichen der Wirtschaft – von Startups bis hin zu großen Firmen – und müssen sich mit der Verwaltung von Mitarbeitern, Finanzen und Ressourcen befassen.
+1.4. Spielengine:
+	•	Unreal Engine 5
 
-### **Realismus**
-- **Physik und Bewegung:** Das Spiel nutzt realistische Physik, einschließlich Fahrzeugdynamik und Interaktion mit der Umwelt.
-- **Feuerwehr, Polizei und Rettungsdienste:** Spieler können Berufe wie Feuerwehrmann oder Polizist ergreifen und mit realen Notfällen interagieren.
-- **Immobilienmarkt:** Der Spieler kann Häuser kaufen, mieten, bauen und verkaufen. Es gibt vollständige Gestaltungsmöglichkeiten innerhalb des Hauses, einschließlich Möbel, Verkabelung und Elektronik.
+1.5. Zielgruppe:
+	•	RPG- und Open-World-Fans
+	•	Spieler, die eine immersive Story und Entscheidungsfreiheit schätzen
+	•	Altersfreigabe: 16+ (je nach Gewaltgrad und Themen)
 
-### **Soziale Interaktionen**
-- **Beziehungen:** Die Spieler können Freundschaften, Rivalitäten und romantische Beziehungen mit NPCs und anderen Spielern aufbauen.
-- **Familie:** Spieler können eine eigene Familie gründen, Kinder haben und deren Lebensverlauf beeinflussen.
-- **Gesellschaftliche Einflussnahme:** Der Spieler kann Politik betreiben, sich in soziale Bewegungen einbringen oder die Wirtschaft beeinflussen.
+2. Spielkonzept & Vision
 
-## **4. Multiplayer**
-LifeVerse ermöglicht es den Spielern, in einer geteilten, persistierenden Welt zu interagieren.
-- **Kooperative und kompetitive Elemente:** Spieler können zusammenarbeiten oder gegeneinander antreten, z.B. beim Starten von Unternehmen oder in gemeinsamen Quests.
-- **Echtzeit-Events:** Es gibt regelmäßig globale Events, die sich auf alle Spieler auswirken, z.B. Wirtschaftskrisen, politische Umbrüche oder Naturkatastrophen.
-  
-## **5. Missionen und Storyline**
-### **Hauptgeschichte**
-Die Hauptgeschichte wird im Laufe des Lebens des Spielers entfaltet und basiert auf den Entscheidungen, die der Spieler trifft. 
-- **Anfang:** Der Spieler beginnt mit einer persönlichen Herausforderung, wie dem Verlust eines Elternteils. Diese Herausforderung dient als Motivator für den Start ins Leben.
-- **Entwicklung:** Während der Charakter wächst, verändert sich die Welt um ihn herum. Der Spieler trifft wichtige Entscheidungen, die sowohl seine persönlichen Beziehungen als auch die Weltwirtschaft beeinflussen.
-- **Höhepunkt:** Der Spieler wird in eine globale Verschwörung verwickelt, die politische, wirtschaftliche und gesellschaftliche Auswirkungen hat.
+LifeVerse bietet eine riesige, dynamische Spielwelt, in der der Spieler die Kontrolle über seine eigene Geschichte hat. Entscheidungen haben langfristige Konsequenzen, und jede Handlung beeinflusst die Welt auf unerwartete Weise.
 
-### **Nebenquests**
-Nebenquests entstehen dynamisch aus den Entscheidungen des Spielers und der Weltumgebung.
-- **Berufliche Herausforderungen:** Der Spieler muss bestimmte berufliche Ziele erreichen, z.B. eine Beförderung bekommen oder eine wichtige berufliche Aufgabe erfüllen.
-- **Interaktive Welt:** Der Spieler kann neue Orte entdecken, Rätsel lösen oder NPCs helfen, die sich mit persönlichen Problemen befassen.
+2.1. Kernelemente:
+	•	Dynamische Open-World: Eine lebendige Welt mit einer tiefen Ökologie und realistischen Simulationen.
+	•	Story mit 1000+ Stunden Inhalt: Eine komplexe Haupthandlung mit zahlreichen Nebenquests und prozedural generierten Events.
+	•	Kampfsystem: Action-basiertes Echtzeit-Kampfsystem mit Nahkampf, Fernkampf und Magie.
+	•	Survival-Elemente: Nahrungsaufnahme, Wetteranpassung, Krankheiten und physische Erschöpfung spielen eine Rolle.
+	•	Crafting & Wirtschaft: Spieler können Ausrüstung herstellen, handeln und eigene Siedlungen aufbauen.
+	•	KI-gestützte NPCs: NPCs führen ein eigenständiges Leben, reagieren auf Spieleraktionen und verändern ihre Umgebung.
 
-## **6. AI und NPC-Verhalten**
-NPCs sind keine statischen Charaktere, sondern dynamische Entitäten mit eigenen Zielen, Erinnerungen und Emotionen.
-- **Erinnerungen:** NPCs erinnern sich an vergangene Interaktionen und passen ihr Verhalten entsprechend an.
-- **Emotionale Reaktionen:** NPCs reagieren auf die Entscheidungen des Spielers basierend auf deren emotionaler Lage, sozialer Stellung und Erfahrungen.
-  
-## **7. Monetarisierung**
-- **Basispreis:** Einmaliger Kaufpreis für das Basisspiel.
-- **DLCs und Erweiterungen:** Zusätzliche Story-Pakete, neue Standorte und Features werden in regelmäßigen Abständen veröffentlicht.
-- **Mikrotransaktionen:** Spieler können kosmetische Items kaufen (Kleidung, Möbel, Häuser), ohne die Spielmechanik zu beeinflussen.
-- **Modding-Community:** Spieler können eigene Inhalte erstellen und teilen, wodurch das Spiel kontinuierlich wächst.
+3. Spielmechaniken
 
-## **8. Technische Architektur**
-### **Engine**
-- **Unreal Engine 5:** Die Grafiken sind fotorealistisch, und Raytracing wird verwendet, um die Beleuchtung und die Texturen der Welt zu optimieren.
-- **Nanite:** Detaillierte Texturen und Geometrie werden für eine nahtlose Spielerfahrung eingesetzt.
+3.1. Steuerung
 
-### **Serverinfrastruktur**
-- **Skalierbare Servercluster:** Es werden leistungsstarke Server verwendet, um Millionen von Spielern gleichzeitig zu unterstützen und eine persistente Welt zu gewährleisten.
-- **Datenbankmanagement:** MongoDB wird zur Speicherung der Spielfortschritte, NPC-Daten und weltverändernden Ereignissen genutzt.
+Das Spiel bietet eine intuitive Steuerung mit folgenden Kernmechaniken:
+	•	Bewegung: Laufen, Sprinten, Klettern, Springen, Schwimmen
+	•	Kampf: Angreifen, Blocken, Ausweichen, Spezialfähigkeiten
+	•	Interaktion: Dialoge, Looten, Crafting, Bauen
+	•	Erkundung: Schnellreisen, Reiten, Klettern
 
-## **9. Entwicklung und Zeitrahmen**
-### **Pre-Production (0-6 Monate)**
-- Konzeptentwicklung, Teamaufbau, Erstellung erster Prototypen.
+3.2. Progression & Levelsystem
+	•	XP-gestützte Charakterentwicklung mit Skill-Trees für Kampf, Magie, Diplomatie, Handwerk und Überleben.
+	•	Spezialisierungen erlauben verschiedene Spielstile, darunter Kämpfer, Magier, Händler oder Anführer.
 
-### **Alpha-Phase (6-18 Monate)**
-- Kerngameplay-Mechaniken, erste Tests, Entwicklung des Kernsystems.
+3.3. Entscheidungsfreiheit & Konsequenzen
+	•	Jede Entscheidung verändert die Welt dauerhaft.
+	•	Moralisches System mit verschiedenen Fraktionen und politischer Einflussnahme.
 
-### **Beta-Phase (18-36 Monate)**
-- Multiplayer-Integration, Quest-Tests, Fehlerbehebung und Balancing.
+4. Spielwelt & Level Design
 
-### **Launch (36-48 Monate)**
-- Veröffentlichung des Basisspiels, erster DLC und Erweiterungen.
+4.1. Weltstruktur
+	•	Offene, nahtlose Welt ohne Ladezeiten.
+	•	Prozedural generierte Events beeinflussen die Umgebung.
+	•	Biom-Vielfalt: Wälder, Wüsten, Gebirge, Ozeane, Städte.
 
-### **Post-Launch (48+ Monate)**
-- Regelmäßige Updates, neue Inhalte, und Community-gesteuerte Verbesserungen.
+4.2. Level Design
+	•	Dynamische Umgebung: Zerstörbare Strukturen, sich verändernde Wetterbedingungen, Jahreszeiten.
+	•	Versteckte Geheimnisse & Dungeons: Nichtlineare Erkundungsmöglichkeiten mit Belohnungen.
 
-## **10. Risiken und Herausforderungen**
-- **Skalierbarkeit:** Die Verwaltung einer persistierenden Welt, die Millionen von Spielern gleichzeitig unterstützt, ist eine technische Herausforderung.
-- **Komplexität der AI:** Die Entwicklung von KI, die sich menschenähnlich verhält und auf Entscheidungen reagiert, stellt hohe Anforderungen an die Technik.
+5. Kampf- & Gameplay-Mechaniken
 
-## **11. Fazit**
-LifeVerse bietet die Möglichkeit, ein echtes Leben in einer virtuellen Welt zu simulieren, die sowohl sozial als auch ökonomisch komplex ist. Es verspricht eine aufregende, dynamische Erfahrung, die den Spielern ermöglicht, tief in die Welt einzutauchen und ihre eigenen Entscheidungen zu treffen, die die Welt um sie herum prägen.
+5.1. Kampfsystem
+	•	Dynamischer Echtzeit-Kampf: Kombination aus Nahkampf, Fernkampf und Magie.
+	•	Ausdauer & Timing: Angriffe und Ausweichmanöver verbrauchen Ausdauer.
+	•	Waffenklassen: Einhänder, Zweihänder, Bögen, Stäbe, Dolche.
+	•	Magiesystem: Elementare Zauber, Runenmagie, Verzauberungen.
 
-**Kontakt:** support@hauknetz.de
+5.2. KI & Gegner
+	•	Fortschrittliche Gegner-KI: Feinde koordinieren sich, setzen Fallen und reagieren dynamisch auf den Spieler.
+	•	Bosskämpfe: Jeder Boss hat mehrphasige Mechaniken und erfordert verschiedene Strategien.
+
+6. Quests & Storytelling
+
+6.1. Haupt- & Nebenquests
+	•	Hauptgeschichte mit verzweigten Erzählsträngen.
+	•	Nebenquests mit Einfluss auf die Welt: Städte können aufgebaut oder zerstört werden, NPCs erinnern sich an den Spieler.
+
+6.2. Dynamisches Storytelling
+	•	Jeder NPC kann zu einem Questgeber werden, abhängig von den Handlungen des Spielers.
+	•	Fraktions- und Rufsystem: Abhängig von den getroffenen Entscheidungen reagieren NPCs unterschiedlich.
+
+7. NPCs & Interaktionen
+
+7.1. NPC-Verhalten
+	•	Tägliche Routinen & Jobs: NPCs gehen arbeiten, schlafen, interagieren mit anderen NPCs.
+	•	Realistische Reaktionen: NPCs merken sich, wenn sie bestohlen oder angegriffen wurden.
+	•	Handelssystem: Dynamische Preise basierend auf Angebot und Nachfrage.
+
+7.2. Begleiter & Fraktionen
+	•	Spieler können NPCs rekrutieren, ausbilden und befehligen.
+	•	Fraktionszugehörigkeit verändert die Welt: Kriege, politische Machtwechsel, Allianzen.
+
+8. Crafting, Wirtschaft & Überleben
+
+8.1. Crafting & Handwerk
+	•	Waffen, Rüstungen, Tränke, Fallen und magische Artefakte können hergestellt werden.
+	•	Dynamische Handwerksrezepte: Kombinationen von Materialien ergeben neue Items.
+
+8.2. Überlebensmechaniken
+	•	Spieler müssen Nahrung, Wasser und Schutz suchen.
+	•	Dynamisches Wettersystem: Stürme, Schnee, extreme Hitze beeinflussen den Charakter.
+	•	Verletzungen & Krankheiten: Medizinische Versorgung notwendig.
+
+8.3. Wirtschaftssystem
+	•	Spieler können Waren herstellen, Märkte beeinflussen oder ihre eigene Stadt gründen.
+	•	Dynamische Preissysteme je nach Nachfrage und geopolitischer Lage.
+
+9. Multiplayer & Online-Features
+
+9.1. Koop-Modus
+	•	Spieler können gemeinsam Quests lösen, handeln und sich gegenseitig unterstützen.
+	•	Koop-Szenarien mit spezifischen Herausforderungen.
+
+9.2. PvP & Gilden
+	•	Fraktionskämpfe zwischen Spielern möglich.
+	•	Gildenverwaltung: Spieler können Städte gründen und politisch Einfluss nehmen.
+
+10. Technische Details & Anforderungen
+
+10.1. Engine & Technologien
+	•	Unreal Engine 5 mit Nanite & Lumen für fotorealistische Grafik.
+	•	Physik-Engine: Realistische Zerstörung, Umwelteinflüsse.
+
+10.2. Systemanforderungen (vorläufig)
+	•	Minimum:
+	•	CPU: Ryzen 5 3600 / Intel i5-9600K
+	•	GPU: GTX 1660 Ti / RX 5600XT
+	•	RAM: 16 GB
+	•	SSD: 100 GB
+	•	Empfohlen:
+	•	CPU: Ryzen 7 5800X / Intel i7-12700K
+	•	GPU: RTX 3080 / RX 6800XT
+	•	RAM: 32 GB
+	•	SSD: 150 GB
+
+11. Fazit & Vision
+
+LifeVerse kombiniert realistische Simulationen, ein tiefes Storytelling und actionreiche Kämpfe zu einem einzigartigen Open-World-Erlebnis. Jede Entscheidung beeinflusst die Welt und führt zu einem individuellen Spielerlebnis.
+
+Mit einer 1000-stündigen Hauptstory, realistischen Überlebensmechaniken und einer intelligenten NPC-KI hebt sich LifeVerse von klassischen Open-World-Spielen ab und bietet ein episches Abenteuer für RPG-Fans.
+
+Das ist das komplette Game Design Document (GDD) für LifeVerse!
