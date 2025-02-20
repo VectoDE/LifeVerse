@@ -11,8 +11,9 @@ import PingCommand from '../commands/utility/ping';
 import InviteCommand from "../commands/utility/invite";
 import ServerInfoCommand from "../commands/utility/serverinfo";
 import UserInfoCommand from "../commands/utility/userinfo";
-import LifeVerseInfoCommand from "../commands/utility/lifeverseinfo";
 import TimeoutCommand from "../commands/moderation/timeout";
+import LifeVerseInfoCommand from "../commands/lifeverse/lifeverseinfo";
+import ReportCommand from "../commands/moderation/report";
 
 dotenv.config();
 
@@ -27,12 +28,14 @@ const commandFiles = [
     MuteCommand,
     ClearCommand,
     TimeoutCommand,
+    ReportCommand,
     // Utility Commands
     PingCommand,
     InviteCommand,
     ServerInfoCommand,
     UserInfoCommand,
-    LifeVerseInfoCommand
+    // LifeVerse Commands
+    LifeVerseInfoCommand,
 ];
 
 const commands: any[] = [];

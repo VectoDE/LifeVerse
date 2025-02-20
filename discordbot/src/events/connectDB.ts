@@ -8,11 +8,16 @@ export const connectDB = async () => {
 
         if (!mongoURI) {
             LogService.error("MongoDB URI is not defined in environment variables.");
+            throw new Error("MongoDB URI is missing");
         }
 
         const conn = await mongoose.connect(mongoURI);
 
-        LogService.info(`MongoDB Connected: ${conn.connection.host}`);
+        if (conn) {
+            LogService.info(`Database Connected`);
+        } else {
+            LogService.error("Connection object is undefined.");
+        }
     } catch (error) {
         if (error instanceof Error) {
             LogService.error(`Error: ${error.message}`);
