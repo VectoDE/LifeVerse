@@ -1,8 +1,9 @@
 import { ChatInputCommandInteraction, SlashCommandBuilder, EmbedBuilder } from "discord.js";
 import { performance } from "perf_hooks";
 import axios from "axios";
-import { Command } from "../functions/handleCommands";
-import { config } from "../config/config";
+import { Command } from "../../functions/handleCommands";
+import { config } from "../../config/config";
+import { LogService } from "../../services/logService";
 
 const services = [
     { name: "🌍 Website", url: config.apiRequests.WEBSITE },
@@ -10,7 +11,7 @@ const services = [
     { name: "🎮 Game Servers", url: config.apiRequests.GAME_SERVERS },
 ];
 
-export const PingCommand: Command = {
+const PingCommand: Command = {
     data: new SlashCommandBuilder()
         .setName("ping")
         .setDescription("Shows the ping of the Discord bot, server, and LifeVerse services."),
@@ -62,10 +63,12 @@ export const PingCommand: Command = {
 
             await interaction.editReply({ embeds: [embed] });
         } catch (error) {
-            console.error("Error fetching latencies or services:", error);
+            LogService.error("Error fetching latencies or services:", error);
             await interaction.editReply({
                 content: "❌ Could not retrieve latency or service statuses. Please try again later.",
             });
         }
     },
 };
+
+export default PingCommand;

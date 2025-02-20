@@ -1,7 +1,7 @@
 {
   "name": "discordbot",
   "version": "1.0.0",
-  "description": "The LifeVerse Discord Bot to manage the discord server and handle request about out systems.",
+  "description": "The LifeVerse Discord Bot to manage the Discord server and handle requests about our systems.",
   "keywords": [
     "LifeVerse",
     "Realism",
@@ -20,16 +20,28 @@
   },
   "license": "MIT",
   "author": "Vecto. (Tim Hauke)",
-  "type": "commonjs",
   "main": "src/index.ts",
   "scripts": {
-    "test": "test/index.test.ts"
+    "start": "node dist/index.ts",
+    "build": "tsc",
+    "format": "prettier --write .",
+    "dev": "concurrently \"nodemon src/index.ts\""
   },
   "dependencies": {
     "axios": "^1.7.9",
-    "discord.js": "^14.18.0",
+    "concurrently": "^9.1.2",
     "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "mongoose": "^8.10.1",
-    "perf_hooks": "^0.0.1"
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^18.19.76",
+    "discord.js": "^14.18.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.5.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3"
   }
 }
