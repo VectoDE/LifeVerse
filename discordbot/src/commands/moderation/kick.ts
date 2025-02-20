@@ -6,27 +6,27 @@ import { LogService } from "../../services/logService";
 const KickCommand: Command = {
     data: new SlashCommandBuilder()
         .setName("kick")
-        .setDescription("Verwalte Kicks")
+        .setDescription("Manage kicks")
         .addSubcommand(subcommand =>
             subcommand
                 .setName("add")
-                .setDescription("Fügt einen Kick hinzu")
+                .setDescription("Add a kick")
                 .addUserOption(option =>
-                    option.setName("user").setDescription("Der gekickte Benutzer").setRequired(true)
+                    option.setName("user").setDescription("The kicked user").setRequired(true)
                 )
                 .addStringOption(option =>
-                    option.setName("reason").setDescription("Grund des Kicks").setRequired(true)
+                    option.setName("reason").setDescription("Reason for the kick").setRequired(true)
                 )
         )
         .addSubcommand(subcommand =>
-            subcommand.setName("list").setDescription("Listet die letzten 10 Kicks auf")
+            subcommand.setName("list").setDescription("List the last 10 kicks")
         )
         .setDefaultMemberPermissions(PermissionFlagsBits.KickMembers),
 
     async execute(interaction: ChatInputCommandInteraction) {
         if (!interaction.guild) {
             await interaction.reply({
-                content: "⚠️ Dieser Befehl kann nur in einem Server genutzt werden.",
+                content: "⚠️ This command can only be used in a server.",
                 ephemeral: true,
             });
             return;
@@ -42,7 +42,7 @@ const KickCommand: Command = {
                 const reason = interaction.options.getString("reason");
 
                 if (!user || !reason) {
-                    interaction.editReply({ content: "❌ Fehlende Argumente!" });
+                    interaction.editReply({ content: "❌ Missing arguments!" });
                     return;
                 }
 
@@ -57,14 +57,16 @@ const KickCommand: Command = {
 
                 const embed = new EmbedBuilder()
                     .setColor("Red")
-                    .setTitle("🚨 Kick-Log")
-                    .setDescription(`✅ **${user.tag}** wurde gekickt.`)
+                    .setTitle("🚨 Kick Log")
+                    .setDescription(`✅ **${user.username}** has been kicked.`)
                     .addFields(
                         { name: "👮 Moderator", value: `<@${interaction.user.id}>`, inline: true },
-                        { name: "📝 Grund", value: reason, inline: true },
-                        { name: "📅 Zeitpunkt", value: new Date().toLocaleString(), inline: false }
+                        { name: "📝 Reason", value: reason, inline: true },
+                        { name: "📅 Time", value: new Date().toLocaleString(), inline: false }
                     )
                     .setTimestamp();
+
+                LogService.info(`${user.username} has been kicked from ${interaction.user.username}`);
 
                 await interaction.editReply({ embeds: [embed] });
 
@@ -72,24 +74,31 @@ const KickCommand: Command = {
                 const kicks = await Kick.find().sort({ timestamp: -1 }).limit(10);
 
                 if (kicks.length === 0) {
-                    interaction.editReply({ content: "ℹ️ Es wurden keine Kicks gefunden." });
+                    interaction.editReply({ content: "ℹ️ No kicks found." });
                     return;
                 }
 
-                const embed = new EmbedBuilder()
-                    .setColor("Orange")
-                    .setTitle("📋 Letzte 10 Kicks")
-                    .setDescription(kicks.map(kick =>
-                        `👤 **Benutzer:** <@${kick.userId}>\n👮 **Moderator:** <@${kick.moderatorId}>\n📝 **Grund:** ${kick.reason}\n📅 **Zeit:** ${kick.timestamp.toLocaleString()}\n—`
-                    ).join("\n"))
-                    .setTimestamp();
+                const embeds = [];
 
-                await interaction.editReply({ embeds: [embed] });
+                for (const kick of kicks) {
+                    const user = await interaction.client.users.fetch(kick.userId);
+                    embeds.push(
+                        new EmbedBuilder()
+                            .setColor("Orange")
+                            .setTitle("📋 Last 10 Kicks")
+                            .setDescription(
+                                `👤 **User:** ${user.username}\n👮 **Moderator:** <@${kick.moderatorId}>\n📝 **Reason:** ${kick.reason}\n📅 **Time:** ${kick.timestamp.toLocaleString()}\n—`
+                            )
+                            .setTimestamp()
+                    );
+                }
+
+                await interaction.editReply({ embeds });
             }
         } catch (error) {
-            LogService.error("Fehler beim Kick-Befehl:", error);
+            LogService.error("Error with kick command:", error);
             await interaction.editReply({
-                content: "❌ Ein Fehler ist aufgetreten. Bitte versuche es später erneut.",
+                content: "❌ An error occurred. Please try again later.",
             });
         }
     },

@@ -6,29 +6,29 @@ import { LogService } from "../../services/logService";
 const MuteCommand: Command = {
     data: new SlashCommandBuilder()
         .setName("mute")
-        .setDescription("Verwalte Mutes.")
+        .setDescription("Manage mutes.")
         .addSubcommand(subcommand =>
             subcommand
                 .setName("add")
-                .setDescription("Mute einen Benutzer.")
+                .setDescription("Mute a user.")
                 .addUserOption(option =>
-                    option.setName("user").setDescription("Der zu stummgeschaltete Benutzer").setRequired(true)
+                    option.setName("user").setDescription("The user to be muted").setRequired(true)
                 )
                 .addStringOption(option =>
-                    option.setName("reason").setDescription("Der Grund für das Muten").setRequired(false)
+                    option.setName("reason").setDescription("The reason for muting").setRequired(false)
                 )
         )
         .addSubcommand(subcommand =>
             subcommand
                 .setName("list")
-                .setDescription("Zeige alle stummgeschalteten Benutzer.")
+                .setDescription("Show all muted users.")
         )
         .addSubcommand(subcommand =>
             subcommand
                 .setName("remove")
-                .setDescription("Entferne das Muten von einem Benutzer.")
+                .setDescription("Remove the mute from a user.")
                 .addUserOption(option =>
-                    option.setName("user").setDescription("Der zu entmuttende Benutzer").setRequired(true)
+                    option.setName("user").setDescription("The user to unmute").setRequired(true)
                 )
         )
         .setDefaultMemberPermissions(PermissionFlagsBits.MuteMembers),
@@ -36,7 +36,7 @@ const MuteCommand: Command = {
     async execute(interaction: ChatInputCommandInteraction) {
         if (!interaction.guild) {
             await interaction.reply({
-                content: "⚠️ Dieser Befehl kann nur in einem Server genutzt werden.",
+                content: "⚠️ This command can only be used in a server.",
                 ephemeral: true,
             });
             return;
@@ -49,10 +49,10 @@ const MuteCommand: Command = {
 
             if (subcommand === "add") {
                 const user = interaction.options.getUser("user");
-                const reason = interaction.options.getString("reason") || "Kein Grund angegeben";
+                const reason = interaction.options.getString("reason") || "No reason provided";
 
                 if (!user) {
-                    interaction.editReply({ content: "❌ Kein Benutzer angegeben!" });
+                    interaction.editReply({ content: "❌ No user specified!" });
                     return;
                 }
 
@@ -67,11 +67,11 @@ const MuteCommand: Command = {
 
                 const embed = new EmbedBuilder()
                     .setColor("Red")
-                    .setTitle("🚨 Mute-Log")
-                    .setDescription(`✅ **${user.tag}** wurde stummgeschaltet.`)
+                    .setTitle("🚨 Mute Log")
+                    .setDescription(`✅ **${user.tag}** has been muted.`)
                     .addFields(
-                        { name: "📝 Grund", value: reason, inline: true },
-                        { name: "📅 Mute-Zeit", value: new Date().toLocaleString(), inline: false }
+                        { name: "📝 Reason", value: reason, inline: true },
+                        { name: "📅 Mute Time", value: new Date().toLocaleString(), inline: false }
                     )
                     .setTimestamp();
 
@@ -83,15 +83,15 @@ const MuteCommand: Command = {
                 const mutes = await Mute.find().sort({ timestamp: -1 }).limit(10);
 
                 if (mutes.length === 0) {
-                    interaction.editReply({ content: "ℹ️ Es wurden keine stummgeschalteten Benutzer gefunden." });
+                    interaction.editReply({ content: "ℹ️ No muted users found." });
                     return;
                 }
 
                 const embed = new EmbedBuilder()
                     .setColor("Orange")
-                    .setTitle("📋 Letzte 10 Mutes")
+                    .setTitle("📋 Last 10 Mutes")
                     .setDescription(mutes.map(mute =>
-                        `👤 **Benutzer:** ${mute.username}\n📝 **Grund:** ${mute.reason}\n📅 **Zeit:** ${mute.timestamp.toLocaleString()}\n—`
+                        `👤 **User:** ${mute.username}\n📝 **Reason:** ${mute.reason}\n📅 **Time:** ${mute.timestamp.toLocaleString()}\n—`
                     ).join("\n"))
                     .setTimestamp();
 
@@ -101,24 +101,24 @@ const MuteCommand: Command = {
                 const user = interaction.options.getUser("user");
 
                 if (!user) {
-                    interaction.editReply({ content: "❌ Kein Benutzer angegeben!" });
+                    interaction.editReply({ content: "❌ No user specified!" });
                     return;
                 }
 
                 const mute = await Mute.findOneAndDelete({ userId: user.id });
 
                 if (!mute) {
-                    interaction.editReply({ content: `ℹ️ Der Benutzer **${user.tag}** ist nicht stummgeschaltet.` });
+                    interaction.editReply({ content: `ℹ️ User **${user.tag}** is not muted.` });
                     return;
                 }
 
                 const embed = new EmbedBuilder()
                     .setColor("Green")
-                    .setTitle("✅ Mute entfernt")
-                    .setDescription(`Das Muten für **${user.tag}** wurde entfernt.`)
+                    .setTitle("✅ Mute Removed")
+                    .setDescription(`The mute for **${user.tag}** has been removed.`)
                     .addFields(
-                        { name: "📝 Grund", value: mute.reason, inline: true },
-                        { name: "📅 Mute-Zeit", value: mute.timestamp.toLocaleString(), inline: false }
+                        { name: "📝 Reason", value: mute.reason, inline: true },
+                        { name: "📅 Mute Time", value: mute.timestamp.toLocaleString(), inline: false }
                     )
                     .setTimestamp();
 
@@ -127,9 +127,9 @@ const MuteCommand: Command = {
                 LogService.info(`User ${user.tag} has been unmuted.`);
             }
         } catch (error) {
-            LogService.error("Fehler beim Mute-Befehl:", error);
+            LogService.error("Error with mute command:", error);
             await interaction.editReply({
-                content: "❌ Ein Fehler ist aufgetreten. Bitte versuche es später erneut.",
+                content: "❌ An error occurred. Please try again later.",
             });
         }
     },

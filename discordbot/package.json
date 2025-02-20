@@ -25,10 +25,13 @@
     "start": "node dist/index.ts",
     "build": "tsc",
     "format": "prettier --write .",
-    "dev": "concurrently \"nodemon src/index.ts\""
+    "dev": "concurrently \"nodemon src/index.ts\"",
+    "server": "nodemon src/server.ts"
   },
   "dependencies": {
     "axios": "^1.7.9",
+    "chart.js": "^4.4.8",
+    "chartjs-node-canvas": "^4.1.6",
     "concurrently": "^9.1.2",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",

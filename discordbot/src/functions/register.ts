@@ -3,8 +3,16 @@ import { REST, Routes } from "discord.js";
 import { config } from "../config/config";
 import { LogService } from "../services/logService";
 
-import PingCommand from '../commands/utility/ping';
 import KickCommand from '../commands/moderation/kick';
+import BanCommand from "../commands/moderation/ban";
+import MuteCommand from "../commands/moderation/mute";
+import ClearCommand from "../commands/moderation/clear";
+import PingCommand from '../commands/utility/ping';
+import InviteCommand from "../commands/utility/invite";
+import ServerInfoCommand from "../commands/utility/serverinfo";
+import UserInfoCommand from "../commands/utility/userinfo";
+import LifeVerseInfoCommand from "../commands/utility/lifeverseinfo";
+import TimeoutCommand from "../commands/moderation/timeout";
 
 dotenv.config();
 
@@ -13,8 +21,18 @@ const clientId = config.application.CLIENT_ID;
 const guildId = config.application.TEST_GUILD_ID;
 
 const commandFiles = [
+    // Moderation Commands
+    KickCommand,
+    BanCommand,
+    MuteCommand,
+    ClearCommand,
+    TimeoutCommand,
+    // Utility Commands
     PingCommand,
-    KickCommand
+    InviteCommand,
+    ServerInfoCommand,
+    UserInfoCommand,
+    LifeVerseInfoCommand
 ];
 
 const commands: any[] = [];

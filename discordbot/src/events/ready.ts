@@ -14,31 +14,34 @@ export const handleReadyEvent = (client: Client) => {
             });
             console.info(`Invite Link: ${inviteLink}`);
 
-            await client.user?.setPresence({
-                activities: [
-                    { 
-                        name: "LifeVerse",
-                        type: 0, // Playing
-                        url: "https://download.lifeverse.com"
-                    },
-                    { 
-                        name: "to Members",
-                        type: 3, // Listening
-                        url: "https://open.spotify.com"
-                    },
-                    { 
-                        name: "on Twitch",
-                        type: 1, // Streaming
-                        url: "https://www.twitch.tv/lifeverse"
-                    },
-                    { 
-                        name: "at Population",
-                        type: 2, // Watching
-                        url: "https://www.lifeverse.com/population/cameras"
-                    },
-                ],
-                status: "online",
-            });
+            const activities = [
+                { name: "LifeVerse", type: 0, url: "https://download.lifeverse.com" }, // Playing
+                { name: "to Members", type: 3, url: "https://open.spotify.com" }, // Listening
+                { name: "on Twitch", type: 1, url: "https://www.twitch.tv/lifeverse" }, // Streaming
+                { name: "at Population", type: 2, url: "https://www.lifeverse.com/population/cameras" }, // Watching
+            ];
+
+            let currentActivityIndex = 0;
+
+            const updatePresence = () => {
+                const activity = activities[currentActivityIndex];
+                client.user?.setPresence({
+                    activities: [
+                        { 
+                            name: activity.name,
+                            type: activity.type, 
+                            url: activity.url 
+                        }
+                    ],
+                    status: "online",
+                });
+
+                currentActivityIndex = (currentActivityIndex + 1) % activities.length;
+            };
+
+            setInterval(updatePresence, 20000);
+
+            updatePresence();
 
             await registerCommands();
 

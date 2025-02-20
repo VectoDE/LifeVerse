@@ -6,29 +6,29 @@ import { LogService } from "../../services/logService";
 const BanCommand: Command = {
     data: new SlashCommandBuilder()
         .setName("ban")
-        .setDescription("Verwalte Bans.")
+        .setDescription("Manage bans.")
         .addSubcommand(subcommand =>
             subcommand
                 .setName("add")
-                .setDescription("Banne einen Benutzer.")
+                .setDescription("Ban a user.")
                 .addUserOption(option =>
-                    option.setName("user").setDescription("Der zu bannende Benutzer").setRequired(true)
+                    option.setName("user").setDescription("The user to ban").setRequired(true)
                 )
                 .addStringOption(option =>
-                    option.setName("reason").setDescription("Der Grund für den Bann").setRequired(false)
+                    option.setName("reason").setDescription("The reason for the ban").setRequired(false)
                 )
         )
         .addSubcommand(subcommand =>
             subcommand
                 .setName("list")
-                .setDescription("Zeige alle gebannten Benutzer.")
+                .setDescription("Show all banned users.")
         )
         .addSubcommand(subcommand =>
             subcommand
                 .setName("remove")
-                .setDescription("Entferne einen Bann.")
+                .setDescription("Unban a user.")
                 .addUserOption(option =>
-                    option.setName("user").setDescription("Der zu entbannende Benutzer").setRequired(true)
+                    option.setName("user").setDescription("The user to unban").setRequired(true)
                 )
         )
         .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
@@ -36,7 +36,7 @@ const BanCommand: Command = {
     async execute(interaction: ChatInputCommandInteraction) {
         if (!interaction.guild) {
             await interaction.reply({
-                content: "⚠️ Dieser Befehl kann nur in einem Server genutzt werden.",
+                content: "⚠️ This command can only be used in a server.",
                 ephemeral: true,
             });
             return;
@@ -49,10 +49,10 @@ const BanCommand: Command = {
 
             if (subcommand === "add") {
                 const user = interaction.options.getUser("user");
-                const reason = interaction.options.getString("reason") || "Kein Grund angegeben";
+                const reason = interaction.options.getString("reason") || "No reason provided";
 
                 if (!user) {
-                    interaction.editReply({ content: "❌ Kein Benutzer angegeben!" });
+                    interaction.editReply({ content: "❌ No user specified!" });
                     return;
                 }
 
@@ -67,11 +67,11 @@ const BanCommand: Command = {
 
                 const embed = new EmbedBuilder()
                     .setColor("Red")
-                    .setTitle("🚨 Ban-Log")
-                    .setDescription(`✅ **${user.tag}** wurde gebannt.`)
+                    .setTitle("🚨 Ban Log")
+                    .setDescription(`✅ **${user.tag}** has been banned.`)
                     .addFields(
-                        { name: "📝 Grund", value: reason, inline: true },
-                        { name: "📅 Bannzeit", value: new Date().toLocaleString(), inline: false }
+                        { name: "📝 Reason", value: reason, inline: true },
+                        { name: "📅 Ban Date", value: new Date().toLocaleString(), inline: false }
                     )
                     .setTimestamp();
 
@@ -83,15 +83,15 @@ const BanCommand: Command = {
                 const bans = await Ban.find().sort({ timestamp: -1 }).limit(10);
 
                 if (bans.length === 0) {
-                    interaction.editReply({ content: "ℹ️ Es wurden keine gebannten Benutzer gefunden." });
+                    interaction.editReply({ content: "ℹ️ No banned users found." });
                     return;
                 }
 
                 const embed = new EmbedBuilder()
                     .setColor("Orange")
-                    .setTitle("📋 Letzte 10 Banns")
+                    .setTitle("📋 Last 10 Bans")
                     .setDescription(bans.map(ban =>
-                        `👤 **Benutzer:** ${ban.username}\n📝 **Grund:** ${ban.reason}\n📅 **Zeit:** ${ban.timestamp.toLocaleString()}\n—`
+                        `👤 **User:** ${ban.username}\n📝 **Reason:** ${ban.reason}\n📅 **Time:** ${ban.timestamp.toLocaleString()}\n—`
                     ).join("\n"))
                     .setTimestamp();
 
@@ -101,24 +101,24 @@ const BanCommand: Command = {
                 const user = interaction.options.getUser("user");
 
                 if (!user) {
-                    interaction.editReply({ content: "❌ Kein Benutzer angegeben!" });
+                    interaction.editReply({ content: "❌ No user specified!" });
                     return;
                 }
 
                 const ban = await Ban.findOneAndDelete({ userId: user.id });
 
                 if (!ban) {
-                    interaction.editReply({ content: `ℹ️ Der Benutzer **${user.tag}** ist nicht gebannt.` });
+                    interaction.editReply({ content: `ℹ️ The user **${user.tag}** is not banned.` });
                     return;
                 }
 
                 const embed = new EmbedBuilder()
                     .setColor("Green")
-                    .setTitle("✅ Ban entfernt")
-                    .setDescription(`Der Bann für **${user.tag}** wurde entfernt.`)
+                    .setTitle("✅ Ban Removed")
+                    .setDescription(`The ban for **${user.tag}** has been removed.`)
                     .addFields(
-                        { name: "📝 Grund", value: ban.reason, inline: true },
-                        { name: "📅 Bannzeit", value: ban.timestamp.toLocaleString(), inline: false }
+                        { name: "📝 Reason", value: ban.reason, inline: true },
+                        { name: "📅 Ban Date", value: ban.timestamp.toLocaleString(), inline: false }
                     )
                     .setTimestamp();
 
@@ -127,9 +127,9 @@ const BanCommand: Command = {
                 LogService.info(`User ${user.tag} has been unbanned.`);
             }
         } catch (error) {
-            LogService.error("Fehler beim Ban-Befehl:", error);
+            LogService.error("Error with ban command:", error);
             await interaction.editReply({
-                content: "❌ Ein Fehler ist aufgetreten. Bitte versuche es später erneut.",
+                content: "❌ An error occurred. Please try again later.",
             });
         }
     },
