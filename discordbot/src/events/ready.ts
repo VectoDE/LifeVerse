@@ -20,7 +20,7 @@ export const handleReadyEvent = (client: Client) => {
                 .setFooter({ text: "Thanks for using our bot! 😊" })
                 .setTimestamp();
 
-            const channel = client.channels.cache.get(process.env.START_MESSAGE_CHANNEL_ID);
+            const channel = client.channels.cache.get(process.env.START_MESSAGE_CHANNEL_ID || '');
 
             if (channel && channel instanceof TextChannel) {
                 await channel.send({ embeds: [embed] });

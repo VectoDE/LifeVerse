@@ -1,5 +1,5 @@
 import { Client } from "discord.js";
-import { IPTracking } from "../models/IPTracking"; // Dein Modell importieren
+import { IPTracking } from "../models/IP"; // Dein Modell importieren
 
 export const handleIpTrackingEvent = (client: Client) => {
     client.on("messageCreate", async (message) => {

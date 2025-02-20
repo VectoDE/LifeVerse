@@ -2,6 +2,7 @@ import dotenv from "dotenv";
 import { REST, Routes } from "discord.js";
 
 import { PingCommand } from '../commands/ping';
+import { config } from "../config/config";
 
 dotenv.config();
 
@@ -13,9 +14,9 @@ function getEnvVar(name: string): string {
     return value;
 }
 
-const token: string = getEnvVar("TOKEN");
-const clientId: string = getEnvVar("CLIENT_ID");
-const guildId: string = getEnvVar("TEST_SERVER_ID");
+const token: string = config.application.TOKEN;
+const clientId: string = config.application.CLIENT_ID;
+const guildId: string = config.application.TEST_GUILD_ID;
 
 const commandFiles = [
     PingCommand

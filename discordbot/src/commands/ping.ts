@@ -1,16 +1,24 @@
 import { ChatInputCommandInteraction, SlashCommandBuilder, EmbedBuilder } from "discord.js";
 import { performance } from "perf_hooks";
+import axios from "axios";
 import { Command } from "../functions/handleCommands";
+import { config } from "../config/config";
 
-const PingCommand: Command = {
+const services = [
+    { name: "🌍 Website", url: config.apiRequests.WEBSITE },
+    { name: "🛠️ API", url: config.apiRequests.API },
+    { name: "🎮 Game Servers", url: config.apiRequests.GAME_SERVERS },
+];
+
+export const PingCommand: Command = {
     data: new SlashCommandBuilder()
         .setName("ping")
-        .setDescription("Shows the ping of the Discord bot and server."),
+        .setDescription("Shows the ping of the Discord bot, server, and LifeVerse services."),
 
     async execute(interaction: ChatInputCommandInteraction) {
         if (!interaction.guild) {
             await interaction.reply({
-                content: `⚠️ This command can only be used in one server.`,
+                content: "⚠️ This command can only be used in a server.",
                 ephemeral: true,
             });
             return;
@@ -26,19 +34,25 @@ const PingCommand: Command = {
             const end = performance.now();
             const serverLatency = Math.round(end - start);
 
+            const serviceStatuses = await Promise.all(
+                services.map(async (service) => {
+                    try {
+                        const response = await axios.get(service.url, { timeout: 5000 });
+                        return { name: service.name, status: `🟢 Online (${response.status} OK)` };
+                    } catch (error) {
+                        return { name: service.name, status: "🔴 Offline" };
+                    }
+                })
+            );
+
             const embed = new EmbedBuilder()
                 .setColor("Random")
-                .setTitle(`🌐 Ping from EzClap Gaming Services`)
-                .setDescription(
-                    `Here are the current ping values ​​of the Discord bot and the server:`,
-                )
+                .setTitle("🌐 LifeVerse Service Status & Ping")
+                .setDescription("Here are the current ping values and service statuses:")
                 .addFields(
                     { name: "🤖 Discord Bot", value: `${botLatency}ms`, inline: true },
-                    {
-                        name: "🖥️ Server latency",
-                        value: `${serverLatency}ms`,
-                        inline: true,
-                    },
+                    { name: "🖥️ Server Latency", value: `${serverLatency}ms`, inline: true },
+                    ...serviceStatuses.map((s) => ({ name: s.name, value: s.status, inline: false }))
                 )
                 .setFooter({
                     text: `Requested by ${interaction.user.tag}`,
@@ -48,13 +62,10 @@ const PingCommand: Command = {
 
             await interaction.editReply({ embeds: [embed] });
         } catch (error) {
-            console.error("Error fetching latencies:", error);
+            console.error("Error fetching latencies or services:", error);
             await interaction.editReply({
-                content:
-                    "❌ Latency could not be measured. Please try again later.",
+                content: "❌ Could not retrieve latency or service statuses. Please try again later.",
             });
         }
     },
 };
-
-export default PingCommand;

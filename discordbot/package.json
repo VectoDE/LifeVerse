@@ -1,0 +1,35 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "The LifeVerse Discord Bot to manage the discord server and handle request about out systems.",
+  "keywords": [
+    "LifeVerse",
+    "Realism",
+    "Game",
+    "Economy",
+    "Lawyer",
+    "Real-Life"
+  ],
+  "homepage": "https://github.com/VectoDE/LifeVerse#readme",
+  "bugs": {
+    "url": "https://github.com/VectoDE/LifeVerse/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VectoDE/LifeVerse.git"
+  },
+  "license": "MIT",
+  "author": "Vecto. (Tim Hauke)",
+  "type": "commonjs",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "test/index.test.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.10.1",
+    "perf_hooks": "^0.0.1"
+  }
+}
