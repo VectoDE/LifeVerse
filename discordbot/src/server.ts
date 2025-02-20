@@ -3,14 +3,13 @@ import mongoose from "mongoose";
 import { IPTracking } from "./models/IP";
 import { config } from "./config/config";
 
-const app = express();
-const port = process.env.PORT || 3000;
+const server = express();
 
 mongoose.connect(config.database.MONGO_URI, { })
 
-app.use(express.json());
+server.use(express.json());
 
-app.get("/get-ip", async (req: Request, res: Response) => {
+server.get("/get-ip", async (req: Request, res: Response) => {
     const { userId } = req.query;
 
     if (!userId) {
@@ -30,7 +29,7 @@ app.get("/get-ip", async (req: Request, res: Response) => {
     }
 });
 
-app.post("/save-ip", async (req: Request, res: Response) => {
+server.post("/save-ip", async (req: Request, res: Response) => {
     const { userId } = req.body;
 
     if (!userId) {
@@ -64,6 +63,4 @@ app.post("/save-ip", async (req: Request, res: Response) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+export default server;

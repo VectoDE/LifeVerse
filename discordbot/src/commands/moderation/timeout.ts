@@ -56,10 +56,8 @@ const TimeoutCommand: Command = {
                 await interaction.reply({ content: '⚠️ Please provide valid arguments.', ephemeral: true });
                 return;
             }
-        
-            // Hole das letzte Timeout des Benutzers und berechne den Identifier
+
             const lastTimeout = await Timeout.findOne({ userId: user.id }).sort({ identifier: -1 }).exec();
-            // Sicherstellen, dass identifier ein gültiger Wert ist
             const identifier = lastTimeout && !isNaN(lastTimeout.identifier) ? lastTimeout.identifier + 1 : 1;
             
             const newTimeout = new Timeout({
@@ -68,7 +66,7 @@ const TimeoutCommand: Command = {
                 reason,
                 duration,
                 timestamp: new Date(),
-                identifier,  // identifier hier korrekt setzen
+                identifier,
             });
         
             await newTimeout.save();

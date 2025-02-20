@@ -1,6 +1,7 @@
 import { Client, Collection, GatewayIntentBits, Interaction } from 'discord.js';
 import { readdirSync } from 'fs';
 import path from 'path';
+import server from './server';
 import { config } from './config/config';
 import { LogService } from './services/logService';
 
@@ -57,6 +58,11 @@ client.on('interactionCreate', async (interaction: Interaction) => {
             LogService.error(`Error executing command: ${errorMessage}`);
         }
     }
+});
+
+// Start Express-Server
+server.listen(config.server.PORT || 3000, () => {
+    console.log(`API server is running on port ${config.server.PORT || 3000}`);
 });
 
 // Connect to MongoDB

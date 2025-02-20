@@ -8,6 +8,9 @@ export const config = {
         CLIENT_ID: String(EnvUtil.getEnvVar('CLIENT_ID') || ''),
         TEST_GUILD_ID: String(EnvUtil.getEnvVar('TEST_GUILD_ID') || ''),
     },
+    server: {
+        PORT: String(EnvUtil.getEnvVar('SERVER_PORT')),
+    },
     database: {
         MONGO_URI: String(EnvUtil.getEnvVar('MONGO_URI')),
     },
