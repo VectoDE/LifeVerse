@@ -1,13 +1,35 @@
+import axios from 'axios';
 import { ChatInputCommandInteraction, SlashCommandBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle } from 'discord.js';
 import { Command } from '../../functions/handleCommands';
 import { LogService } from '../../services/logService';
 import { Request } from '../../models/Request';
 import { config } from '../../config/config';
-import { makeRequest } from '../../utils/requestUtil';
 
-async function checkURLStatus(type: string, url?: string): Promise<boolean> {
-    const response = await makeRequest(type, url);
-    return response !== null && response.status === 200;
+async function checkURLStatus(_type: string, url?: string): Promise<boolean> {
+    if (!url) {
+        console.error('No URL provided.');
+        return false;
+    }
+
+    try {
+        const response = await axios.get(url);
+        return response.status === 200;
+    } catch (error) {
+        return false;
+    }
+}
+
+async function checkBotStatus(interaction: ChatInputCommandInteraction): Promise<boolean> {
+    try {
+        const bot = await interaction.client.user;
+        if (bot && bot.presence && bot.presence.status === 'online') {
+            return true;
+        }
+        return false;
+    } catch (error) {
+        console.error('Error checking bot status:', error);
+        return false;
+    }
 }
 
 async function getRequestStats(): Promise<{
@@ -19,8 +41,10 @@ async function getRequestStats(): Promise<{
     thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
     const requests = await Request.find({ timestamp: { $gte: thirtyDaysAgo } });
+
     const successCount = requests.filter(req => req.status === 'success').length;
     const errorCount = requests.filter(req => req.status === 'failed').length;
+
     return { successCount, errorCount, totalRequests: requests.length };
 }
 
@@ -47,8 +71,9 @@ const LifeVerseInfoCommand: Command = {
                 return;
             }
 
+            const botStatus = await checkBotStatus(interaction);
             const websiteStatus = await checkURLStatus('GET', config.apiRequests.WEBSITE);
-            const apiStatus = await checkURLStatus('GET', config.apiRequests.API);
+            const apiStatus = await checkURLStatus('GET', 'https://api.lifeversegame.com/api/status');
             const appStatus = await checkURLStatus('GET', 'https://api.lifeversegame.com/mobile_app/status');
             const databaseStatus = await checkURLStatus('GET', 'https://api.lifeversegame.com/database/status');
             const authServiceStatus = await checkURLStatus('GET', 'https://api.lifeversegame.com/auth/status');
@@ -99,7 +124,6 @@ const LifeVerseInfoCommand: Command = {
                         },
                     )
                     .setTimestamp(),
-
                 new EmbedBuilder()
                     .setColor('Random')
                     .setTitle('🌐 LifeVerse Website Info')
@@ -122,7 +146,6 @@ const LifeVerseInfoCommand: Command = {
                         },
                     )
                     .setTimestamp(),
-
                 new EmbedBuilder()
                     .setColor('Random')
                     .setTitle('🎮 LifeVerse Game Info')
@@ -147,11 +170,15 @@ const LifeVerseInfoCommand: Command = {
                         },
                     )
                     .setTimestamp(),
-
                 new EmbedBuilder()
                     .setColor('Random')
                     .setTitle('🌐 LifeVerse Website Info')
                     .addFields(
+                        {
+                            name: '🤖 Discord Bot',
+                            value: botStatus ? '✅ Online' : '🛑 Offline',
+                            inline: true,
+                        },
                         {
                             name: '🌐 Website',
                             value: websiteStatus ? '✅ Operational' : '🛑 Offline',
@@ -289,7 +316,7 @@ const LifeVerseInfoCommand: Command = {
         } catch (error) {
             LogService.error('Error with lifeverseinfo command:', error);
             await interaction.reply({
-                content: '❌ An error occurred while fetching LifeVerse information.',
+                content: '❌ There was an error while executing this command.',
                 ephemeral: true,
             });
         }
