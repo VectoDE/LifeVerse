@@ -25,6 +25,7 @@ export const commandUsageEvent = async (interaction: ChatInputCommandInteraction
             userId: user.id,
             username: user.username,
             channelId: channel.id,
+            identifier: Math.random().toString(36).substring(2, 15),
             timestamp: new Date(),
         });
 
