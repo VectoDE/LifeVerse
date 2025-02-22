@@ -9,6 +9,7 @@ import MuteCommand from "../commands/moderation/mute";
 import ClearCommand from "../commands/moderation/clear";
 import ReportCommand from "../commands/moderation/report";
 import WelcomeCommand from "../commands/moderation/welcome";
+import RoleCommand from "../commands/moderation/role";
 import PingCommand from '../commands/utility/ping';
 import InviteCommand from "../commands/utility/invite";
 import ServerInfoCommand from "../commands/utility/serverinfo";
@@ -31,6 +32,7 @@ const commandFiles = [
     TimeoutCommand,
     ReportCommand,
     WelcomeCommand,
+    RoleCommand,
     // Utility Commands
     PingCommand,
     InviteCommand,
