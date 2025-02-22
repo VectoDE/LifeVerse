@@ -145,6 +145,10 @@ const LifeVerseInfoCommand: Command = {
                 return;
             }
 
+            if (!message) {
+                return;
+            }
+
             const filter = (interaction: any) => interaction.user.id === interaction.user.id;
 
             const collector = interaction.channel?.createMessageComponentCollector({
@@ -178,7 +182,7 @@ const LifeVerseInfoCommand: Command = {
                     LogService.error("Error during button interaction:", error);
                 }
             });
-            
+
             collector?.on("end", async () => {
                 if (!message) return;
             

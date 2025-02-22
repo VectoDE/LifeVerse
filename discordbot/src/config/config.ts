@@ -30,6 +30,7 @@ export const config = {
             { name: "Earth Server", url: "https://api.lifeversegame.com/game/servers/earth-server" },
             { name: "World Eel Server", url: "https://api.lifeversegame.com/game/servers/world-eel-server" },
             { name: "Test Server", url: "https://api.lifeversegame.com/game/servers/test-server" },
-        ]  
+        ],
+        REQUEST_API_BASE_URL: String(EnvUtil.getEnvVar('REQUEST_API_BASE_URL'))
     }
 };

@@ -3,6 +3,8 @@ import { registerCommands } from "../functions/register";
 import { LogService } from "../services/logService";
 import { config } from "../config/config";
 
+let startMessage: any;
+
 export const handleReadyEvent = (client: Client) => {
     client.on("ready", async () => {
         try {
@@ -55,7 +57,15 @@ export const handleReadyEvent = (client: Client) => {
             const channel = client.channels.cache.get(config.channels.START_MESSAGE_CHANNEL_ID);
 
             if (channel && channel instanceof TextChannel) {
-                await channel.send({ embeds: [embed] });
+                if (startMessage) {
+                    try {
+                        await startMessage.delete();
+                    } catch (error) {
+                        LogService.error("Failed to delete previous start message.");
+                    }
+                }
+
+                startMessage = await channel.send({ embeds: [embed] });
             } else {
                 LogService.error("The channel is not a TextChannel or could not be found.");
             }

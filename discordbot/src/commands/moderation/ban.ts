@@ -1,7 +1,11 @@
+import axios from "axios";
 import { ChatInputCommandInteraction, SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } from "discord.js";
 import { Command } from "../../functions/handleCommands";
 import { Ban } from "../../models/Ban";
 import { LogService } from "../../services/logService";
+import { config } from "../../config/config";
+
+const apiRequestUrl = config.apiRequests.REQUEST_API_BASE_URL;
 
 const BanCommand: Command = {
     data: new SlashCommandBuilder()
@@ -56,14 +60,17 @@ const BanCommand: Command = {
                     return;
                 }
 
-                const banEntry = new Ban({
+                await Ban.create({
                     userId: user.id,
                     username: user.username,
                     reason: reason,
                     timestamp: new Date(),
                 });
 
-                await banEntry.save();
+                await axios.patch(`${apiRequestUrl}/update-ip-ban-status`, {
+                    userId: user.id,
+                    isBanned: true,
+                });
 
                 const embed = new EmbedBuilder()
                     .setColor("Red")
@@ -78,7 +85,6 @@ const BanCommand: Command = {
                 await interaction.editReply({ embeds: [embed] });
 
                 LogService.info(`User ${user.tag} has been banned. Reason: ${reason}`);
-
             } else if (subcommand === "list") {
                 const bans = await Ban.find().sort({ timestamp: -1 }).limit(10);
 
@@ -96,7 +102,6 @@ const BanCommand: Command = {
                     .setTimestamp();
 
                 await interaction.editReply({ embeds: [embed] });
-
             } else if (subcommand === "remove") {
                 const user = interaction.options.getUser("user");
 
@@ -111,6 +116,11 @@ const BanCommand: Command = {
                     interaction.editReply({ content: `ℹ️ The user **${user.tag}** is not banned.` });
                     return;
                 }
+
+                await axios.patch(`${apiRequestUrl}/update-ip-ban-status`, {
+                    userId: user.id,
+                    isBanned: false,
+                });
 
                 const embed = new EmbedBuilder()
                     .setColor("Green")

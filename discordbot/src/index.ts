@@ -11,6 +11,7 @@ import { handleReadyEvent } from './events/ready';
 import { handleIpTrackingEvent } from './events/ipTracker';
 import { handleBanEvasionEvent } from './events/banEvasion';
 import { handleWelcomeEvent } from './events/welcomeMessage';
+import { commandUsageEvent } from './events/commandUsage';
 
 export interface ExtendedClient extends Client {
     commands: Collection<string, Command>;
@@ -74,6 +75,8 @@ client.on('interactionCreate', async (interaction: Interaction) => {
 
         try {
             await command.execute(interaction);
+
+            await commandUsageEvent(interaction);
         } catch (error) {
             const errorMessage = error instanceof Error ? error.message : String(error);
             LogService.error(`Error executing command: ${errorMessage}`);

@@ -5,29 +5,9 @@ import { config } from "./config/config";
 
 const server = express();
 
-mongoose.connect(config.database.MONGO_URI, { })
+mongoose.connect(config.database.MONGO_URI, {});
 
 server.use(express.json());
-
-server.get("/get-ip", async (req: Request, res: Response) => {
-    const { userId } = req.query;
-
-    if (!userId) {
-        return res.status(400).json({ error: "UserId is required" });
-    }
-
-    try {
-        const ipTracking = await IPTracking.findOne({ userId: userId as string }).sort({ timestamps: -1 });
-
-        if (ipTracking) {
-            return res.status(200).json({ ip: ipTracking.ip, timestamps: ipTracking.timestamps });
-        } else {
-            return res.status(404).json({ error: "IP address not found for this user" });
-        }
-    } catch (error) {
-        return res.status(500).json({ error: "Error fetching IP address" });
-    }
-});
 
 server.post("/save-ip", async (req: Request, res: Response) => {
     const { userId } = req.body;
@@ -53,6 +33,7 @@ server.post("/save-ip", async (req: Request, res: Response) => {
             ipTracking = new IPTracking({
                 userId,
                 ip,
+                isBanned: false,
                 timestamps: [new Date()],
             });
             await ipTracking.save();
@@ -60,6 +41,45 @@ server.post("/save-ip", async (req: Request, res: Response) => {
         }
     } catch (error) {
         return res.status(500).json({ error: "Error saving IP address" });
+    }
+});
+
+server.patch("/update-ip-ban-status", async (req: Request, res: Response) => {
+    const { userId, ip, isBanned } = req.body;
+
+    if (typeof isBanned !== "boolean") {
+        return res.status(400).json({ error: "isBanned must be a boolean (true/false)" });
+    }
+
+    if (!userId && !ip) {
+        return res.status(400).json({ error: "Either userId or IP is required" });
+    }
+
+    try {
+        const filter = userId ? { userId } : { ip };
+        const result = await IPTracking.updateMany(filter, { isBanned });
+
+        if (result.matchedCount === 0) {
+            return res.status(404).json({ error: "No matching records found" });
+        }
+
+        return res.status(200).json({ message: `Updated ${result.modifiedCount} records`, isBanned });
+    } catch (error) {
+        return res.status(500).json({ error: "Error updating ban status" });
+    }
+});
+
+server.get("/list-tracked-ips", async (_req: Request, res: Response) => {
+    try {
+        const ipRecords = await IPTracking.find({}, { _id: 0, __v: 0 });
+
+        if (ipRecords.length === 0) {
+            return res.status(404).json({ message: "No IP tracking data found" });
+        }
+
+        return res.status(200).json(ipRecords);
+    } catch (error) {
+        return res.status(500).json({ error: "Error retrieving IP tracking data" });
     }
 });
 
