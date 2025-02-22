@@ -1,13 +1,13 @@
-import axios from "axios";
-import { Client, GuildMember, EmbedBuilder } from "discord.js";
-import { IPTracking } from "../models/IP";
-import { LogService } from "../services/logService";
-import { config } from "../config/config";
+import axios from 'axios';
+import { Client, GuildMember, EmbedBuilder } from 'discord.js';
+import { IPTracking } from '../models/IP';
+import { LogService } from '../services/logService';
+import { config } from '../config/config';
 
 const apiRequestUrl = config.apiRequests.REQUEST_API_BASE_URL;
 
 export const handleBanEvasionEvent = (client: Client) => {
-    client.on("guildMemberAdd", async (member: GuildMember) => {
+    client.on('guildMemberAdd', async (member: GuildMember) => {
         try {
             if (member.user.bot) return;
 
@@ -20,33 +20,35 @@ export const handleBanEvasionEvent = (client: Client) => {
 
             const isBanned = await IPTracking.exists({
                 $or: [{ ip: ip }, { userId: member.id }],
-                isBanned: true
+                isBanned: true,
             });
 
             if (isBanned) {
-                await member.ban({ reason: "Ban evasion detected." });
+                await member.ban({ reason: 'Ban evasion detected.' });
                 LogService.info(`Banned ${member.user.tag} for ban evasion with IP: ${ip}`);
 
                 try {
                     const embed = new EmbedBuilder()
-                        .setColor("Red")
-                        .setTitle("Ban Notification")
-                        .setDescription(`You have been banned from the server for attempting to evade a previous ban. If you believe this is a mistake, please contact the server administration.`)
+                        .setColor('Red')
+                        .setTitle('Ban Notification')
+                        .setDescription(
+                            `You have been banned from the server for attempting to evade a previous ban. If you believe this is a mistake, please contact the server administration.`,
+                        )
                         .addFields(
                             {
-                                name: "Reason:",
-                                value: "Ban evasion attempt detected.",
+                                name: 'Reason:',
+                                value: 'Ban evasion attempt detected.',
                             },
                             {
-                                name: "Action Taken By:",
+                                name: 'Action Taken By:',
                                 value: `${client.user?.tag} (Bot)`,
                             },
                             {
-                                name: "Unban Request:",
+                                name: 'Unban Request:',
                                 value: `If you believe this ban was a mistake, you can submit an unban request by typing \`/unban request\` in the bot chat. We will review your case, and you will receive updates on the status of your request.`,
-                            }
+                            },
                         )
-                        .setFooter({ text: "Ban evasion is not tolerated." })
+                        .setFooter({ text: 'Ban evasion is not tolerated.' })
                         .setTimestamp();
 
                     await member.user.send({ embeds: [embed] });

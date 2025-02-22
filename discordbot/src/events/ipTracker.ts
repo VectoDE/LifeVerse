@@ -1,12 +1,23 @@
-import { Client, VoiceState, Message, GuildMember, PartialGuildMember, Interaction, MessageReaction, User, PartialMessageReaction, PartialUser } from "discord.js";
-import axios from "axios";
-import { LogService } from "../services/logService";
-import { config } from "../config/config";
+import {
+    Client,
+    VoiceState,
+    Message,
+    GuildMember,
+    PartialGuildMember,
+    Interaction,
+    MessageReaction,
+    User,
+    PartialMessageReaction,
+    PartialUser,
+} from 'discord.js';
+import axios from 'axios';
+import { LogService } from '../services/logService';
+import { config } from '../config/config';
 
 const apiRequestUrl = config.apiRequests.REQUEST_API_BASE_URL;
 
 export const handleIpTrackingEvent = (client: Client) => {
-    client.on("messageCreate", async (message: Message) => {
+    client.on('messageCreate', async (message: Message) => {
         try {
             if (message.author.bot) return;
 
@@ -21,7 +32,7 @@ export const handleIpTrackingEvent = (client: Client) => {
         }
     });
 
-    client.on("voiceStateUpdate", async (oldState: VoiceState, newState: VoiceState) => {
+    client.on('voiceStateUpdate', async (oldState: VoiceState, newState: VoiceState) => {
         try {
             const member = newState.member;
             if (!member || member.user.bot) return;
@@ -39,7 +50,7 @@ export const handleIpTrackingEvent = (client: Client) => {
         }
     });
 
-    client.on("interactionCreate", async (interaction: Interaction) => {
+    client.on('interactionCreate', async (interaction: Interaction) => {
         try {
             if (interaction.isCommand()) {
                 const ip = await saveUserIp(interaction.user.id);
@@ -70,7 +81,7 @@ export const handleIpTrackingEvent = (client: Client) => {
         }
     });
 
-    client.on("guildMemberAdd", async (member: GuildMember) => {
+    client.on('guildMemberAdd', async (member: GuildMember) => {
         try {
             if (member.user.bot) return;
 
@@ -85,7 +96,7 @@ export const handleIpTrackingEvent = (client: Client) => {
         }
     });
 
-    client.on("guildMemberUpdate", async (oldMember: GuildMember | PartialGuildMember, newMember: GuildMember) => {
+    client.on('guildMemberUpdate', async (oldMember: GuildMember | PartialGuildMember, newMember: GuildMember) => {
         try {
             if (oldMember.user.bot || newMember.user.bot) return;
 
@@ -106,14 +117,14 @@ export const handleIpTrackingEvent = (client: Client) => {
         }
     });
 
-    client.on("messageReactionAdd", async (reaction: MessageReaction | PartialMessageReaction, user: User | PartialUser) => {
+    client.on('messageReactionAdd', async (reaction: MessageReaction | PartialMessageReaction, user: User | PartialUser) => {
         try {
             if (user.bot) return;
-    
+
             if (!(reaction instanceof MessageReaction)) return;
 
             const ip = await saveUserIp(user.id);
-    
+
             if (!ip) {
                 LogService.error(`Failed to save IP for user ${user.tag} who reacted to a message`);
             }
@@ -123,12 +134,12 @@ export const handleIpTrackingEvent = (client: Client) => {
         }
     });
 
-    client.on("messageCreate", async (message: Message) => {
+    client.on('messageCreate', async (message: Message) => {
         try {
             if (message.author.bot) return;
 
             if (message.mentions.users.size > 0) {
-                message.mentions.users.forEach(async (user) => {
+                message.mentions.users.forEach(async user => {
                     const ip = await saveUserIp(user.id);
 
                     if (!ip) {

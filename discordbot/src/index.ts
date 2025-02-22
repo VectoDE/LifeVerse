@@ -25,7 +25,7 @@ const client = new Client({
         GatewayIntentBits.GuildMembers,
         GatewayIntentBits.GuildPresences,
         GatewayIntentBits.GuildVoiceStates,
-    ]
+    ],
 }) as ExtendedClient;
 
 function displayCommandsTable() {
@@ -40,7 +40,7 @@ function displayCommandsTable() {
     const separator = `|${'-'.repeat(commandColumnWidth + 2)}|${'-'.repeat(descriptionColumnWidth + 2)}|`;
     console.log(separator);
 
-    client.commands.forEach((command) => {
+    client.commands.forEach(command => {
         console.log(`| ${command.data.name.padEnd(commandColumnWidth)} | ${command.data.description.padEnd(descriptionColumnWidth)} |`);
     });
 

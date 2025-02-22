@@ -1,21 +1,23 @@
-import dotenv from "dotenv";
-import { REST, Routes } from "discord.js";
-import { config } from "../config/config";
-import { LogService } from "../services/logService";
+import dotenv from 'dotenv';
+import { REST, Routes } from 'discord.js';
+import { config } from '../config/config';
+import { LogService } from '../services/logService';
 
 import KickCommand from '../commands/moderation/kick';
-import BanCommand from "../commands/moderation/ban";
-import MuteCommand from "../commands/moderation/mute";
-import ClearCommand from "../commands/moderation/clear";
-import ReportCommand from "../commands/moderation/report";
-import WelcomeCommand from "../commands/moderation/welcome";
-import RoleCommand from "../commands/moderation/role";
+import BanCommand from '../commands/moderation/ban';
+import MuteCommand from '../commands/moderation/mute';
+import ClearCommand from '../commands/moderation/clear';
+import ReportCommand from '../commands/moderation/report';
+import WelcomeCommand from '../commands/moderation/welcome';
+import RoleCommand from '../commands/moderation/role';
+import AntiLinkCommand from '../commands/moderation/antilink';
+import WarnCommand from '../commands/moderation/warn';
 import PingCommand from '../commands/utility/ping';
-import InviteCommand from "../commands/utility/invite";
-import ServerInfoCommand from "../commands/utility/serverinfo";
-import UserInfoCommand from "../commands/utility/userinfo";
-import TimeoutCommand from "../commands/moderation/timeout";
-import LifeVerseInfoCommand from "../commands/lifeverse/lifeverseinfo";
+import InviteCommand from '../commands/utility/invite';
+import ServerInfoCommand from '../commands/utility/serverinfo';
+import UserInfoCommand from '../commands/utility/userinfo';
+import TimeoutCommand from '../commands/moderation/timeout';
+import LifeVerseInfoCommand from '../commands/lifeverse/lifeverseinfo';
 
 dotenv.config();
 
@@ -33,6 +35,8 @@ const commandFiles = [
     ReportCommand,
     WelcomeCommand,
     RoleCommand,
+    AntiLinkCommand,
+    WarnCommand,
     // Utility Commands
     PingCommand,
     InviteCommand,
@@ -45,14 +49,14 @@ const commandFiles = [
 const commands: any[] = [];
 
 for (const command of commandFiles) {
-    if ("data" in command && "execute" in command) {
+    if ('data' in command && 'execute' in command) {
         commands.push(command.data.toJSON());
     } else {
         LogService.info(`The command is missing a required 'data' or 'execute' property.`);
     }
 }
 
-const rest = new REST({ version: "9" }).setToken(token);
+const rest = new REST({ version: '9' }).setToken(token);
 
 export const registerCommands = async () => {
     try {

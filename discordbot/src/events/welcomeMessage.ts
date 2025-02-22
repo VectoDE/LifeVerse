@@ -5,7 +5,9 @@ import { Welcome } from '../models/Welcome';
 export const handleWelcomeEvent = (client: Client) => {
     client.on('guildMemberAdd', async (member: GuildMember) => {
         try {
-            const welcomeData = await Welcome.findOne({ guildId: member.guild.id });
+            const welcomeData = await Welcome.findOne({
+                guildId: member.guild.id,
+            });
 
             if (!welcomeData || !welcomeData.isEnabled) {
                 return;
@@ -18,14 +20,35 @@ export const handleWelcomeEvent = (client: Client) => {
             } else {
                 embedData = {
                     title: `Welcome to the server, ${member.user.username}! 🎉`,
-                    description: `We're happy to see you at **${member.guild.name}**! 😄\n`
-                        + `Take a look around, and don't forget to read the rules! 📜`,
+                    description:
+                        `We're happy to see you at **${member.guild.name}**! 😄\n` +
+                        `Take a look around, and don't forget to read the rules! 📜`,
                     fields: [
-                        { name: '👋 Say Hello!', value: 'Come in and greet everyone!', inline: true },
-                        { name: '📚 Read the Rules', value: `The **[rules](https://discord.com/channels/${member.guild.id}/1341925164392124509)** are in the information section.`, inline: true },
-                        { name: '🔔 Getting Active?', value: 'Active members get great perks!', inline: true },
-                        { name: '🛡️ Verification Required', value: `Please complete the **[verification](https://discord.com/channels/${member.guild.id}/1342297124750102558)** process to get your roles.`, inline: true },
-                        { name: '✅ Verified?', value: `Once verified, you will be granted your roles in the **[Get Roles Channel](https://discord.com/channels/${member.guild.id}/1341925450531737690)**.`, inline: true },
+                        {
+                            name: '👋 Say Hello!',
+                            value: 'Come in and greet everyone!',
+                            inline: true,
+                        },
+                        {
+                            name: '📚 Read the Rules',
+                            value: `The **[rules](https://discord.com/channels/${member.guild.id}/1341925164392124509)** are in the information section.`,
+                            inline: true,
+                        },
+                        {
+                            name: '🔔 Getting Active?',
+                            value: 'Active members get great perks!',
+                            inline: true,
+                        },
+                        {
+                            name: '🛡️ Verification Required',
+                            value: `Please complete the **[verification](https://discord.com/channels/${member.guild.id}/1342297124750102558)** process to get your roles.`,
+                            inline: true,
+                        },
+                        {
+                            name: '✅ Verified?',
+                            value: `Once verified, you will be granted your roles in the **[Get Roles Channel](https://discord.com/channels/${member.guild.id}/1341925450531737690)**.`,
+                            inline: true,
+                        },
                     ],
                     footer: 'Welcome and have fun!',
                     timestamp: new Date(),
@@ -51,17 +74,20 @@ export const handleWelcomeEvent = (client: Client) => {
             const dmEmbed = new EmbedBuilder()
                 .setColor('Blue')
                 .setTitle('Welcome to LifeVerse!')
-                .setDescription(`Hey **${member.user.username}**! 🎉\n\n`
-                    + `Welcome to **LifeVerse**, a world like no other! Here, you can experience life in a 1:1 scale with the real world.\n\n`
-                    + `🔎 Explore our immersive environments and engage in endless activities.\n\n`
-                    + `💡 Don’t forget to check the rules and start your journey in LifeVerse by visiting the [Rules](https://discord.com/channels/${member.guild.id}/1341925164392124509) and [Verification](https://discord.com/channels/${member.guild.id}/1342297124750102558) section!\n\n`
-                    + `Feel free to reach out to any member if you need assistance!`)
-                .setFooter({ text: 'We hope you enjoy your stay in LifeVerse!' })
+                .setDescription(
+                    `Hey **${member.user.username}**! 🎉\n\n` +
+                        `Welcome to **LifeVerse**, a world like no other! Here, you can experience life in a 1:1 scale with the real world.\n\n` +
+                        `🔎 Explore our immersive environments and engage in endless activities.\n\n` +
+                        `💡 Don’t forget to check the rules and start your journey in LifeVerse by visiting the [Rules](https://discord.com/channels/${member.guild.id}/1341925164392124509) and [Verification](https://discord.com/channels/${member.guild.id}/1342297124750102558) section!\n\n` +
+                        `Feel free to reach out to any member if you need assistance!`,
+                )
+                .setFooter({
+                    text: 'We hope you enjoy your stay in LifeVerse!',
+                })
                 .setTimestamp();
 
             await member.send({ embeds: [dmEmbed] });
             LogService.info(`Sent DM to ${member.user.tag} with LifeVerse info.`);
-
         } catch (error) {
             const errorMessage = error instanceof Error ? error.message : String(error);
             LogService.error(`Error in welcome message: ${errorMessage}`);

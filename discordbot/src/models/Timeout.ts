@@ -1,11 +1,11 @@
 import { Schema, model, Document } from 'mongoose';
 
-interface ITimeout extends Document {
+export interface ITimeout extends Document {
     userId: string;
     username: string;
     reason: string;
     duration: number;
-    identifier: number;
+    identifier: string;
     timestamp: Date;
 }
 
@@ -14,13 +14,13 @@ const timeoutSchema = new Schema<ITimeout>({
     username: { type: String, required: true },
     reason: { type: String, required: true },
     duration: { type: Number, required: true },
-    identifier: { type: Number, required: true, unique: true },
+    identifier: { type: String, required: true, unique: true },
     timestamp: { type: Date, default: Date.now },
 });
 
-timeoutSchema.pre('save', function(next) {
-    if (isNaN(this.identifier)) {
-        this.identifier = 1;
+timeoutSchema.pre('save', function (next) {
+    if (!this.identifier) {
+        this.identifier = Math.random().toString(36).substring(2, 15);
     }
     next();
 });

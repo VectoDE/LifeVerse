@@ -1,4 +1,12 @@
-import { ChatInputCommandInteraction, SlashCommandBuilder, PermissionFlagsBits, Role, EmbedBuilder, GuildMember, PermissionsBitField } from 'discord.js';
+import {
+    ChatInputCommandInteraction,
+    SlashCommandBuilder,
+    PermissionFlagsBits,
+    Role,
+    EmbedBuilder,
+    GuildMember,
+    PermissionsBitField,
+} from 'discord.js';
 import { Command } from '../../functions/handleCommands';
 import { LogService } from '../../services/logService';
 
@@ -7,32 +15,18 @@ const RoleCommand: Command = {
         .setName('role')
         .setDescription('Manage server roles.')
         .addSubcommand(subcommand =>
-            subcommand.setName('assign')
+            subcommand
+                .setName('assign')
                 .setDescription('Assign a role to a user.')
-                .addUserOption(option =>
-                    option.setName('user')
-                        .setDescription('User to assign the role to.')
-                        .setRequired(true)
-                )
-                .addRoleOption(option =>
-                    option.setName('role')
-                        .setDescription('Role to assign.')
-                        .setRequired(true)
-                )
+                .addUserOption(option => option.setName('user').setDescription('User to assign the role to.').setRequired(true))
+                .addRoleOption(option => option.setName('role').setDescription('Role to assign.').setRequired(true)),
         )
         .addSubcommand(subcommand =>
-            subcommand.setName('unassign')
+            subcommand
+                .setName('unassign')
                 .setDescription('Unassign a role from a user.')
-                .addUserOption(option =>
-                    option.setName('user')
-                        .setDescription('User to unassign the role from.')
-                        .setRequired(true)
-                )
-                .addRoleOption(option =>
-                    option.setName('role')
-                        .setDescription('Role to unassign.')
-                        .setRequired(true)
-                )
+                .addUserOption(option => option.setName('user').setDescription('User to unassign the role from.').setRequired(true))
+                .addRoleOption(option => option.setName('role').setDescription('Role to unassign.').setRequired(true)),
         )
         .setDefaultMemberPermissions(PermissionsBitField.Flags.ManageRoles),
 
@@ -53,12 +47,12 @@ const RoleCommand: Command = {
         if (subcommand === 'assign') {
             const user = interaction.options.getUser('user')!;
             const role = interaction.options.getRole('role')!;
-        
+
             try {
                 if (role instanceof Role) {
                     const member = await interaction.guild!.members.fetch(user.id);
                     await member.roles.add(role, `Role assigned by ${interaction.user.tag}`);
-        
+
                     const embed = new EmbedBuilder()
                         .setColor('Green')
                         .setTitle('Role Assigned')
@@ -69,15 +63,21 @@ const RoleCommand: Command = {
                 } else {
                     interaction.reply({
                         embeds: [new EmbedBuilder().setColor('Red').setTitle('Error').setDescription('The specified role is not valid.')],
-                        ephemeral: true
+                        ephemeral: true,
                     });
                     return;
                 }
             } catch (error) {
                 LogService.error(`Error assigning role: ${error}`);
                 interaction.reply({
-                    embeds: [new EmbedBuilder().setColor('Red').setTitle('Error').setDescription('An error occurred while assigning the role.').setTimestamp()],
-                    ephemeral: true
+                    embeds: [
+                        new EmbedBuilder()
+                            .setColor('Red')
+                            .setTitle('Error')
+                            .setDescription('An error occurred while assigning the role.')
+                            .setTimestamp(),
+                    ],
+                    ephemeral: true,
                 });
                 return;
             }
@@ -86,12 +86,12 @@ const RoleCommand: Command = {
         if (subcommand === 'unassign') {
             const user = interaction.options.getUser('user')!;
             const role = interaction.options.getRole('role')!;
-        
+
             try {
                 if (role instanceof Role) {
                     const member = await interaction.guild!.members.fetch(user.id);
                     await member.roles.remove(role, `Role removed by ${interaction.user.tag}`);
-        
+
                     const embed = new EmbedBuilder()
                         .setColor('Red')
                         .setTitle('Role Removed')
@@ -102,15 +102,21 @@ const RoleCommand: Command = {
                 } else {
                     interaction.reply({
                         embeds: [new EmbedBuilder().setColor('Red').setTitle('Error').setDescription('The specified role is not valid.')],
-                        ephemeral: true
+                        ephemeral: true,
                     });
                     return;
                 }
             } catch (error) {
                 LogService.error(`Error removing role: ${error}`);
                 interaction.reply({
-                    embeds: [new EmbedBuilder().setColor('Red').setTitle('Error').setDescription('An error occurred while removing the role.').setTimestamp()],
-                    ephemeral: true
+                    embeds: [
+                        new EmbedBuilder()
+                            .setColor('Red')
+                            .setTitle('Error')
+                            .setDescription('An error occurred while removing the role.')
+                            .setTimestamp(),
+                    ],
+                    ephemeral: true,
                 });
                 return;
             }

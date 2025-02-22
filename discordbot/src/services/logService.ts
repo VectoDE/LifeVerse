@@ -1,7 +1,7 @@
 //import { WebhookClient, EmbedBuilder } from 'discord.js';
 //import { config } from '../config/config';
 
-//const webhookClient = new WebhookClient({ 
+//const webhookClient = new WebhookClient({
 //    id: config.webhooks.logWebhook.id,
 //    token: config.webhooks.logWebhook.token
 //});

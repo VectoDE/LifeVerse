@@ -18,6 +18,7 @@ export interface IWelcome extends Document {
     username: string;
     embed: IWelcomeEmbed;
     isEnabled: boolean;
+    identifier: string;
     timestamp: Date;
 }
 
@@ -42,7 +43,15 @@ const welcomeSchema = new Schema<IWelcome>({
         image: { type: String },
     },
     isEnabled: { type: Boolean, default: false },
+    identifier: { type: String, required: true, unique: true },
     timestamp: { type: Date, default: Date.now },
+});
+
+welcomeSchema.pre('save', function (next) {
+    if (!this.identifier) {
+        this.identifier = Math.random().toString(36).substring(2, 15);
+    }
+    next();
 });
 
 export const Welcome = model<IWelcome>('Welcome', welcomeSchema);

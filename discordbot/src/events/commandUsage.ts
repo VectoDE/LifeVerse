@@ -1,13 +1,13 @@
-import { ChatInputCommandInteraction, TextChannel, DMChannel } from "discord.js";
-import { CommandUsage } from "../models/CommandUsage";
-import { LogService } from "../services/logService";
+import { ChatInputCommandInteraction, TextChannel, DMChannel } from 'discord.js';
+import { CommandUsage } from '../models/CommandUsage';
+import { LogService } from '../services/logService';
 
 export const commandUsageEvent = async (interaction: ChatInputCommandInteraction) => {
     try {
         const { commandName, user, channel } = interaction;
 
         if (!channel) {
-            throw new Error("Channel is null");
+            throw new Error('Channel is null');
         }
 
         let channelName: string;
@@ -31,12 +31,16 @@ export const commandUsageEvent = async (interaction: ChatInputCommandInteraction
         await commandUsage.save();
         console.info(`Command '${commandName}' executed by ${user.username} in channel ${channelName} at ${new Date().toISOString()}.`);
     } catch (error) {
-        LogService.error("Error logging command usage:", error);
+        LogService.error('Error logging command usage:', error);
 
         if (!interaction.replied && !interaction.deferred) {
-            await interaction.reply({ content: "There was an error executing the command." });
+            await interaction.reply({
+                content: 'There was an error executing the command.',
+            });
         } else if (interaction.replied || interaction.deferred) {
-            await interaction.followUp({ content: "There was an error executing the command." });
+            await interaction.followUp({
+                content: 'There was an error executing the command.',
+            });
         }
     }
 };
