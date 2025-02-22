@@ -1,5 +1,6 @@
 import { ChatInputCommandInteraction, TextChannel, DMChannel } from 'discord.js';
 import { CommandUsage } from '../models/CommandUsage';
+import { CommandName } from '../models/CommandName';
 import { LogService } from '../services/logService';
 
 export const commandUsageEvent = async (interaction: ChatInputCommandInteraction) => {
@@ -20,16 +21,54 @@ export const commandUsageEvent = async (interaction: ChatInputCommandInteraction
             channelName = `Unknown Channel (${channel.id})`;
         }
 
-        const commandUsage = new CommandUsage({
-            commandName: commandName,
-            userId: user.id,
-            username: user.username,
-            channelId: channel.id,
-            identifier: Math.random().toString(36).substring(2, 15),
-            timestamp: new Date(),
-        });
+        let command = await CommandName.findOne({ commandName });
 
-        await commandUsage.save();
+        if (command) {
+            if (!command.users.some(existingUser => existingUser.userId === user.id)) {
+                command.users.push({
+                    userId: user.id,
+                    username: user.username,
+                    identifier: Math.random().toString(36).substring(2, 15),
+                    timestamp: new Date(),
+                });
+                await command.save();
+            }
+        } else {
+            command = new CommandName({
+                commandName: commandName,
+                users: [{
+                    userId: user.id,
+                    username: user.username,
+                    identifier: Math.random().toString(36).substring(2, 15),
+                    timestamp: new Date(),
+                }],
+            });
+            await command.save();
+        }
+
+        let commandUsage = await CommandUsage.findOne({ userId: user.id });
+
+        if (commandUsage) {
+            commandUsage.commands.push({
+                commandName: commandName,
+                timestamp: new Date(),
+                identifier: Math.random().toString(36).substring(2, 15),
+            });
+            await commandUsage.save();
+        } else {
+            commandUsage = new CommandUsage({
+                userId: user.id,
+                username: user.username,
+                channelId: channel.id,
+                commands: [{
+                    commandName: commandName,
+                    timestamp: new Date(),
+                    identifier: Math.random().toString(36).substring(2, 15),
+                }],
+            });
+            await commandUsage.save();
+        }
+
         console.info(`Command '${commandName}' executed by ${user.username} in channel ${channelName} at ${new Date().toISOString()}.`);
     } catch (error) {
         LogService.error('Error logging command usage:', error);
