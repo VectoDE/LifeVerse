@@ -3,6 +3,7 @@ import { Client, GuildMember, EmbedBuilder } from 'discord.js';
 import { IPTracking } from '../models/IP';
 import { LogService } from '../services/logService';
 import { config } from '../config/config';
+import { Request } from '../models/Request';
 
 const apiRequestUrl = config.apiRequests.REQUEST_API_BASE_URL;
 
@@ -71,9 +72,26 @@ const saveUserIp = async (userId: string): Promise<string | null> => {
             userId: userId,
         });
 
+        await Request.create({
+            url: `${apiRequestUrl}/save-ip`,
+            type: 'POST',
+            status: response.status === 200 ? 'success' : 'failed',
+            identifier: Math.random().toString(36).substring(2, 15),
+            timestamp: new Date(),
+        });
+
         return response.data.ip;
     } catch (error) {
         LogService.error(`Error fetching IP for ${userId}:`, error);
+
+        await Request.create({
+            url: `${apiRequestUrl}/save-ip`,
+            type: 'POST',
+            status: 'failed',
+            identifier: Math.random().toString(36).substring(2, 15),
+            timestamp: new Date(),
+        });
+
         return null;
     }
 };

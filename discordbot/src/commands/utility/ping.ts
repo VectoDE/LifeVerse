@@ -1,10 +1,11 @@
+import axios from 'axios';
 import { ChatInputCommandInteraction, SlashCommandBuilder, EmbedBuilder } from 'discord.js';
 import { performance } from 'perf_hooks';
 import { Command } from '../../functions/handleCommands';
 import { config } from '../../config/config';
 import { LogService } from '../../services/logService';
 import { ArrayUtil } from '../../utils/arrayUtil';
-import { makeRequest } from '../../utils/requestUtil';
+import { Request } from '../../models/Request';
 
 const services = [
     { name: '🌍 Website', url: config.apiRequests.WEBSITE },
@@ -38,23 +39,31 @@ const PingCommand: Command = {
                 serverLatency < 200
                     ? `🟢 Online (${serverLatency}ms)`
                     : serverLatency < 500
-                      ? `🟠 Maintenance (${serverLatency}ms)`
-                      : '🔴 Offline';
+                    ? `🟠 Maintenance (${serverLatency}ms)`
+                    : '🔴 Offline';
 
             const serviceStatuses = await Promise.all(
                 services.map(async service => {
                     try {
                         const serviceStart = performance.now();
-                        const response = await makeRequest('service', service.url);
+                        const response = await axios.get(service.url);
                         const serviceEnd = performance.now();
                         const latency = Math.round(serviceEnd - serviceStart);
 
-                        if (response && response.status === 200) {
+                        await Request.create({
+                            url: service.url,
+                            type: 'GET',
+                            status: response.status === 200 ? 'success' : 'failed',
+                            identifier: Math.random().toString(36).substring(2, 15),
+                            timestamp: new Date(),
+                        });
+
+                        if (response.status === 200) {
                             return {
                                 name: service.name,
                                 status: `🟢 Online (${latency}ms)`,
                             };
-                        } else if (response && response.status === 503) {
+                        } else if (response.status === 503) {
                             return {
                                 name: service.name,
                                 status: `🟠 Maintenance (${latency}ms)`,
@@ -72,14 +81,22 @@ const PingCommand: Command = {
             const gameServerStatuses = await Promise.all(
                 gameServers.map(async server => {
                     try {
-                        const response = await makeRequest('game_server', server.url);
+                        const response = await axios.get(server.url);
 
                         let status = '🔴 Offline';
-                        if (response && response.status === 200) {
+                        if (response.status === 200) {
                             status = '🟢 Online';
-                        } else if (response && response.status === 503) {
+                        } else if (response.status === 503) {
                             status = '🟠 Maintenance';
                         }
+
+                        await Request.create({
+                            url: server.url,
+                            type: 'GET',
+                            status: response.status === 200 ? 'success' : 'failed',
+                            identifier: Math.random().toString(36).substring(2, 15),
+                            timestamp: new Date(),
+                        });
 
                         return { name: server.name, status };
                     } catch (error) {

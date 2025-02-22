@@ -11,12 +11,29 @@ async function checkURLStatus(_type: string, url?: string): Promise<boolean> {
         return false;
     }
 
+    let status: string;
     try {
         const response = await axios.get(url);
-        return response.status === 200;
+        status = response.status === 200 ? 'success' : 'failed';
     } catch (error) {
-        return false;
+        status = 'failed';
     }
+
+    const request = new Request({
+        url,
+        type: _type,
+        status,
+        identifier: Math.random().toString(36).substring(2, 15),
+        timestamp: new Date(),
+    });
+
+    try {
+        await request.save();
+    } catch (error) {
+        console.error('Error saving request to database:', error);
+    }
+
+    return status === 'success';
 }
 
 async function checkBotStatus(interaction: ChatInputCommandInteraction): Promise<boolean> {
