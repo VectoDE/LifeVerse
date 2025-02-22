@@ -1,11 +1,12 @@
-import { ChatInputCommandInteraction, SlashCommandBuilder, EmbedBuilder } from "discord.js";
+import { ChatInputCommandInteraction, SlashCommandBuilder, EmbedBuilder, PermissionsBitField } from "discord.js";
 import { Command } from "../../functions/handleCommands";
 import { LogService } from "../../services/logService";
 
 const InviteCommand: Command = {
     data: new SlashCommandBuilder()
         .setName("invite")
-        .setDescription("Get an invite link to add the bot to your server."),
+        .setDescription("Get an invite link to add the bot to your server.")
+        .setDefaultMemberPermissions(PermissionsBitField.Flags.CreateInstantInvite),
 
     async execute(interaction: ChatInputCommandInteraction) {
         try {

@@ -56,8 +56,6 @@ export const handleBanEvasionEvent = (client: Client) => {
 
                 return;
             }
-
-            LogService.info(`User ${member.user.tag} joined. Tracking IP: ${ip}`);
         } catch (error) {
             const errorMessage = error instanceof Error ? error.message : String(error);
             LogService.error(`Error handling ban evasion: ${errorMessage}`);

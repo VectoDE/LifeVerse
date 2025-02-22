@@ -1,4 +1,4 @@
-import { ChatInputCommandInteraction, SlashCommandBuilder, TextChannel, EmbedBuilder, GuildMember } from 'discord.js';
+import { ChatInputCommandInteraction, SlashCommandBuilder, TextChannel, EmbedBuilder, GuildMember, PermissionsBitField } from 'discord.js';
 import { Command } from '../../functions/handleCommands';
 import { Welcome } from '../../models/Welcome';
 import { LogService } from '../../services/logService';
@@ -63,7 +63,8 @@ const WelcomeCommand: Command = {
         .addSubcommand(subcommand =>
             subcommand.setName('simulate-join')
                 .setDescription('Simulate a new member joining the server.')
-        ),
+        )
+        .setDefaultMemberPermissions(PermissionsBitField.Flags.ManageGuild),
     
     async execute(interaction: ChatInputCommandInteraction) {
         const subcommand = interaction.options.getSubcommand();

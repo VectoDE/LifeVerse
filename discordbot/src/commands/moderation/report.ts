@@ -1,4 +1,4 @@
-import { ChatInputCommandInteraction, SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits } from 'discord.js';
+import { ChatInputCommandInteraction, SlashCommandBuilder, EmbedBuilder, PermissionFlagsBits, PermissionsBitField } from 'discord.js';
 import { Command } from '../../functions/handleCommands';
 import { Report } from '../../models/Report';
 import { LogService } from '../../services/logService';
@@ -95,6 +95,10 @@ const ReportCommand: Command = {
         } else if (subcommand === 'list') {
             const user = interaction.options.getUser('user');
             
+            if(!PermissionsBitField.Flags.ManageMessages) {
+                await interaction.reply({ content: `⚠️ You do not have the permissions to use this command.`, ephemeral: true });
+            }
+
             if (!user) {
                 await interaction.reply({ content: '⚠️ Please provide a valid user to list reports.', ephemeral: true });
                 return;
@@ -120,6 +124,10 @@ const ReportCommand: Command = {
         } else if (subcommand === 'remove') {
             const reportId = interaction.options.getString('report-id');
 
+            if(!PermissionsBitField.Flags.ManageMessages) {
+                await interaction.reply({ content: `⚠️ You do not have the permissions to use this command.`, ephemeral: true });
+            }
+            
             if (!reportId) {
                 await interaction.reply({ content: '⚠️ Please provide a valid report ID to remove.', ephemeral: true });
                 return;

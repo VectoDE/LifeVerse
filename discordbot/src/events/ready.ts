@@ -14,7 +14,7 @@ export const handleReadyEvent = (client: Client) => {
                 permissions: [PermissionsBitField.Flags.Administrator],
                 scopes: [OAuth2Scopes.Bot],
             });
-            console.info(`Invite Link: ${inviteLink}`);
+            LogService.info(`Invite Link: ${inviteLink}`);
 
             const activities = [
                 { name: "LifeVerse", type: 0, url: "https://download.lifeverse.com" }, // Playing

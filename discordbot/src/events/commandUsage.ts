@@ -1,5 +1,6 @@
 import { ChatInputCommandInteraction, TextChannel, DMChannel } from "discord.js";
 import { CommandUsage } from "../models/CommandUsage";
+import { LogService } from "../services/logService";
 
 export const commandUsageEvent = async (interaction: ChatInputCommandInteraction) => {
     try {
@@ -28,9 +29,9 @@ export const commandUsageEvent = async (interaction: ChatInputCommandInteraction
         });
 
         await commandUsage.save();
-        console.log(`Command '${commandName}' executed by ${user.username} in channel ${channelName} at ${new Date().toISOString()}.`);
+        console.info(`Command '${commandName}' executed by ${user.username} in channel ${channelName} at ${new Date().toISOString()}.`);
     } catch (error) {
-        console.error("Error logging command usage:", error);
+        LogService.error("Error logging command usage:", error);
 
         if (!interaction.replied && !interaction.deferred) {
             await interaction.reply({ content: "There was an error executing the command." });
