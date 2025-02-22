@@ -9,6 +9,8 @@ import { Command } from './functions/handleCommands';
 import { connectDB } from './events/connectDB';
 import { handleReadyEvent } from './events/ready';
 import { handleIpTrackingEvent } from './events/ipTracker';
+import { handleBanEvasionEvent } from './events/banEvasion';
+import { handleWelcomeEvent } from './events/welcomeMessage';
 
 export interface ExtendedClient extends Client {
     commands: Collection<string, Command>;
@@ -25,6 +27,25 @@ const client = new Client({
     ]
 }) as ExtendedClient;
 
+function displayCommandsTable() {
+    const maxCommandNameLength = Math.max(...[...client.commands.values()].map(command => command.data.name.length));
+    const maxDescriptionLength = Math.max(...[...client.commands.values()].map(command => command.data.description.length));
+
+    const commandColumnWidth = maxCommandNameLength + 2;
+    const descriptionColumnWidth = maxDescriptionLength + 2;
+
+    console.log(`| ${'Command Name'.padEnd(commandColumnWidth)} | ${'Description'.padEnd(descriptionColumnWidth)} |`);
+
+    const separator = `|${'-'.repeat(commandColumnWidth + 2)}|${'-'.repeat(descriptionColumnWidth + 2)}|`;
+    console.log(separator);
+
+    client.commands.forEach((command) => {
+        console.log(`| ${command.data.name.padEnd(commandColumnWidth)} | ${command.data.description.padEnd(descriptionColumnWidth)} |`);
+    });
+
+    console.log(separator);
+}
+
 client.commands = new Collection<string, Command>();
 
 const commandFolders = readdirSync(path.join(__dirname, 'commands'));
@@ -34,8 +55,6 @@ for (const folder of commandFolders) {
     for (const file of commandFiles) {
         const { default: command } = require(path.join(__dirname, 'commands', folder, file));
 
-        LogService.info(`Loading Command: ${file}`);
-
         if (!command?.data?.name) {
             LogService.error(`Command in file ${file} is missing a 'data.name' property.`);
             continue;
@@ -44,6 +63,8 @@ for (const folder of commandFolders) {
         client.commands.set(command.data.name, command);
     }
 }
+
+displayCommandsTable();
 
 client.on('interactionCreate', async (interaction: Interaction) => {
     if (interaction.isChatInputCommand()) {
@@ -60,17 +81,19 @@ client.on('interactionCreate', async (interaction: Interaction) => {
     }
 });
 
-// Start Express-Server
-server.listen(config.server.PORT || 3000, () => {
-    console.log(`API server is running on port ${config.server.PORT || 3000}`);
-});
-
-// Connect to MongoDB
+// Connect the database
 connectDB();
 
 // Handle bot events
 handleReadyEvent(client);
 handleIpTrackingEvent(client);
+handleBanEvasionEvent(client);
+handleWelcomeEvent(client);
+
+// Start Express-Server
+server.listen(config.server.PORT || 3000, () => {
+    console.log(`API server is running on port ${config.server.PORT || 3000}`);
+});
 
 client.login(config.application.TOKEN);
 

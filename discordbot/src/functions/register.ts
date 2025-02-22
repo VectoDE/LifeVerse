@@ -7,13 +7,14 @@ import KickCommand from '../commands/moderation/kick';
 import BanCommand from "../commands/moderation/ban";
 import MuteCommand from "../commands/moderation/mute";
 import ClearCommand from "../commands/moderation/clear";
+import ReportCommand from "../commands/moderation/report";
+import WelcomeCommand from "../commands/moderation/welcome";
 import PingCommand from '../commands/utility/ping';
 import InviteCommand from "../commands/utility/invite";
 import ServerInfoCommand from "../commands/utility/serverinfo";
 import UserInfoCommand from "../commands/utility/userinfo";
 import TimeoutCommand from "../commands/moderation/timeout";
 import LifeVerseInfoCommand from "../commands/lifeverse/lifeverseinfo";
-import ReportCommand from "../commands/moderation/report";
 
 dotenv.config();
 
@@ -29,6 +30,7 @@ const commandFiles = [
     ClearCommand,
     TimeoutCommand,
     ReportCommand,
+    WelcomeCommand,
     // Utility Commands
     PingCommand,
     InviteCommand,

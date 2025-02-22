@@ -48,7 +48,7 @@ const ReportCommand: Command = {
             subcommand
                 .setName('remove')
                 .setDescription('Remove a report.')
-                .addStringOption(option =>  // Changed to 'string' to match the ID type.
+                .addStringOption(option =>
                     option.setName('report-id')
                         .setDescription('The ID of the report to remove.')
                         .setRequired(true))
@@ -118,7 +118,7 @@ const ReportCommand: Command = {
             await interaction.reply({ embeds: [embed] });
 
         } else if (subcommand === 'remove') {
-            const reportId = interaction.options.getString('report-id');  // Using 'getString' to match ID format
+            const reportId = interaction.options.getString('report-id');
 
             if (!reportId) {
                 await interaction.reply({ content: '⚠️ Please provide a valid report ID to remove.', ephemeral: true });

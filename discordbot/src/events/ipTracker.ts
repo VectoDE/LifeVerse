@@ -7,7 +7,7 @@ export const handleIpTrackingEvent = (client: Client) => {
         try {
             if (message.author.bot) return;
 
-            const ip = await fetchUserIp(message.author.id);
+            const ip = await saveUserIp(message.author.id);
 
             if (!ip) {
                 LogService.error(`Failed to save IP for user ${message.author.tag}`);
@@ -25,7 +25,7 @@ export const handleIpTrackingEvent = (client: Client) => {
             if (!member || member.user.bot) return;
 
             if (newState.channelId && !oldState.channelId) {
-                const ip = await fetchUserIp(member.id);
+                const ip = await saveUserIp(member.id);
                 
                 if (!ip) {
                     LogService.error(`Failed to save IP for user ${member.user.tag} who joined the voice channel`);
@@ -41,7 +41,7 @@ export const handleIpTrackingEvent = (client: Client) => {
         try {
             if (!interaction.isButton()) return;
 
-            const ip = await fetchUserIp(interaction.user.id);
+            const ip = await saveUserIp(interaction.user.id);
 
             if (!ip) {
                 LogService.error(`Failed to save IP for user ${interaction.user.tag} who interacted with a button`);
@@ -53,7 +53,7 @@ export const handleIpTrackingEvent = (client: Client) => {
     });
 };
 
-const fetchUserIp = async (userId: string): Promise<string | null> => {
+const saveUserIp = async (userId: string): Promise<string | null> => {
     try {
         const response = await axios.post("http://localhost:3000/save-ip", {
             userId: userId,
