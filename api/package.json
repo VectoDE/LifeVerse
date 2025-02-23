@@ -1,0 +1,40 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Functionality of the backend for LifeVerse systems.",
+  "keywords": [
+    "LifeVerse",
+    "API",
+    "Game",
+    "Backend",
+    "Systems"
+  ],
+  "homepage": "https://github.com/VectoDE/LifeVerse#readme",
+  "bugs": {
+    "url": "https://github.com/VectoDE/LifeVerse/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VectoDE/LifeVerse.git"
+  },
+  "license": "MIT",
+  "author": "Vecto. (Tim Hauke)",
+  "main": "src/index.ts",
+  "scripts": {
+    "jest": "jest",
+    "test": "test/index.test.ts",
+    "dev": "concurrently \"nodemon src/index.ts\"",
+    "format": "prettier --write .",
+    "build": "tsc",
+    "start": "node dist/index.ts"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

@@ -25,8 +25,7 @@
         "start": "node dist/index.ts",
         "build": "tsc",
         "format": "prettier --write .",
-        "dev": "concurrently \"nodemon src/index.ts\"",
-        "server": "nodemon src/server.ts"
+        "dev": "concurrently \"nodemon src/index.ts\""
     },
     "dependencies": {
         "axios": "^1.7.9",
