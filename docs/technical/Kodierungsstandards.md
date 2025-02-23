@@ -1,5 +1,3 @@
-Hier ist das Template für die CodingStandards.md-Datei, angepasst auf ein C++-Projekt:
-
 # Coding Standards for LifeVerse Game (C++)
 
 ## 1. Introduction

@@ -1,5 +1,3 @@
-Hier ist die ShaderDevelopment.md-Datei für dein C++-Projekt in Unreal Engine 5:
-
 # Shader Development for LifeVerse Game
 
 ## 1. Introduction

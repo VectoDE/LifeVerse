@@ -1,5 +1,3 @@
-Hier ist die AnimationGuide.md-Datei für dein C++-Projekt in Unreal Engine 5:
-
 # Animation Guide for LifeVerse Game
 
 ## 1. Introduction

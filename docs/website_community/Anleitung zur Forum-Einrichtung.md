@@ -1,21 +1,25 @@
-Hier ist die ForumSetupGuide.md für dein Projekt:
-
 # Forum Setup Guide for LifeVerse Game
 
 ## Introduction
+
 This document provides a comprehensive guide to setting up a forum for the LifeVerse game. The forum will serve as a platform for players to interact, discuss in-game experiences, share feedback, and form communities. The setup will include steps for configuring the forum software, integrating it with the game's backend, and customizing it for a seamless user experience.
 
 ## Table of Contents
-1. [Forum Software Selection](#forum-software-selection)
-2. [Installation Requirements](#installation-requirements)
-3. [Setting Up the Forum Software](#setting-up-the-forum-software)
-4. [User Authentication Integration](#user-authentication-integration)
-5. [Customizing the Forum](#customizing-the-forum)
-6. [Forum Moderation and Management](#forum-moderation-and-management)
-7. [Forum Security](#forum-security)
-8. [Forum Integration with Game](#forum-integration-with-game)
-9. [Testing the Forum](#testing-the-forum)
-10. [Maintenance and Updates](#maintenance-and-updates)
+
+- [Forum Setup Guide for LifeVerse Game](#forum-setup-guide-for-lifeverse-game)
+	- [Introduction](#introduction)
+	- [Table of Contents](#table-of-contents)
+	- [1. Forum Software Selection](#1-forum-software-selection)
+	- [2. Installation Requirements](#2-installation-requirements)
+		- [Example Requirements for Discourse:](#example-requirements-for-discourse)
+	- [3. Setting Up the Forum Software](#3-setting-up-the-forum-software)
+	- [4. User Authentication Integration](#4-user-authentication-integration)
+	- [5. Customizing the Forum](#5-customizing-the-forum)
+	- [6. Forum Moderation and Management](#6-forum-moderation-and-management)
+	- [7. Forum Security](#7-forum-security)
+	- [8. Forum Integration with Game](#8-forum-integration-with-game)
+	- [9. Testing the Forum](#9-testing-the-forum)
+	- [10. Maintenance and Updates](#10-maintenance-and-updates)
 
 ## 1. Forum Software Selection
 Selecting the right forum software is essential for providing a great user experience. Some of the popular open-source forum software options include:
@@ -76,7 +80,7 @@ sudo ./launcher start app
 
 This will start the forum in a Docker container. Access it by visiting your server’s domain or IP address.
 
-4. User Authentication Integration
+## 4. User Authentication Integration
 
 To integrate the forum with LifeVerse’s user authentication system:
 	1.	Enable SSO (Single Sign-On): Discourse supports SSO integration, allowing players to use their game account to log in to the forum.
@@ -95,7 +99,7 @@ app.post('/sso', (req, res) => {
   res.redirect(`https://discourse.example.com/session/sso_login?token=${token}`);
 });
 
-5. Customizing the Forum
+## 5. Customizing the Forum
 
 Customize the forum to fit LifeVerse’s branding and user experience requirements:
 	•	Theme Customization: Use Discourse’s theme components and CSS to adjust colors, logos, and layout.
@@ -103,7 +107,7 @@ Customize the forum to fit LifeVerse’s branding and user experience requiremen
 	•	Categories and Subcategories: Organize discussions into relevant categories (e.g., Game Updates, Community Feedback, Bug Reports).
 	•	User Roles: Assign roles to players such as moderators, VIP users, or developers for different permissions within the forum.
 
-6. Forum Moderation and Management
+## 6. Forum Moderation and Management
 
 Proper moderation tools are essential to maintain a healthy community. Features to consider:
 	•	Automated Spam Detection: Use Discourse’s built-in spam filters or install third-party spam protection plugins.
@@ -111,7 +115,7 @@ Proper moderation tools are essential to maintain a healthy community. Features 
 	•	Moderators: Assign community members to moderate content, manage discussions, and enforce community guidelines.
 	•	Content Flags: Enable a flagging system for posts that violate community guidelines.
 
-7. Forum Security
+## 7. Forum Security
 
 Security is critical to prevent unauthorized access and protect user data:
 	•	HTTPS: Ensure the forum is served over HTTPS to encrypt all traffic between users and the server.
@@ -119,7 +123,7 @@ Security is critical to prevent unauthorized access and protect user data:
 	•	CAPTCHA: Use CAPTCHA during registration and login to prevent bot activity.
 	•	Regular Updates: Keep the forum software and server updated to prevent vulnerabilities.
 
-8. Forum Integration with Game
+## 8. Forum Integration with Game
 
 For a seamless user experience, integrate the forum with the game:
 	•	Game-Linked Profiles: Display game data such as achievements, progression, and avatars on the forum profiles.
@@ -127,20 +131,16 @@ For a seamless user experience, integrate the forum with the game:
 	•	Notifications: Send notifications to the game client for forum events like new posts, messages, or replies.
 	•	Cross-Linking: Use links within the game to guide players to relevant forum discussions.
 
-9. Testing the Forum
+## 9. Testing the Forum
 
 Before launching the forum, conduct extensive testing to ensure functionality and security:
 	•	Load Testing: Test the forum under heavy load to ensure it can handle the expected traffic.
 	•	Bug Testing: Test the user interface, authentication, and forum features to identify and fix any bugs.
 	•	Security Audits: Perform security audits to identify potential vulnerabilities.
 
-10. Maintenance and Updates
+## 10. Maintenance and Updates
 
 Once the forum is live, regular maintenance is necessary to ensure optimal performance:
 	•	Software Updates: Regularly update the forum software and plugins to the latest versions.
 	•	Backup: Set up automated backups to protect user data and forum content.
 	•	User Support: Provide a support channel for users to report issues or ask questions related to the forum.
-
-By following this guide, you can successfully set up a community-driven forum for LifeVerse players to interact, share feedback, and engage in discussions. The integration with the game’s backend ensures a seamless experience, and the customizations will align the forum with LifeVerse’s unique brand and player experience.
-
-Diese `ForumSetupGuide.md` bietet eine detaillierte Anleitung zur Einrichtung eines Forums für LifeVerse, einschließlich der Auswahl der Forensoftware, Installation, Integration der Benutzeranmeldung, Anpassung des Forums und der Moderation.

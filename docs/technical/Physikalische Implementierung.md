@@ -1,5 +1,3 @@
-Hier ist die PhysicsImplementation.md-Datei für dein C++-Projekt in Unreal Engine 5:
-
 # Physics Implementation Guide for LifeVerse Game
 
 ## 1. Introduction

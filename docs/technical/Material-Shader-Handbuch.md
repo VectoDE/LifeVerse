@@ -1,5 +1,3 @@
-Hier ist die MaterialShaderGuide.md-Datei für dein C++-Projekt in Unreal Engine 5:
-
 # Material and Shader Guide for LifeVerse Game
 
 ## 1. Introduction

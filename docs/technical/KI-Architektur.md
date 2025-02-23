@@ -1,5 +1,3 @@
-Hier ist die AIArchitecture.md-Datei für dein C++-Spiel in Unreal Engine 5:
-
 # AI Architecture for LifeVerse Game
 
 ## 1. Introduction

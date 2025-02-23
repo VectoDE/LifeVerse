@@ -1,5 +1,3 @@
-Hier ist die AIPathfinding.md-Datei für dein C++-Projekt in Unreal Engine 5:
-
 # AI Pathfinding Guide for LifeVerse Game
 
 ## 1. Introduction

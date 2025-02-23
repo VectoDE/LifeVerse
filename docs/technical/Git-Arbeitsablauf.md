@@ -1,5 +1,3 @@
-Hier ist das Markdown-Dokument für “GitWorkflow.md”:
-
 # Git Workflow
 
 ## Introduction

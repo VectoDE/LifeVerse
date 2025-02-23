@@ -1,5 +1,3 @@
-Hier ist die Graphics.md-Datei für dein C++-Spiel in Unreal Engine 5:
-
 # Graphics Design for LifeVerse Game
 
 ## 1. Introduction

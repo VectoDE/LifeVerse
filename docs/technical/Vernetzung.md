@@ -1,5 +1,3 @@
-Hier ist die Networking.md-Datei für dein C++-Spiel in Unreal Engine 5:
-
 # Networking Guide for LifeVerse Game
 
 ## 1. Introduction
