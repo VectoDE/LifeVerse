@@ -1,16 +1,19 @@
 # Sustainability and Server Maintenance – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Nachhaltige Serverinfrastruktur](#nachhaltige-serverinfrastruktur)
-3. [Energieeffizienz und Umweltfreundlichkeit](#energieeffizienz-und-umweltfreundlichkeit)
-4. [Dynamische Skalierung der Server](#dynamische-skalierung-der-server)
-5. [Automatisierte Wartung und Fehlerbehebung](#automatisierte-wartung-und-fehlerbehebung)
-6. [Datenmanagement und Speicheroptimierung](#datenmanagement-und-speicheroptimierung)
-7. [Sicherheitsupdates und Patch-Management](#sicherheitsupdates-und-patch-management)
-8. [Notfallwiederherstellung und Backup-Systeme](#notfallwiederherstellung-und-backup-systeme)
-9. [Langfristige Unterstützung und Nachhaltigkeitsstrategie](#langfristige-unterstützung-und-nachhaltigkeitsstrategie)
-10. [Fazit](#fazit)
+
+- [Sustainability and Server Maintenance – LifeVerse](#sustainability-and-server-maintenance--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Nachhaltige Serverinfrastruktur](#2-nachhaltige-serverinfrastruktur)
+  - [3. Energieeffizienz und Umweltfreundlichkeit](#3-energieeffizienz-und-umweltfreundlichkeit)
+  - [4. Dynamische Skalierung der Server](#4-dynamische-skalierung-der-server)
+  - [5. Automatisierte Wartung und Fehlerbehebung](#5-automatisierte-wartung-und-fehlerbehebung)
+  - [6. Datenmanagement und Speicheroptimierung](#6-datenmanagement-und-speicheroptimierung)
+  - [7. Sicherheitsupdates und Patch-Management](#7-sicherheitsupdates-und-patch-management)
+  - [8. Notfallwiederherstellung und Backup-Systeme](#8-notfallwiederherstellung-und-backup-systeme)
+  - [9. Langfristige Unterstützung und Nachhaltigkeitsstrategie](#9-langfristige-unterstützung-und-nachhaltigkeitsstrategie)
+  - [10. Fazit](#10-fazit)
 
 ---
 

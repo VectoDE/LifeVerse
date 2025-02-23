@@ -1,18 +1,21 @@
 # Streaming Integration Plan – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele der Streaming-Integration](#ziele-der-streaming-integration)
-3. [Plattformen und Technologien](#plattformen-und-technologien)
-4. [Streaming-Features](#streaming-features)
-5. [Technische Anforderungen](#technische-anforderungen)
-6. [API-Integration und Webhooks](#api-integration-und-webhooks)
-7. [Streaming-UI und Benutzererfahrung](#streaming-ui-und-benutzererfahrung)
-8. [Performance-Optimierung](#performance-optimierung)
-9. [Monitoring und Fehlerbehebung](#monitoring-und-fehlerbehebung)
-10. [Rechtliche und Datenschutzaspekte](#rechtliche-und-datenschutzaspekte)
-11. [Testen und Qualitätssicherung](#testen-und-qualitätsicherung)
-12. [Zukunftsperspektiven und Erweiterungen](#zukunftsperspektiven-und-erweiterungen)
+
+- [Streaming Integration Plan – LifeVerse](#streaming-integration-plan--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele der Streaming-Integration](#2-ziele-der-streaming-integration)
+  - [3. Plattformen und Technologien](#3-plattformen-und-technologien)
+  - [4. Streaming-Features](#4-streaming-features)
+  - [5. Technische Anforderungen](#5-technische-anforderungen)
+  - [6. API-Integration und Webhooks](#6-api-integration-und-webhooks)
+  - [7. Streaming-UI und Benutzererfahrung](#7-streaming-ui-und-benutzererfahrung)
+  - [8. Performance-Optimierung](#8-performance-optimierung)
+  - [9. Monitoring und Fehlerbehebung](#9-monitoring-und-fehlerbehebung)
+  - [10. Rechtliche und Datenschutzaspekte](#10-rechtliche-und-datenschutzaspekte)
+  - [11. Testen und Qualitätssicherung](#11-testen-und-qualitätssicherung)
+  - [12. Zukunftsperspektiven und Erweiterungen](#12-zukunftsperspektiven-und-erweiterungen)
 
 ---
 

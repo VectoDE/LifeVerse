@@ -1,19 +1,22 @@
 # Anti-Cheat and Anti-Hack System – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des Anti-Cheat-Systems](#ziele-des-anti-cheat-systems)
-3. [Systemarchitektur](#systemarchitektur)
-4. [Cheat-Erkennungsmethoden](#cheat-erkennungsmethoden)
-5. [Client-Side Schutzmechanismen](#client-side-schutzmechanismen)
-6. [Server-Side Schutzmechanismen](#server-side-schutzmechanismen)
-7. [Verhaltensanalyse und Machine Learning](#verhaltensanalyse-und-machine-learning)
-8. [Überwachung und Echtzeit-Detektion](#überwachung-und-echtzeit-detektion)
-9. [Maßnahmen bei Verdacht auf Betrug](#maßnahmen-bei-verdacht-auf-betrug)
-10. [Einsatz von Verschlüsselung und Code-Obfuscation](#einsatz-von-verschlüsselung-und-code-obfuscation)
-11. [Patch-Management und Sicherheitsupdates](#patch-management-und-sicherheitsupdates)
-12. [Community-Feedback und Reporting](#community-feedback-und-reporting)
-13. [Zukunftsperspektiven und Erweiterungen](#zukunftsperspektiven-und-erweiterungen)
+
+- [Anti-Cheat and Anti-Hack System – LifeVerse](#anti-cheat-and-anti-hack-system--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des Anti-Cheat-Systems](#2-ziele-des-anti-cheat-systems)
+  - [3. Systemarchitektur](#3-systemarchitektur)
+  - [4. Cheat-Erkennungsmethoden](#4-cheat-erkennungsmethoden)
+  - [5. Client-Side Schutzmechanismen](#5-client-side-schutzmechanismen)
+  - [6. Server-Side Schutzmechanismen](#6-server-side-schutzmechanismen)
+  - [7. Verhaltensanalyse und Machine Learning](#7-verhaltensanalyse-und-machine-learning)
+  - [8. Überwachung und Echtzeit-Detektion](#8-überwachung-und-echtzeit-detektion)
+  - [9. Maßnahmen bei Verdacht auf Betrug](#9-maßnahmen-bei-verdacht-auf-betrug)
+  - [10. Einsatz von Verschlüsselung und Code-Obfuscation](#10-einsatz-von-verschlüsselung-und-code-obfuscation)
+  - [11. Patch-Management und Sicherheitsupdates](#11-patch-management-und-sicherheitsupdates)
+  - [12. Community-Feedback und Reporting](#12-community-feedback-und-reporting)
+  - [13. Zukunftsperspektiven und Erweiterungen](#13-zukunftsperspektiven-und-erweiterungen)
 
 ---
 

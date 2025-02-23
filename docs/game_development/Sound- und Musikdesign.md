@@ -1,17 +1,20 @@
 # Sound and Music Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des Sound- und Musikdesigns](#ziele-des-sound-und-musikdesigns)
-3. [Soundeffekte](#soundeffekte)
-4. [Musik](#musik)
-5. [Dynamische Musik und Audio-Anpassungen](#dynamische-musik-und-audio-anpassungen)
-6. [3D-Sound und Umgebungsgeräusche](#3d-sound-und-umgebungsgeräusche)
-7. [Sprachaufnahmen und Dialoge](#sprachaufnahmen-und-dialoge)
-8. [Audio für unterschiedliche Regionen und Kulturen](#audio-für-unterschiedliche-regionen-und-kulturen)
-9. [Sounddesign für Interaktionen](#sounddesign-für-interaktionen)
-10. [Testverfahren und Benutzerfeedback](#testverfahren-und-benutzerfeedback)
-11. [Zukunftsperspektiven und Verbesserungen](#zukunftsperspektiven-und-verbesserungen)
+
+- [Sound and Music Design – LifeVerse](#sound-and-music-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des Sound- und Musikdesigns](#2-ziele-des-sound--und-musikdesigns)
+  - [3. Soundeffekte](#3-soundeffekte)
+  - [4. Musik](#4-musik)
+  - [5. Dynamische Musik und Audio-Anpassungen](#5-dynamische-musik-und-audio-anpassungen)
+  - [6. 3D-Sound und Umgebungsgeräusche](#6-3d-sound-und-umgebungsgeräusche)
+  - [7. Sprachaufnahmen und Dialoge](#7-sprachaufnahmen-und-dialoge)
+  - [8. Audio für unterschiedliche Regionen und Kulturen](#8-audio-für-unterschiedliche-regionen-und-kulturen)
+  - [9. Sounddesign für Interaktionen](#9-sounddesign-für-interaktionen)
+  - [10. Testverfahren und Benutzerfeedback](#10-testverfahren-und-benutzerfeedback)
+  - [11. Zukunftsperspektiven und Verbesserungen](#11-zukunftsperspektiven-und-verbesserungen)
 
 ---
 

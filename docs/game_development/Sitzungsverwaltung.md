@@ -1,14 +1,17 @@
 # Session Management – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Sitzungsidentifikation und -verfolgung](#sitzungsidentifikation-und-verfolgung)
-3. [Authentifizierung und Autorisierung](#authentifizierung-und-autorisierung)
-4. [Sitzungsspeicherung und -wiederherstellung](#sitzungsspeicherung-und-wiederherstellung)
-5. [Sitzungszeitüberschreitung und Abmeldung](#sitzungszeitueberschreitung-und-abmeldung)
-6. [Sicherheitsaspekte des Sitzungsmanagements](#sicherheitsaspekte-des-sitzungsmanagements)
-7. [Skalierbarkeit und Leistung](#skalierbarkeit-und-leistung)
-8. [Zukünftige Erweiterungen und Designüberlegungen](#zukuenftige-erweiterungen-und-designueberlegungen)
+
+- [Session Management – LifeVerse](#session-management--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Sitzungsidentifikation und -verfolgung](#2-sitzungsidentifikation-und--verfolgung)
+  - [3. Authentifizierung und Autorisierung](#3-authentifizierung-und-autorisierung)
+  - [4. Sitzungsspeicherung und -wiederherstellung](#4-sitzungsspeicherung-und--wiederherstellung)
+  - [5. Sitzungszeitüberschreitung und Abmeldung](#5-sitzungszeitüberschreitung-und-abmeldung)
+  - [6. Sicherheitsaspekte des Sitzungsmanagements](#6-sicherheitsaspekte-des-sitzungsmanagements)
+  - [7. Skalierbarkeit und Leistung](#7-skalierbarkeit-und-leistung)
+  - [8. Zukünftige Erweiterungen und Designüberlegungen](#8-zukünftige-erweiterungen-und-designüberlegungen)
 
 ---
 

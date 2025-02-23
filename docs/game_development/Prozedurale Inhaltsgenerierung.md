@@ -1,16 +1,19 @@
 # Procedural Content Generation – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Verfahren der prozeduralen Generierung](#verfahren-der-prozeduralen-generierung)
-3. [Weltgenerierung](#weltgenerierung)
-4. [Städte- und Infrastruktur-Generierung](#städte--und-infrastruktur-generierung)
-5. [Dynamische NPCs & Gesellschaften](#dynamische-npcs--gesellschaften)
-6. [Quest- und Ereignisgenerierung](#quest--und-ereignisgenerierung)
-7. [Ökosystem & Ressourcenverteilung](#ökosystem--ressourcenverteilung)
-8. [KI-gestützte Evolution der Welt](#ki-gestützte-evolution-der-welt)
-9. [Herausforderungen & Balancing](#herausforderungen--balancing)
-10. [Fazit](#fazit)
+
+- [Procedural Content Generation – LifeVerse](#procedural-content-generation--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Verfahren der prozeduralen Generierung](#2-verfahren-der-prozeduralen-generierung)
+  - [3. Weltgenerierung](#3-weltgenerierung)
+  - [4. Städte- und Infrastruktur-Generierung](#4-städte--und-infrastruktur-generierung)
+  - [5. Dynamische NPCs \& Gesellschaften](#5-dynamische-npcs--gesellschaften)
+  - [6. Quest- und Ereignisgenerierung](#6-quest--und-ereignisgenerierung)
+  - [7. Ökosystem \& Ressourcenverteilung](#7-ökosystem--ressourcenverteilung)
+  - [8. KI-gestützte Evolution der Welt](#8-ki-gestützte-evolution-der-welt)
+  - [9. Herausforderungen \& Balancing](#9-herausforderungen--balancing)
+  - [10. Fazit](#10-fazit)
 
 ---
 

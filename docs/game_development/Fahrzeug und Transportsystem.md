@@ -1,21 +1,24 @@
 # Vehicle and Transportation System – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele und Anforderungen](#ziele-und-anforderungen)
-3. [Fahrzeugtypen](#fahrzeugtypen)
-4. [Transportmethoden](#transportmethoden)
-5. [Steuerungssysteme](#steuerungssysteme)
-6. [Fahrzeuganpassung und -entwicklung](#fahrzeuganpassung-und---entwicklung)
-7. [Weltweite Transportinfrastruktur](#weltweite-transportinfrastruktur)
-8. [KI-gesteuerte Fahrzeuge und NPC-Verkehr](#ki-gesteuerte-fahrzeuge-und-npc-verkehr)
-9. [Fahrzeugökonomie und Ressourcenmanagement](#fahrzeugökonomie-und-ressourcenmanagement)
-10. [Missionen und Transportaufgaben](#missionen-und-transportaufgaben)
-11. [Fahrzeug- und Verkehrsphänomene](#fahrzeug--und-verkehrsphänomene)
-12. [Multiplayer-Interaktionen und Fahrgemeinschaften](#multiplayer-interaktionen-und-fahrgemeinschaften)
-13. [Sicherheits- und Umweltüberlegungen](#sicherheits--und-umweltüberlegungen)
-14. [Fahrzeug-Fehlerbehandlung und Wartungssystem](#fahrzeug-fehlerbehandlung-und-wartungssystem)
-15. [Zukunftsperspektiven und Erweiterungen](#zukunftsperspektiven-und-erweiterungen)
+
+- [Vehicle and Transportation System – LifeVerse](#vehicle-and-transportation-system--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele und Anforderungen](#2-ziele-und-anforderungen)
+  - [3. Fahrzeugtypen](#3-fahrzeugtypen)
+  - [4. Transportmethoden](#4-transportmethoden)
+  - [5. Steuerungssysteme](#5-steuerungssysteme)
+  - [6. Fahrzeuganpassung und -entwicklung](#6-fahrzeuganpassung-und--entwicklung)
+  - [7. Weltweite Transportinfrastruktur](#7-weltweite-transportinfrastruktur)
+  - [8. KI-gesteuerte Fahrzeuge und NPC-Verkehr](#8-ki-gesteuerte-fahrzeuge-und-npc-verkehr)
+  - [9. Fahrzeugökonomie und Ressourcenmanagement](#9-fahrzeugökonomie-und-ressourcenmanagement)
+  - [10. Missionen und Transportaufgaben](#10-missionen-und-transportaufgaben)
+  - [11. Fahrzeug- und Verkehrsphänomene](#11-fahrzeug--und-verkehrsphänomene)
+  - [12. Multiplayer-Interaktionen und Fahrgemeinschaften](#12-multiplayer-interaktionen-und-fahrgemeinschaften)
+  - [13. Sicherheits- und Umweltüberlegungen](#13-sicherheits--und-umweltüberlegungen)
+  - [14. Fahrzeug-Fehlerbehandlung und Wartungssystem](#14-fahrzeug-fehlerbehandlung-und-wartungssystem)
+  - [15. Zukunftsperspektiven und Erweiterungen](#15-zukunftsperspektiven-und-erweiterungen)
 
 ---
 

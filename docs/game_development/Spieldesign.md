@@ -1,17 +1,20 @@
 # Game Design Document – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Zielsetzung](#zielsetzung)
-3. [Spielwelt](#spielwelt)
-4. [Gameplay-Mechaniken](#gameplay-mechaniken)
-5. [Charakterentwicklung & Fortschritt](#charakterentwicklung-und-fortschritt)
-6. [Multiplayer & Soziale Interaktionen](#multiplayer-und-soziale-interaktionen)
-7. [Künstliche Intelligenz (KI)](#künstliche-intelligenz-ki)
-8. [Realistische Zeitmechanik](#realistische-zeitmechanik)
-9. [Technologie & Tools](#technologie-und-tools)
-10. [Monetarisierung](#monetarisierung)
-11. [Fazit](#fazit)
+
+- [Game Design Document – LifeVerse](#game-design-document--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Zielsetzung](#2-zielsetzung)
+  - [3. Spielwelt](#3-spielwelt)
+  - [4. Gameplay-Mechaniken](#4-gameplay-mechaniken)
+  - [5. Charakterentwicklung \& Fortschritt](#5-charakterentwicklung--fortschritt)
+  - [6. Multiplayer \& Soziale Interaktionen](#6-multiplayer--soziale-interaktionen)
+  - [7. Künstliche Intelligenz (KI)](#7-künstliche-intelligenz-ki)
+  - [8. Realistische Zeitmechanik](#8-realistische-zeitmechanik)
+  - [9. Technologie \& Tools](#9-technologie--tools)
+  - [10. Monetarisierung](#10-monetarisierung)
+  - [11. Fazit](#11-fazit)
 
 ---
 
@@ -22,6 +25,7 @@ LifeVerse ist eine Open-World-Lebenssimulation, die darauf abzielt, das echte Le
 ## 2. Zielsetzung
 
 Die Hauptziele von LifeVerse sind:
+
 - Eine tiefgreifende, realistische Lebenssimulation zu schaffen.
 - Den Spielern die Freiheit zu geben, eigene Entscheidungen zu treffen, die ihren Lebensweg beeinflussen.
 - Eine sich ständig verändernde und dynamische Welt zu bieten, die auf die Handlungen der Spieler reagiert.
@@ -30,6 +34,7 @@ Die Hauptziele von LifeVerse sind:
 ## 3. Spielwelt
 
 Die Welt von LifeVerse ist eine offene, realistische Nachbildung der realen Welt, die den Spielern erlaubt, ihre eigenen Geschichten zu schreiben. Sie umfasst:
+
 - **Dynamische Städte**: Belebte Straßen, Märkte, soziale Treffpunkte und vieles mehr.
 - **Interaktive Umgebungen**: Spieler können die Welt in vielerlei Hinsicht beeinflussen und interagieren, von der Wahl des Arbeitsplatzes bis zur Gestaltung des eigenen Heims.
 - **Realistische Wirtschaft**: Preise, Inflation, Angebot und Nachfrage verändern sich dynamisch, basierend auf den Handlungen der Spieler und den Entwicklungen in der Spielwelt.
@@ -37,6 +42,7 @@ Die Welt von LifeVerse ist eine offene, realistische Nachbildung der realen Welt
 ## 4. Gameplay-Mechaniken
 
 Das Gameplay von LifeVerse bietet eine Vielzahl realistischer Mechaniken:
+
 - **Lebensabschnitte**: Spieler starten im Spiel als Kind und erleben eine dynamische Kindheit, gefolgt von einer entscheidungsreichen Jugend und Erwachsenenphase.
 - **Karriere & Berufe**: Mehr als 100 Berufe stehen zur Wahl, jeder mit eigenen Anforderungen und Karrieremöglichkeiten.
 - **Soziale Interaktionen**: Beziehungen, Freundschaften und rivalisierende Verhältnisse können das Leben eines Spielers maßgeblich beeinflussen.
@@ -46,6 +52,7 @@ Das Gameplay von LifeVerse bietet eine Vielzahl realistischer Mechaniken:
 ## 5. Charakterentwicklung & Fortschritt
 
 Spieler entwickeln ihre Charaktere basierend auf Entscheidungen, Interaktionen und Erfahrungen:
+
 - **Talente & Fähigkeiten**: Abhängig von der Kindheit und den gewählten Bildungswegen entwickeln sich bestimmte Talente und Fähigkeiten, die den weiteren Lebensweg beeinflussen.
 - **Berufliche Karriere**: Durch Jobwechsel, Weiterbildung und unternehmerische Entscheidungen kann sich die Karriere des Spielers weiterentwickeln.
 - **Soziale & romantische Beziehungen**: Der Charakter kann Freunde finden, Beziehungen eingehen und eine Familie gründen.
@@ -53,6 +60,7 @@ Spieler entwickeln ihre Charaktere basierend auf Entscheidungen, Interaktionen u
 ## 6. Multiplayer & Soziale Interaktionen
 
 LifeVerse ermöglicht es den Spielern, miteinander zu interagieren und gemeinsam die Welt zu erleben:
+
 - **Freunde & Gemeinschaften**: Spieler können Freunde finden und soziale Netzwerke aufbauen.
 - **Unternehmensgründung**: Spieler können zusammen Unternehmen gründen, gemeinsam arbeiten oder als Rivalen kämpfen.
 - **Beziehungen**: Der Aufbau von Freundschaften und romantischen Beziehungen ist ein zentraler Bestandteil des Spiels.
@@ -60,12 +68,14 @@ LifeVerse ermöglicht es den Spielern, miteinander zu interagieren und gemeinsam
 ## 7. Künstliche Intelligenz (KI)
 
 Die Welt von LifeVerse wird von fortschrittlicher KI bewohnt:
+
 - **NPCs mit echten Zielen & Emotionen**: KI-Charaktere verfolgen ihre eigenen Ziele, haben soziale Netzwerke und erleben das Leben wie die Spieler.
 - **Dynamische Reaktionen**: NPCs reagieren auf die Handlungen des Spielers, sowohl positiv als auch negativ, je nach ihren eigenen Zielen und Emotionen.
 
 ## 8. Realistische Zeitmechanik
 
 Das Spiel verwendet eine einzigartige Zeitmechanik:
+
 - **Geburt bis 12 Jahre**: Die frühen Jahre werden durch eine KI-gesteuerte Geschichte dargestellt.
 - **12-24 Jahre**: Spieler erleben zwei Jahre in der Spielzeit und springen dann um zwei Jahre vorwärts.
 - **Ab 24 Jahren**: Eine Echtzeit-Simulation beginnt, bei der 20 Minuten Spielzeit 2 Stunden im Spiel entsprechen.
@@ -73,6 +83,7 @@ Das Spiel verwendet eine einzigartige Zeitmechanik:
 ## 9. Technologie & Tools
 
 LifeVerse wird mit den neuesten Technologien entwickelt:
+
 - **Unreal Engine 5**: Raytracing, realistische Physik und eine dynamische Open-World-Simulation.
 - **MongoDB & Cloud-Server**: Speicherung des Weltzustands und Fortschritts der Spieler in der Cloud.
 - **Multiplayer-Server**: Ermöglicht nahtlose Interaktionen und eine permanente Welt.
@@ -80,6 +91,7 @@ LifeVerse wird mit den neuesten Technologien entwickelt:
 ## 10. Monetarisierung
 
 LifeVerse wird mit einer Einmalzahlung für das Hauptspiel und optionalen DLCs mit neuen Städten, Berufen und Technologien monetarisiert:
+
 - **Hauptspiel**: Einmalige Zahlung für den Zugang zum Spiel.
 - **DLCs**: Zusätzliche Inhalte und Erweiterungen, die das Spielerlebnis erweitern.
 - **Modding-Tools**: Spieler können eigene Inhalte erstellen, die im Spiel genutzt werden können.

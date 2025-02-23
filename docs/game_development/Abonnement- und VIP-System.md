@@ -1,18 +1,21 @@
 # Subscription and VIP System – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des Abonnement-Systems](#ziele-des-abonnement-systems)
-3. [Abonnement-Stufen und Vorteile](#abonnement-stufen-und-vorteile)
-4. [VIP-System](#vip-system)
-5. [Exklusive Inhalte und Features](#exklusive-inhalte-und-features)
-6. [Monetarisierung durch Abonnements](#monetarisierung-durch-abonnements)
-7. [Zahlungsmodelle und Abrechnungsmechanismen](#zahlungsmodelle-und-abrechnungsmechanismen)
-8. [Kostenlose Testversion und Werbeaktionen](#kostenlose-testversion-und-werbeaktionen)
-9. [Abonnement-Verwaltung und Benutzerkonten](#abonnement-verwaltung-und-benutzerkonten)
-10. [Community-Integration und Belohnungssysteme](#community-integration-und-belohnungssysteme)
-11. [Anti-Abonnement-Exploitation und Fairness](#anti-abonnement-exploitation-und-fairness)
-12. [Zukunftsperspektiven und Weiterentwicklungen](#zukunftsperspektiven-und-weiterentwicklungen)
+
+- [Subscription and VIP System – LifeVerse](#subscription-and-vip-system--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des Abonnement-Systems](#2-ziele-des-abonnement-systems)
+  - [3. Abonnement-Stufen und Vorteile](#3-abonnement-stufen-und-vorteile)
+  - [4. VIP-System](#4-vip-system)
+  - [5. Exklusive Inhalte und Features](#5-exklusive-inhalte-und-features)
+  - [6. Monetarisierung durch Abonnements](#6-monetarisierung-durch-abonnements)
+  - [7. Zahlungsmodelle und Abrechnungsmechanismen](#7-zahlungsmodelle-und-abrechnungsmechanismen)
+  - [8. Kostenlose Testversion und Werbeaktionen](#8-kostenlose-testversion-und-werbeaktionen)
+  - [9. Abonnement-Verwaltung und Benutzerkonten](#9-abonnement-verwaltung-und-benutzerkonten)
+  - [10. Community-Integration und Belohnungssysteme](#10-community-integration-und-belohnungssysteme)
+  - [11. Anti-Abonnement-Exploitation und Fairness](#11-anti-abonnement-exploitation-und-fairness)
+  - [12. Zukunftsperspektiven und Weiterentwicklungen](#12-zukunftsperspektiven-und-weiterentwicklungen)
 
 ---
 

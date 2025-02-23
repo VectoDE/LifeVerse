@@ -1,12 +1,21 @@
 # Character Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Spielercharaktere](#spielercharaktere)
-3. [Nebencharaktere](#nebencharaktere)
-4. [Dynamische Charakterentwicklung](#dynamische-charakterentwicklung)
-5. [Charakterinteraktionen](#charakterinteraktionen)
-6. [Fazit](#fazit)
+
+- [Character Design – LifeVerse](#character-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Spielercharaktere](#2-spielercharaktere)
+    - [2.1. Charaktererstellung](#21-charaktererstellung)
+    - [2.2. Entwicklung des Spielercharakters](#22-entwicklung-des-spielercharakters)
+    - [2.3. Besonderheiten](#23-besonderheiten)
+  - [3. Nebencharaktere](#3-nebencharaktere)
+    - [3.1. Typen von Nebencharakteren](#31-typen-von-nebencharakteren)
+    - [3.2. Dynamische Entwicklung der NPCs](#32-dynamische-entwicklung-der-npcs)
+    - [3.3. Künstliche Intelligenz (KI) und Realismus](#33-künstliche-intelligenz-ki-und-realismus)
+  - [4. Dynamische Charakterentwicklung](#4-dynamische-charakterentwicklung)
+  - [5. Charakterinteraktionen](#5-charakterinteraktionen)
+  - [6. Fazit](#6-fazit)
 
 ---
 
@@ -21,6 +30,7 @@ Der Spielercharakter (PC) ist das Herzstück von LifeVerse und wird vom Spieler 
 ### 2.1. Charaktererstellung
 
 Zu Beginn des Spiels kann der Spieler den PC erstellen, wobei folgende Merkmale anpassbar sind:
+
 - **Aussehen**: Der Spieler kann das äußere Erscheinungsbild seines Charakters anpassen, einschließlich Gesichtszüge, Körperbau, Frisur, Kleidung und Hautfarbe. Hierbei soll eine hohe Detailgenauigkeit gewährleistet sein, um eine realistische Darstellung zu ermöglichen.
 - **Hintergrundgeschichte**: Der Spieler kann wählen, aus welchem sozialen Umfeld der Charakter stammt (z. B. arme Familie, wohlhabende Eltern) und welche grundlegenden persönlichen Merkmale der Charakter besitzt.
 - **Charaktereigenschaften**: Zu Beginn des Spiels werden die Grundwerte des Charakters (Intelligenz, Fitness, Sozialkompetenz) festgelegt, die das spätere Leben und die Fähigkeiten des Charakters beeinflussen. Diese Eigenschaften können im Laufe des Spiels weiterentwickelt werden.
@@ -29,6 +39,7 @@ Zu Beginn des Spiels kann der Spieler den PC erstellen, wobei folgende Merkmale 
 ### 2.2. Entwicklung des Spielercharakters
 
 Im Verlauf des Spiels kann der Charakter in vielen Bereichen weiterentwickelt werden:
+
 - **Berufe & Karriere**: Der Spieler kann Karriereentscheidungen treffen, die die berufliche Entwicklung seines Charakters bestimmen. Dies kann zu höheren Gehältern, besserer gesellschaftlicher Stellung und neuen Fähigkeiten führen.
 - **Beziehungen**: Der Spieler kann Freundschaften, Rivalitäten oder romantische Beziehungen entwickeln, die den Verlauf der Geschichte beeinflussen.
 - **Gesundheit & Fitness**: Der Charakter kann körperlich fit bleiben, um seine Leistungsfähigkeit zu steigern, oder gesundheitliche Probleme entwickeln, die den Spielverlauf beeinflussen.
@@ -44,6 +55,7 @@ Im Verlauf des Spiels kann der Charakter in vielen Bereichen weiterentwickelt we
 Nebencharaktere (NPCs) sind eine der wichtigsten Komponenten von LifeVerse. Diese Charaktere sind mit eigenen Geschichten, Zielen und Persönlichkeiten ausgestattet und reagieren auf die Handlungen des Spielers.
 
 ### 3.1. Typen von Nebencharakteren
+
 - **Freunde & Familie**: NPCs, mit denen der Spieler eine enge Beziehung aufbaut. Diese Charaktere bieten Unterstützung und beeinflussen das persönliche Wachstum des Spielers.
 - **Rivalen & Feinde**: Einige NPCs können feindlich eingestellt sein und dem Spieler im beruflichen, politischen oder gesellschaftlichen Bereich Konkurrenz machen.
 - **Mentoren & Vorbilder**: NPCs, die dem Spieler helfen können, bestimmte Fähigkeiten zu erlernen oder Karriereziel zu erreichen.
@@ -52,6 +64,7 @@ Nebencharaktere (NPCs) sind eine der wichtigsten Komponenten von LifeVerse. Dies
 ### 3.2. Dynamische Entwicklung der NPCs
 
 Wie der Spielercharakter können auch NPCs dynamisch im Spiel wachsen und sich entwickeln:
+
 - **Berufliche Entwicklung**: NPCs können Karriere machen, Unternehmen gründen oder wichtige politische Ämter übernehmen.
 - **Beziehungen**: NPCs können Freundschaften, Familien und Rivalitäten entwickeln, die in Interaktionen mit dem Spieler sichtbar werden.
 - **Emotionale Entwicklung**: NPCs haben eigene emotionale Zustände, die sich je nach Interaktion mit dem Spieler ändern. Sie können glücklich, traurig, wütend oder enttäuscht sein, was das Verhalten und die Dialoge beeinflusst.
@@ -59,18 +72,21 @@ Wie der Spielercharakter können auch NPCs dynamisch im Spiel wachsen und sich e
 ### 3.3. Künstliche Intelligenz (KI) und Realismus
 
 NPCs sind mit einer fortschrittlichen KI ausgestattet, die es ihnen ermöglicht, auf eine realistische Weise zu reagieren:
+
 - **Ziele & Ambitionen**: Jeder NPC verfolgt eigene Ziele, sei es in der Karriere, im sozialen Leben oder im politischen Bereich.
 - **Reaktionen auf Spieleraktionen**: NPCs erinnern sich an frühere Interaktionen mit dem Spieler und reagieren basierend auf diesen Erfahrungen. So kann sich die Beziehung zu einem NPC verbessern oder verschlechtern.
 
 ## 4. Dynamische Charakterentwicklung
 
 Ein herausragendes Merkmal von LifeVerse ist die dynamische Entwicklung aller Charaktere. Die Welt ist nicht statisch, sondern verändert sich kontinuierlich durch die Handlungen der Spieler und der NPCs. Dies wirkt sich auf das Verhalten und die Entwicklung der Charaktere aus:
+
 - **Lebensereignisse**: Geburt, Hochzeit, Karrierewechsel, Umzug – all diese Ereignisse prägen den Lebensweg eines Charakters.
 - **Ereignisgesteuerte Änderungen**: Bestimmte Ereignisse in der Welt (z. B. politische Unruhen, Naturkatastrophen) beeinflussen die Entwicklung der Charaktere und können sie vor neue Herausforderungen stellen.
 
 ## 5. Charakterinteraktionen
 
 Die Interaktionen zwischen Charakteren sind ein zentraler Bestandteil von LifeVerse. Sie reichen von einfachen Gesprächen bis zu tiefgründigen Beziehungen:
+
 - **Dialogsystem**: Das Dialogsystem ist entscheidend, um Entscheidungen zu treffen, die Beziehungen und den Verlauf der Geschichte beeinflussen. Jede Interaktion kann Konsequenzen haben, die den Spielverlauf verändern.
 - **Beziehungsmanagement**: Der Spieler muss aktiv Beziehungen zu anderen Charakteren pflegen. Dies kann durch Gespräche, gemeinsame Erlebnisse oder Konfliktlösung geschehen. Positive oder negative Beziehungen beeinflussen die Karriere, das soziale Leben und den Spielverlauf.
 

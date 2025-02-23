@@ -1,15 +1,18 @@
 # Endgame Content and Replayability Features – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Endgame-Inhalte](#endgame-inhalte)
-3. [Wiederholbarkeit von Inhalten](#wiederholbarkeit-von-inhalten)
-4. [Langfristige Ziele und Herausforderungen](#langfristige-ziele-und-herausforderungen)
-5. [Belohnungssysteme](#belohnungssysteme)
-6. [Multiplayer-Interaktionen und Koop-Elemente](#multiplayer-interaktionen-und-koop-elemente)
-7. [Modding und Community-Inhalte](#modding-und-community-inhalte)
-8. [Zusätzliche Inhalte und Erweiterungen](#zusätzliche-inhalte-und-erweiterungen)
-9. [Fazit](#fazit)
+
+- [Endgame Content and Replayability Features – LifeVerse](#endgame-content-and-replayability-features--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Endgame-Inhalte](#2-endgame-inhalte)
+  - [3. Wiederholbarkeit von Inhalten](#3-wiederholbarkeit-von-inhalten)
+  - [4. Langfristige Ziele und Herausforderungen](#4-langfristige-ziele-und-herausforderungen)
+  - [5. Belohnungssysteme](#5-belohnungssysteme)
+  - [6. Multiplayer-Interaktionen und Koop-Elemente](#6-multiplayer-interaktionen-und-koop-elemente)
+  - [7. Modding und Community-Inhalte](#7-modding-und-community-inhalte)
+  - [8. Zusätzliche Inhalte und Erweiterungen](#8-zusätzliche-inhalte-und-erweiterungen)
+  - [9. Fazit](#9-fazit)
 
 ---
 

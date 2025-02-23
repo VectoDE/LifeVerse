@@ -1,16 +1,19 @@
 # Cross-Platform Support Plan – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des Cross-Platform Supports](#ziele-des-cross-platform-supports)
-3. [Technologische Anforderungen](#technologische-anforderungen)
-4. [Kompatibilität und Integration](#kompatibilität-und-integration)
-5. [Plattformübergreifendes Gameplay](#plattformübergreifendes-gameplay)
-6. [Daten- und Fortschrittsynchronisierung](#daten-und-fortschrittsynchronisierung)
-7. [Plattformabhängige Unterschiede und Anpassungen](#plattformabhängige-unterschiede-und-anpassungen)
-8. [Cross-Platform Multiplayer](#cross-platform-multiplayer)
-9. [Testplan für Cross-Platform Support](#testplan-für-cross-platform-support)
-10. [Zukunftsperspektiven und Updates](#zukunftsperspektiven-und-updates)
+
+- [Cross-Platform Support Plan – LifeVerse](#cross-platform-support-plan--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des Cross-Platform Supports](#2-ziele-des-cross-platform-supports)
+  - [3. Technologische Anforderungen](#3-technologische-anforderungen)
+  - [4. Kompatibilität und Integration](#4-kompatibilität-und-integration)
+  - [5. Plattformübergreifendes Gameplay](#5-plattformübergreifendes-gameplay)
+  - [6. Daten- und Fortschrittsynchronisierung](#6-daten--und-fortschrittsynchronisierung)
+  - [7. Plattformabhängige Unterschiede und Anpassungen](#7-plattformabhängige-unterschiede-und-anpassungen)
+  - [8. Cross-Platform Multiplayer](#8-cross-platform-multiplayer)
+  - [9. Testplan für Cross-Platform Support](#9-testplan-für-cross-platform-support)
+  - [10. Zukunftsperspektiven und Updates](#10-zukunftsperspektiven-und-updates)
 
 ---
 

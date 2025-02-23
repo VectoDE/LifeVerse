@@ -1,15 +1,18 @@
 # Dynamic Weather and Day-Night Cycle – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Dynamisches Wettersystem](#dynamisches-wettersystem)
-3. [Tag-Nacht-Zyklus](#tag-nacht-zyklus)
-4. [Wechselwirkungen zwischen Wetter und Welt](#wechselwirkungen-zwischen-wetter-und-welt)
-5. [Einfluss auf Gameplay](#einfluss-auf-gameplay)
-6. [Technische Architektur des Wettersystems](#technische-architektur-des-wettersystems)
-7. [Wettervorhersage und Spielerinteraktionen](#wettervorhersage-und-spielerinteraktionen)
-8. [Testen des Wettersystems](#testen-des-wettersystems)
-9. [Fazit](#fazit)
+
+- [Dynamic Weather and Day-Night Cycle – LifeVerse](#dynamic-weather-and-day-night-cycle--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Dynamisches Wettersystem](#2-dynamisches-wettersystem)
+  - [3. Tag-Nacht-Zyklus](#3-tag-nacht-zyklus)
+  - [4. Wechselwirkungen zwischen Wetter und Welt](#4-wechselwirkungen-zwischen-wetter-und-welt)
+  - [5. Einfluss auf Gameplay](#5-einfluss-auf-gameplay)
+  - [6. Technische Architektur des Wettersystems](#6-technische-architektur-des-wettersystems)
+  - [7. Wettervorhersage und Spielerinteraktionen](#7-wettervorhersage-und-spielerinteraktionen)
+  - [8. Testen des Wettersystems](#8-testen-des-wettersystems)
+  - [9. Fazit](#9-fazit)
 
 ---
 

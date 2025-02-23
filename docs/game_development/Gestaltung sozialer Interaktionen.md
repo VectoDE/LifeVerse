@@ -1,16 +1,19 @@
 # Social Interaction Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Soziale Beziehungen & Dynamiken](#soziale-beziehungen--dynamiken)
-3. [Kommunikationssystem](#kommunikationssystem)
-4. [Freundschaften & Rivalitäten](#freundschaften--rivalitäten)
-5. [Romantische Beziehungen & Familie](#romantische-beziehungen--familie)
-6. [Soziale Events & Gemeinschaftsaktivitäten](#soziale-events--gemeinschaftsaktivitäten)
-7. [Berufliche & politische Interaktionen](#berufliche--politische-interaktionen)
-8. [Multiplayer-Interaktionen](#multiplayer-interaktionen)
-9. [Auswirkungen sozialer Entscheidungen](#auswirkungen-sozialer-entscheidungen)
-10. [Fazit](#fazit)
+
+- [Social Interaction Design – LifeVerse](#social-interaction-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Soziale Beziehungen \& Dynamiken](#2-soziale-beziehungen--dynamiken)
+  - [3. Kommunikationssystem](#3-kommunikationssystem)
+  - [4. Freundschaften \& Rivalitäten](#4-freundschaften--rivalitäten)
+  - [5. Romantische Beziehungen \& Familie](#5-romantische-beziehungen--familie)
+  - [6. Soziale Events \& Gemeinschaftsaktivitäten](#6-soziale-events--gemeinschaftsaktivitäten)
+  - [7. Berufliche \& politische Interaktionen](#7-berufliche--politische-interaktionen)
+  - [8. Multiplayer-Interaktionen](#8-multiplayer-interaktionen)
+  - [9. Auswirkungen sozialer Entscheidungen](#9-auswirkungen-sozialer-entscheidungen)
+  - [10. Fazit](#10-fazit)
 
 ---
 

@@ -1,17 +1,20 @@
 # Voice Chat and Communication System Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des Voice Chat Systems](#ziele-des-voice-chat-systems)
-3. [Sprachkanäle und Kommunikationsoptionen](#sprachkanäle-und-kommunikationsoptionen)
-4. [Push-to-Talk und Freisprechmodi](#push-to-talk-und-freisprechmodi)
-5. [Sprachqualität und Latenz](#sprachqualität-und-latenz)
-6. [Audiofilter und Rauschunterdrückung](#audiofilter-und-rauschunterdrückung)
-7. [Privatsphäre und Sicherheitsfunktionen](#privatsphäre-und-sicherheitsfunktionen)
-8. [Integration von Text- und Sprachnachrichten](#integration-von-text-und-sprachnachrichten)
-9. [Kommunikationssteuerung und Moderation](#kommunikationssteuerung-und-moderation)
-10. [Testverfahren und Benutzerfeedback](#testverfahren-und-benutzerfeedback)
-11. [Zukunftsperspektiven und Verbesserungen](#zukunftsperspektiven-und-verbesserungen)
+
+- [Voice Chat and Communication System Design – LifeVerse](#voice-chat-and-communication-system-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des Voice Chat Systems](#2-ziele-des-voice-chat-systems)
+  - [3. Sprachkanäle und Kommunikationsoptionen](#3-sprachkanäle-und-kommunikationsoptionen)
+  - [4. Push-to-Talk und Freisprechmodi](#4-push-to-talk-und-freisprechmodi)
+  - [5. Sprachqualität und Latenz](#5-sprachqualität-und-latenz)
+  - [6. Audiofilter und Rauschunterdrückung](#6-audiofilter-und-rauschunterdrückung)
+  - [7. Privatsphäre und Sicherheitsfunktionen](#7-privatsphäre-und-sicherheitsfunktionen)
+  - [8. Integration von Text- und Sprachnachrichten](#8-integration-von-text--und-sprachnachrichten)
+  - [9. Kommunikationssteuerung und Moderation](#9-kommunikationssteuerung-und-moderation)
+  - [10. Testverfahren und Benutzerfeedback](#10-testverfahren-und-benutzerfeedback)
+  - [11. Zukunftsperspektiven und Verbesserungen](#11-zukunftsperspektiven-und-verbesserungen)
 
 ---
 

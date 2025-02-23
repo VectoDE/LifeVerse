@@ -1,15 +1,18 @@
 # Community Engagement – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Interaktive Community-Elemente](#interaktive-community-elemente)
-3. [Feedback-Integration](#feedback-integration)
-4. [Community-Events und Wettbewerbe](#community-events-und-wettbewerbe)
-5. [Modding- und Content-Erstellung](#modding-und-content-erstellung)
-6. [Soziale Medien und Plattformen](#soziale-medien-und-plattformen)
-7. [Spielerbasierte Story-Entwicklung](#spielerbasierte-story-entwicklung)
-8. [Community-Management und Kommunikation](#community-management-und-kommunikation)
-9. [Fazit](#fazit)
+
+- [Community Engagement – LifeVerse](#community-engagement--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Interaktive Community-Elemente](#2-interaktive-community-elemente)
+  - [3. Feedback-Integration](#3-feedback-integration)
+  - [4. Community-Events und Wettbewerbe](#4-community-events-und-wettbewerbe)
+  - [5. Modding- und Content-Erstellung](#5-modding--und-content-erstellung)
+  - [6. Soziale Medien und Plattformen](#6-soziale-medien-und-plattformen)
+  - [7. Spielerbasierte Story-Entwicklung](#7-spielerbasierte-story-entwicklung)
+  - [8. Community-Management und Kommunikation](#8-community-management-und-kommunikation)
+  - [9. Fazit](#9-fazit)
 
 ---
 

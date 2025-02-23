@@ -1,17 +1,20 @@
 # Localization and Translation Plan – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele der Lokalisierung](#ziele-der-lokalisierung)
-3. [Sprachliche Abdeckung](#sprachliche-abdeckung)
-4. [Lokalisierungsworkflow](#lokalisierungsworkflow)
-5. [Übersetzungsrichtlinien](#übersetzungsrichtlinien)
-6. [Kulturelle Anpassungen](#kulturelle-anpassungen)
-7. [Technologische Anforderungen](#technologische-anforderungen)
-8. [Qualitätskontrolle](#qualitätskontrolle)
-9. [Benutzeroberfläche und Textanpassung](#benutzeroberfläche-und-textanpassung)
-10. [Testplan für Lokalisierung und Übersetzung](#testplan-für-lokalisierung-und-übersetzung)
-11. [Zukunftsperspektiven und Updates](#zukunftsperspektiven-und-updates)
+
+- [Localization and Translation Plan – LifeVerse](#localization-and-translation-plan--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele der Lokalisierung](#2-ziele-der-lokalisierung)
+  - [3. Sprachliche Abdeckung](#3-sprachliche-abdeckung)
+  - [4. Lokalisierungsworkflow](#4-lokalisierungsworkflow)
+  - [5. Übersetzungsrichtlinien](#5-übersetzungsrichtlinien)
+  - [6. Kulturelle Anpassungen](#6-kulturelle-anpassungen)
+  - [7. Technologische Anforderungen](#7-technologische-anforderungen)
+  - [8. Qualitätskontrolle](#8-qualitätskontrolle)
+  - [9. Benutzeroberfläche und Textanpassung](#9-benutzeroberfläche-und-textanpassung)
+  - [10. Testplan für Lokalisierung und Übersetzung](#10-testplan-für-lokalisierung-und-übersetzung)
+  - [11. Zukunftsperspektiven und Updates](#11-zukunftsperspektiven-und-updates)
 
 ---
 

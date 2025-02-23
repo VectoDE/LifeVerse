@@ -1,16 +1,19 @@
 # Achievement and Trophy System Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des Achievement- und Trophy-Systems](#ziele-des-achievement-und-trophy-systems)
-3. [Typen von Achievements und Trophäen](#typen-von-achievements-und-trophäen)
-4. [Designprinzipien](#designprinzipien)
-5. [Freischaltung von Achievements und Trophäen](#freischaltung-von-achievements-und-trophäen)
-6. [Belohnungen und Anreize](#belohnungen-und-anreize)
-7. [Tracking und Anzeige](#tracking-und-anzeige)
-8. [Integration in das Gameplay](#integration-in-das-gameplay)
-9. [Plattform- und Community-Integration](#plattform-und-community-integration)
-10. [Fazit](#fazit)
+
+- [Achievement and Trophy System Design – LifeVerse](#achievement-and-trophy-system-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des Achievement- und Trophy-Systems](#2-ziele-des-achievement--und-trophy-systems)
+  - [3. Typen von Achievements und Trophäen](#3-typen-von-achievements-und-trophäen)
+  - [4. Designprinzipien](#4-designprinzipien)
+  - [5. Freischaltung von Achievements und Trophäen](#5-freischaltung-von-achievements-und-trophäen)
+  - [6. Belohnungen und Anreize](#6-belohnungen-und-anreize)
+  - [7. Tracking und Anzeige](#7-tracking-und-anzeige)
+  - [8. Integration in das Gameplay](#8-integration-in-das-gameplay)
+  - [9. Plattform- und Community-Integration](#9-plattform--und-community-integration)
+  - [10. Fazit](#10-fazit)
 
 ---
 

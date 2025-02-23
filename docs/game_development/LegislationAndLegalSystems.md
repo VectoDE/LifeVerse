@@ -1,14 +1,17 @@
 # Legislation and Legal Systems – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Virtuelle Gesetzgebung und Governance](#virtuelle-gesetzgebung-und-governance)
-3. [Rechtssystem und Strafverfolgung](#rechtssystem-und-strafverfolgung)
-4. [Vertragsrecht und Transaktionen](#vertragsrecht-und-transaktionen)
-5. [Datenschutz und Rechte der Spieler](#datenschutz-und-rechte-der-spieler)
-6. [Rechtliche Verantwortung und Haftung](#rechtliche-verantwortung-und-haftung)
-7. [Grenzen der virtuellen Welt und reale Gesetze](#grenzen-der-virtuellen-welt-und-reale-gesetze)
-8. [Zukünftige rechtliche Herausforderungen und Anpassungen](#zukünftige-rechtliche-herausforderungen-und-anpassungen)
+
+- [Legislation and Legal Systems – LifeVerse](#legislation-and-legal-systems--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Virtuelle Gesetzgebung und Governance](#2-virtuelle-gesetzgebung-und-governance)
+  - [3. Rechtssystem und Strafverfolgung](#3-rechtssystem-und-strafverfolgung)
+  - [4. Vertragsrecht und Transaktionen](#4-vertragsrecht-und-transaktionen)
+  - [5. Datenschutz und Rechte der Spieler](#5-datenschutz-und-rechte-der-spieler)
+  - [6. Rechtliche Verantwortung und Haftung](#6-rechtliche-verantwortung-und-haftung)
+  - [7. Grenzen der virtuellen Welt und reale Gesetze](#7-grenzen-der-virtuellen-welt-und-reale-gesetze)
+  - [8. Zukünftige rechtliche Herausforderungen und Anpassungen](#8-zukünftige-rechtliche-herausforderungen-und-anpassungen)
 
 ---
 

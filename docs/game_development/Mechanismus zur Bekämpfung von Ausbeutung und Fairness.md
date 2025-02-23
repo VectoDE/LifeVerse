@@ -1,19 +1,22 @@
 # Anti-Exploitation and Fairness Mechanism – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Exploitation im Spiel](#exploitation-im-spiel)
-3. [Mechanismen zur Verhinderung von Exploits](#mechanismen-zur-verhinderung-von-exploits)
-4. [Fairness-Prinzipien im Gameplay](#fairness-prinzipien-im-gameplay)
-5. [Monitoring und Erkennung von Exploits](#monitoring-und-erkennung-von-exploits)
-6. [Anti-Cheat-System](#anti-cheat-system)
-7. [Transparente Belohnungssysteme](#transparente-belohnungssysteme)
-8. [Zugänglichkeit und Chancengleichheit](#zugänglichkeit-und-chancengleichheit)
-9. [Verhalten und Spielregeln](#verhalten-und-spielregeln)
-10. [Spielerfeedback und Beschwerdemanagement](#spielerfeedback-und-beschwerdemanagement)
-11. [Verantwortungsbewusstsein und Aufklärung](#verantwortungsbewusstsein-und-aufklärung)
-12. [Strafsystem für Exploits](#strafsystem-für-exploits)
-13. [Zukunftsperspektiven und Weiterentwicklungen](#zukunftsperspektiven-und-weiterentwicklungen)
+
+- [Anti-Exploitation and Fairness Mechanism – LifeVerse](#anti-exploitation-and-fairness-mechanism--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Exploitation im Spiel](#2-exploitation-im-spiel)
+  - [3. Mechanismen zur Verhinderung von Exploits](#3-mechanismen-zur-verhinderung-von-exploits)
+  - [4. Fairness-Prinzipien im Gameplay](#4-fairness-prinzipien-im-gameplay)
+  - [5. Monitoring und Erkennung von Exploits](#5-monitoring-und-erkennung-von-exploits)
+  - [6. Anti-Cheat-System](#6-anti-cheat-system)
+  - [7. Transparente Belohnungssysteme](#7-transparente-belohnungssysteme)
+  - [8. Zugänglichkeit und Chancengleichheit](#8-zugänglichkeit-und-chancengleichheit)
+  - [9. Verhalten und Spielregeln](#9-verhalten-und-spielregeln)
+  - [10. Spielerfeedback und Beschwerdemanagement](#10-spielerfeedback-und-beschwerdemanagement)
+  - [11. Verantwortungsbewusstsein und Aufklärung](#11-verantwortungsbewusstsein-und-aufklärung)
+  - [12. Strafsystem für Exploits](#12-strafsystem-für-exploits)
+  - [13. Zukunftsperspektiven und Weiterentwicklungen](#13-zukunftsperspektiven-und-weiterentwicklungen)
 
 ---
 

@@ -1,16 +1,19 @@
 # Player Feedback System Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des Player Feedback Systems](#ziele-des-player-feedback-systems)
-3. [Typen von Feedback](#typen-von-feedback)
-4. [Feedback-Methoden](#feedback-methoden)
-5. [Feedback-Integration in das Spiel](#feedback-integration-in-das-spiel)
-6. [Feedback-Analyse und Verarbeitung](#feedback-analyse-und-verarbeitung)
-7. [Feedback-Belohnungen](#feedback-belohnungen)
-8. [Community-Feedback und Moderation](#community-feedback-und-moderation)
-9. [Datenschutz und Transparenz](#datenschutz-und-transparenz)
-10. [Fazit](#fazit)
+
+- [Player Feedback System Design – LifeVerse](#player-feedback-system-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des Player Feedback Systems](#2-ziele-des-player-feedback-systems)
+  - [3. Typen von Feedback](#3-typen-von-feedback)
+  - [4. Feedback-Methoden](#4-feedback-methoden)
+  - [5. Feedback-Integration in das Spiel](#5-feedback-integration-in-das-spiel)
+  - [6. Feedback-Analyse und Verarbeitung](#6-feedback-analyse-und-verarbeitung)
+  - [7. Feedback-Belohnungen](#7-feedback-belohnungen)
+  - [8. Community-Feedback und Moderation](#8-community-feedback-und-moderation)
+  - [9. Datenschutz und Transparenz](#9-datenschutz-und-transparenz)
+  - [10. Fazit](#10-fazit)
 
 ---
 

@@ -1,16 +1,19 @@
 # Customization & Personalization Options – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Charakteranpassung](#charakteranpassung)
-3. [Kleidung & Mode](#kleidung--mode)
-4. [Immobilien & Wohndesign](#immobilien--wohndesign)
-5. [Fahrzeuge & Transportmittel](#fahrzeuge--transportmittel)
-6. [Unternehmens- & Markenindividualisierung](#unternehmens--markenindividualisierung)
-7. [Spielerprofil & Identität](#spielerprofil--identität)
-8. [Modding & Community-Erweiterungen](#modding--community-erweiterungen)
-9. [Dynamische Anpassung durch KI](#dynamische-anpassung-durch-ki)
-10. [Fazit](#fazit)
+
+- [Customization \& Personalization Options – LifeVerse](#customization--personalization-options--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Charakteranpassung](#2-charakteranpassung)
+  - [3. Kleidung \& Mode](#3-kleidung--mode)
+  - [4. Immobilien \& Wohndesign](#4-immobilien--wohndesign)
+  - [5. Fahrzeuge \& Transportmittel](#5-fahrzeuge--transportmittel)
+  - [6. Unternehmens- \& Markenindividualisierung](#6-unternehmens---markenindividualisierung)
+  - [7. Spielerprofil \& Identität](#7-spielerprofil--identität)
+  - [8. Modding \& Community-Erweiterungen](#8-modding--community-erweiterungen)
+  - [9. Dynamische Anpassung durch KI](#9-dynamische-anpassung-durch-ki)
+  - [10. Fazit](#10-fazit)
 
 ---
 
@@ -22,7 +25,7 @@ In *LifeVerse* steht dem Spieler eine umfangreiche Anpassung und Personalisierun
 
 ## 2. Charakteranpassung
 
-- **Erstellungstool mit detaillierten Optionen**: 
+- **Erstellungstool mit detaillierten Optionen**:
   - Gesichtszüge, Körperform, Hautfarbe, Frisuren, Augenfarbe, Tattoos.
   - Stimme & Bewegungstypen zur Personalisierung.
 - **Dynamische Veränderung**:
@@ -35,7 +38,7 @@ In *LifeVerse* steht dem Spieler eine umfangreiche Anpassung und Personalisierun
 
 ## 3. Kleidung & Mode
 
-- **Umfangreiche Garderobe**: 
+- **Umfangreiche Garderobe**:
   - Markenmode, Casual-Wear, Business-Outfits, Sportkleidung.
   - Jahreszeiten- & Wetterabhängigkeit.
 - **Eigene Designs & Logos**:

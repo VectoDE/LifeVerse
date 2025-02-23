@@ -1,15 +1,18 @@
 # Real Estate Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Immobilienarten](#immobilienarten)
-3. [Standortwahl und Umgebung](#standortwahl-und-umgebung)
-4. [Immobilienanpassung und -verbesserung](#immobilienanpassung-und-verbesserung)
-5. [Immobilienmärkte und -wirtschaft](#immobilienmärkte-und-wirtschaft)
-6. [Kauf- und Verkaufsmechanismen](#kauf-und-verkaufsmechanismen)
-7. [Eigentümer- und Mietersystem](#eigentuemer-und-mietersystem)
-8. [Immobilienverwaltung und Wartung](#immobilienverwaltung-und-wartung)
-9. [Zukünftige Erweiterungen und Designüberlegungen](#zukuenftige-erweiterungen-und-designueberlegungen)
+
+- [Real Estate Design – LifeVerse](#real-estate-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Immobilienarten](#2-immobilienarten)
+  - [3. Standortwahl und Umgebung](#3-standortwahl-und-umgebung)
+  - [4. Immobilienanpassung und -verbesserung](#4-immobilienanpassung-und--verbesserung)
+  - [5. Immobilienmärkte und Wirtschaft](#5-immobilienmärkte-und-wirtschaft)
+  - [6. Kauf- und Verkaufsmechanismen](#6-kauf--und-verkaufsmechanismen)
+  - [7. Eigentümer- und Mietersystem](#7-eigentümer--und-mietersystem)
+  - [8. Immobilienverwaltung und Wartung](#8-immobilienverwaltung-und-wartung)
+  - [9. Zukünftige Erweiterungen und Designüberlegungen](#9-zukünftige-erweiterungen-und-designüberlegungen)
 
 ---
 

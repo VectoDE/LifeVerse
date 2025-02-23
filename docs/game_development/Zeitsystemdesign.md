@@ -1,17 +1,20 @@
 # Time System Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des Zeit-Systems](#ziele-des-zeit-systems)
-3. [Globale Zeit und Zeitzonen](#globale-zeit-und-zeitzonen)
-4. [Tag-Nacht-Zyklus](#tag-nacht-zyklus)
-5. [Jahreszeiten und Wettereffekte](#jahreszeiten-und-wettereffekte)
-6. [Dynamische Ereignisse und Zeitabhängigkeit](#dynamische-ereignisse-und-zeitabhängigkeit)
-7. [Aktivitätszeit und Spielfortschritt](#aktivitätszeit-und-spielfortschritt)
-8. [Zeitskalierung und Zeitverzögerung](#zeitskalierung-und-zeitverzögerung)
-9. [Zeiterweiterung durch Gameplay-Mechaniken](#zeiterweiterung-durch-gameplay-mechaniken)
-10. [Testverfahren und Benutzerfeedback](#testverfahren-und-benutzerfeedback)
-11. [Zukunftsperspektiven und Verbesserungen](#zukunftsperspektiven-und-verbesserungen)
+
+- [Time System Design – LifeVerse](#time-system-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des Zeit-Systems](#2-ziele-des-zeit-systems)
+  - [3. Globale Zeit und Zeitzonen](#3-globale-zeit-und-zeitzonen)
+  - [4. Tag-Nacht-Zyklus](#4-tag-nacht-zyklus)
+  - [5. Jahreszeiten und Wettereffekte](#5-jahreszeiten-und-wettereffekte)
+  - [6. Dynamische Ereignisse und Zeitabhängigkeit](#6-dynamische-ereignisse-und-zeitabhängigkeit)
+  - [7. Aktivitätszeit und Spielfortschritt](#7-aktivitätszeit-und-spielfortschritt)
+  - [8. Zeitskalierung und Zeitverzögerung](#8-zeitskalierung-und-zeitverzögerung)
+  - [9. Zeiterweiterung durch Gameplay-Mechaniken](#9-zeiterweiterung-durch-gameplay-mechaniken)
+  - [10. Testverfahren und Benutzerfeedback](#10-testverfahren-und-benutzerfeedback)
+  - [11. Zukunftsperspektiven und Verbesserungen](#11-zukunftsperspektiven-und-verbesserungen)
 
 ---
 

@@ -1,18 +1,23 @@
 # Server Scaling and Load Balancing – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele und Anforderungen](#ziele-und-anforderungen)
-3. [Skalierbarkeit](#skalierbarkeit)
-4. [Load Balancing Strategien](#load-balancing-strategien)
-5. [Server-Infrastruktur](#server-infrastruktur)
-6. [Auto-Scaling und Elastizität](#auto-scaling-und-elastizität)
-7. [Server-Überwachung und Performance-Management](#server-überwachung-und-performance-management)
-8. [Fehlertoleranz und Redundanz](#fehlertoleranz-und-redundanz)
-9. [Verkehrssteuerung und Routing](#verkehrssteuerung-und-routing)
-10. [Kostenmanagement und Effizienz](#kostenmanagement-und-effizienz)
-11. [Sicherheitsüberlegungen](#sicherheitsüberlegungen)
-12. [Zukunftsperspektiven und Weiterentwicklungen](#zukunftsperspektiven-und-weiterentwicklungen)
+
+- [Server Scaling and Load Balancing – LifeVerse](#server-scaling-and-load-balancing--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele und Anforderungen](#2-ziele-und-anforderungen)
+  - [3. Skalierbarkeit](#3-skalierbarkeit)
+    - [Skalierungsarten](#skalierungsarten)
+  - [4. Load Balancing Strategien](#4-load-balancing-strategien)
+    - [Load Balancer Technologien](#load-balancer-technologien)
+  - [5. Server-Infrastruktur](#5-server-infrastruktur)
+  - [6. Auto-Scaling und Elastizität](#6-auto-scaling-und-elastizität)
+  - [7. Server-Überwachung und Performance-Management](#7-server-überwachung-und-performance-management)
+  - [8. Fehlertoleranz und Redundanz](#8-fehlertoleranz-und-redundanz)
+  - [9. Verkehrssteuerung und Routing](#9-verkehrssteuerung-und-routing)
+  - [10. Kostenmanagement und Effizienz](#10-kostenmanagement-und-effizienz)
+  - [11. Sicherheitsüberlegungen](#11-sicherheitsüberlegungen)
+  - [12. Zukunftsperspektiven und Weiterentwicklungen](#12-zukunftsperspektiven-und-weiterentwicklungen)
 
 ---
 
@@ -37,7 +42,8 @@ Für *LifeVerse* ist eine skalierbare, stabile und zuverlässige Server-Infrastr
 - **Horizontale Skalierung**: Die Infrastruktur sollte so gestaltet sein, dass neue Serverinstanzen einfach hinzugefügt werden können, um den wachsenden Bedarf an Ressourcen zu decken. Dies ermöglicht es, die Last auf mehreren Servern zu verteilen.
 - **Vertikale Skalierung**: Gegebenenfalls kann auch die Leistung einzelner Serverinstanzen erhöht werden, indem zusätzliche Ressourcen wie CPU, RAM oder Festplattenkapazität bereitgestellt werden.
 
-### Skalierungsarten:
+### Skalierungsarten
+
 - **On-Demand Skalierung**: Automatisches Hinzufügen von Servern basierend auf aktuellen Anforderungen und Lastspitzen.
 - **Pre-emptive Skalierung**: Serverkapazitäten werden basierend auf vorab definierten Nutzungsmustern oder Zeitplänen skaliert.
 
@@ -50,7 +56,8 @@ Für *LifeVerse* ist eine skalierbare, stabile und zuverlässige Server-Infrastr
 - **IP Hashing**: Bestimmte Anfragen werden basierend auf der IP-Adresse des Clients einem bestimmten Server zugewiesen. Dies kann nützlich sein, um Sitzungen von Spielern auf denselben Server zu leiten.
 - **Weighted Load Balancing**: Server können mit unterschiedlichen Gewichten versehen werden, sodass leistungsstärkere Server mehr Anfragen übernehmen können.
 
-### Load Balancer Technologien:
+### Load Balancer Technologien
+
 - **Nginx**: Weit verbreiteter Open-Source-Load-Balancer, der einfach zu konfigurieren und skalierbar ist.
 - **HAProxy**: Ein leistungsstarker, flexibler Load Balancer, der sowohl für Webserver als auch für andere Protokolle verwendet werden kann.
 

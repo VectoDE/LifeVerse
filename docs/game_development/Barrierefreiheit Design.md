@@ -1,15 +1,18 @@
 # Accessibility Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele der Barrierefreiheit](#ziele-der-barrierefreiheit)
-3. [Visuelle Barrierefreiheit](#visuelle-barrierefreiheit)
-4. [Auditive Barrierefreiheit](#auditive-barrierefreiheit)
-5. [Motorische Barrierefreiheit](#motorische-barrierefreiheit)
-6. [Kognitive Barrierefreiheit](#kognitive-barrierefreiheit)
-7. [Einstellungen und Anpassungen](#einstellungen-und-anpassungen)
-8. [Testverfahren und Benutzerfeedback](#testverfahren-und-benutzerfeedback)
-9. [Zukunftsperspektiven und Verbesserungen](#zukunftsperspektiven-und-verbesserungen)
+
+- [Accessibility Design – LifeVerse](#accessibility-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele der Barrierefreiheit](#2-ziele-der-barrierefreiheit)
+  - [3. Visuelle Barrierefreiheit](#3-visuelle-barrierefreiheit)
+  - [4. Auditive Barrierefreiheit](#4-auditive-barrierefreiheit)
+  - [5. Motorische Barrierefreiheit](#5-motorische-barrierefreiheit)
+  - [6. Kognitive Barrierefreiheit](#6-kognitive-barrierefreiheit)
+  - [7. Einstellungen und Anpassungen](#7-einstellungen-und-anpassungen)
+  - [8. Testverfahren und Benutzerfeedback](#8-testverfahren-und-benutzerfeedback)
+  - [9. Zukunftsperspektiven und Verbesserungen](#9-zukunftsperspektiven-und-verbesserungen)
 
 ---
 

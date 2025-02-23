@@ -1,17 +1,20 @@
 # Server-Side Event Management – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des Server-Side Event Management Systems](#ziele-des-server-side-event-management-systems)
-3. [Ereignistypen](#ereignistypen)
-4. [Event-Trigger und Bedingungen](#event-trigger-und-bedingungen)
-5. [Verwaltung von Ereignissen und Zuständen](#verwaltung-von-ereignissen-und-zuständen)
-6. [Event-Propagation und Abhängigkeiten](#event-propagation-und-abhängigkeiten)
-7. [Synchronisation zwischen Server und Clients](#synchronisation-zwischen-server-und-clients)
-8. [Event-Logging und Fehlerbehandlung](#event-logging-und-fehlerbehandlung)
-9. [Ereigniswiederholung und -skalierung](#ereigniswiederholung-und-skaliierung)
-10. [Testen von Server-Side Events](#testen-von-server-side-events)
-11. [Zukunftsperspektiven und Erweiterungen](#zukunftsperspektiven-und-erweiterungen)
+
+- [Server-Side Event Management – LifeVerse](#server-side-event-management--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des Server-Side Event Management Systems](#2-ziele-des-server-side-event-management-systems)
+  - [3. Ereignistypen](#3-ereignistypen)
+  - [4. Event-Trigger und Bedingungen](#4-event-trigger-und-bedingungen)
+  - [5. Verwaltung von Ereignissen und Zuständen](#5-verwaltung-von-ereignissen-und-zuständen)
+  - [6. Event-Propagation und Abhängigkeiten](#6-event-propagation-und-abhängigkeiten)
+  - [7. Synchronisation zwischen Server und Clients](#7-synchronisation-zwischen-server-und-clients)
+  - [8. Event-Logging und Fehlerbehandlung](#8-event-logging-und-fehlerbehandlung)
+  - [9. Ereigniswiederholung und -skalierung](#9-ereigniswiederholung-und--skalierung)
+  - [10. Testen von Server-Side Events](#10-testen-von-server-side-events)
+  - [11. Zukunftsperspektiven und Erweiterungen](#11-zukunftsperspektiven-und-erweiterungen)
 
 ---
 

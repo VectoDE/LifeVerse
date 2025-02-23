@@ -1,16 +1,19 @@
 # Economic System Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Grundprinzipien der Wirtschaft](#grundprinzipien-der-wirtschaft)
-3. [Arbeitsmarkt und Karrieresystem](#arbeitsmarkt-und-karrieresystem)
-4. [Handel und Angebot-Nachfrage-Dynamik](#handel-und-angebot-nachfrage-dynamik)
-5. [Unternehmen und Unternehmensführung](#unternehmen-und-unternehmensführung)
-6. [Immobilienmarkt und Finanzwesen](#immobilienmarkt-und-finanzwesen)
-7. [Steuern, Gesetze und staatliche Regulierung](#steuern-gesetze-und-staatliche-regulierung)
-8. [Wirtschaftliche Krisen und Stabilität](#wirtschaftliche-krisen-und-stabilität)
-9. [Integration in Multiplayer und KI-Wirtschaft](#integration-in-multiplayer-und-ki-wirtschaft)
-10. [Fazit](#fazit)
+
+- [Economic System Design – LifeVerse](#economic-system-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Grundprinzipien der Wirtschaft](#2-grundprinzipien-der-wirtschaft)
+  - [3. Arbeitsmarkt und Karrieresystem](#3-arbeitsmarkt-und-karrieresystem)
+  - [4. Handel und Angebot-Nachfrage-Dynamik](#4-handel-und-angebot-nachfrage-dynamik)
+  - [5. Unternehmen und Unternehmensführung](#5-unternehmen-und-unternehmensführung)
+  - [6. Immobilienmarkt und Finanzwesen](#6-immobilienmarkt-und-finanzwesen)
+  - [7. Steuern, Gesetze und staatliche Regulierung](#7-steuern-gesetze-und-staatliche-regulierung)
+  - [8. Wirtschaftliche Krisen und Stabilität](#8-wirtschaftliche-krisen-und-stabilität)
+  - [9. Integration in Multiplayer und KI-Wirtschaft](#9-integration-in-multiplayer-und-ki-wirtschaft)
+  - [10. Fazit](#10-fazit)
 
 ---
 

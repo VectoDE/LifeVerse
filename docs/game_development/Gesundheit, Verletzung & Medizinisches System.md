@@ -1,21 +1,24 @@
 # Health, Injury, and Medical System – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Gesundheits- und Verletzungsmechanik](#gesundheits--und-verletzungsmechanik)
-3. [Verletzungsarten und -schwere](#verletzungsarten-und--schwere)
-4. [Medizinische Behandlungen und Heilung](#medizinische-behandlungen-und-heilung)
-5. [Medizinische Ausrüstung und Ressourcen](#medizinische-ausrüstung-und-ressourcen)
-6. [Medizinische Berufe und NPCs](#medizinische-berufe-und-npcs)
-7. [Spielerinteraktionen und Heilung](#spielerinteraktionen-und-heilung)
-8. [Gesundheitszustand und Auswirkung auf Gameplay](#gesundheitszustand-und-auswirkung-auf-gameplay)
-9. [Verletzungsprotokollierung und Diagnostik](#verletzungsprotokollierung-und-diagnostik)
-10. [Krankheiten und Infektionen](#krankheiten-und-infektionen)
-11. [Medizinische Notfälle und Rettungssystem](#medizinische-notfälle-und-rettungssystem)
-12. [Medizinische Einrichtungen und Infrastruktur](#medizinische-einrichtungen-und-infrastruktur)
-13. [Multiplayer-Heilung und Teamunterstützung](#multiplayer-heilung-und-teamunterstützung)
-14. [Medizinische Fortschritte und Forschungsystem](#medizinische-fortschritte-und-forschungsystem)
-15. [Zukunftsperspektiven und Erweiterungen](#zukunftsperspektiven-und-erweiterungen)
+
+- [Health, Injury, and Medical System – LifeVerse](#health-injury-and-medical-system--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Gesundheits- und Verletzungsmechanik](#2-gesundheits--und-verletzungsmechanik)
+  - [3. Verletzungsarten und -schwere](#3-verletzungsarten-und--schwere)
+  - [4. Medizinische Behandlungen und Heilung](#4-medizinische-behandlungen-und-heilung)
+  - [5. Medizinische Ausrüstung und Ressourcen](#5-medizinische-ausrüstung-und-ressourcen)
+  - [6. Medizinische Berufe und NPCs](#6-medizinische-berufe-und-npcs)
+  - [7. Spielerinteraktionen und Heilung](#7-spielerinteraktionen-und-heilung)
+  - [8. Gesundheitszustand und Auswirkung auf Gameplay](#8-gesundheitszustand-und-auswirkung-auf-gameplay)
+  - [9. Verletzungsprotokollierung und Diagnostik](#9-verletzungsprotokollierung-und-diagnostik)
+  - [10. Krankheiten und Infektionen](#10-krankheiten-und-infektionen)
+  - [11. Medizinische Notfälle und Rettungssystem](#11-medizinische-notfälle-und-rettungssystem)
+  - [12. Medizinische Einrichtungen und Infrastruktur](#12-medizinische-einrichtungen-und-infrastruktur)
+  - [13. Multiplayer-Heilung und Teamunterstützung](#13-multiplayer-heilung-und-teamunterstützung)
+  - [14. Medizinische Fortschritte und Forschungsystem](#14-medizinische-fortschritte-und-forschungsystem)
+  - [15. Zukunftsperspektiven und Erweiterungen](#15-zukunftsperspektiven-und-erweiterungen)
 
 ---
 

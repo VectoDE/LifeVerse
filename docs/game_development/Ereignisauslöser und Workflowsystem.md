@@ -1,16 +1,19 @@
 # Event Trigger and Workflow System – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des Event-Trigger-Systems](#ziele-des-event-trigger-systems)
-3. [Ereignisarten und Auslöser](#ereignisarten-und-auslöser)
-4. [Event-Workflow und Ablaufsteuerung](#event-workflow-und-ablaufsteuerung)
-5. [Event-Trigger Logik und Priorität](#event-trigger-logik-und-priorität)
-6. [Kombination und Verkettung von Ereignissen](#kombination-und-verkettung-von-ereignissen)
-7. [Dynamische Anpassungen und Variationen von Events](#dynamische-anpassungen-und-variationen-von-events)
-8. [Fehlerbehandlung und Event-Management](#fehlerbehandlung-und-event-management)
-9. [Testverfahren und Qualitätssicherung](#testverfahren-und-qualitätssicherung)
-10. [Zukunftsperspektiven und Erweiterungen](#zukunftsperspektiven-und-erweiterungen)
+
+- [Event Trigger and Workflow System – LifeVerse](#event-trigger-and-workflow-system--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des Event-Trigger-Systems](#2-ziele-des-event-trigger-systems)
+  - [3. Ereignisarten und Auslöser](#3-ereignisarten-und-auslöser)
+  - [4. Event-Workflow und Ablaufsteuerung](#4-event-workflow-und-ablaufsteuerung)
+  - [5. Event-Trigger Logik und Priorität](#5-event-trigger-logik-und-priorität)
+  - [6. Kombination und Verkettung von Ereignissen](#6-kombination-und-verkettung-von-ereignissen)
+  - [7. Dynamische Anpassungen und Variationen von Events](#7-dynamische-anpassungen-und-variationen-von-events)
+  - [8. Fehlerbehandlung und Event-Management](#8-fehlerbehandlung-und-event-management)
+  - [9. Testverfahren und Qualitätssicherung](#9-testverfahren-und-qualitätssicherung)
+  - [10. Zukunftsperspektiven und Erweiterungen](#10-zukunftsperspektiven-und-erweiterungen)
 
 ---
 

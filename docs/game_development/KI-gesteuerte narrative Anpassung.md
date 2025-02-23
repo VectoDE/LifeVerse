@@ -1,16 +1,19 @@
 # AI-Driven Narrative Adaptation – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [KI-gesteuerte Entscheidungsfindung](#ki-gesteuerte-entscheidungsfindung)
-3. [Dynamische Erzählstränge](#dynamische-erzählstränge)
-4. [Reaktive NPC-Verhalten](#reaktive-npc-verhalten)
-5. [Zufalls- und Wahl-basierte Ereignisse](#zufalls--und-wahl-basierte-ereignisse)
-6. [Langfristige Story-Entwicklung](#langfristige-story-entwicklung)
-7. [Veränderung des Weltzustands durch Entscheidungen](#veränderung-des-weltzustands-durch-entscheidungen)
-8. [Emotionale Reaktionen der Charaktere](#emotionale-reaktionen-der-charaktere)
-9. [Erzähltechniken und KI-generierte Dialoge](#erzähltechniken-und-ki-generierte-dialoge)
-10. [Fazit](#fazit)
+
+- [AI-Driven Narrative Adaptation – LifeVerse](#ai-driven-narrative-adaptation--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. KI-gesteuerte Entscheidungsfindung](#2-ki-gesteuerte-entscheidungsfindung)
+  - [3. Dynamische Erzählstränge](#3-dynamische-erzählstränge)
+  - [4. Reaktive NPC-Verhalten](#4-reaktive-npc-verhalten)
+  - [5. Zufalls- und Wahl-basierte Ereignisse](#5-zufalls--und-wahl-basierte-ereignisse)
+  - [6. Langfristige Story-Entwicklung](#6-langfristige-story-entwicklung)
+  - [7. Veränderung des Weltzustands durch Entscheidungen](#7-veränderung-des-weltzustands-durch-entscheidungen)
+  - [8. Emotionale Reaktionen der Charaktere](#8-emotionale-reaktionen-der-charaktere)
+  - [9. Erzähltechniken und KI-generierte Dialoge](#9-erzähltechniken-und-ki-generierte-dialoge)
+  - [10. Fazit](#10-fazit)
 
 ---
 

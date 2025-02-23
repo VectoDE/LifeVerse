@@ -1,16 +1,19 @@
 # NPC Evolution and Story Integration – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Evolutionssystem der NPCs](#evolutionssystem-der-npcs)
-3. [Dynamische NPC-Entwicklung](#dynamische-npc-entwicklung)
-4. [Integration in die Hauptgeschichte](#integration-in-die-hauptgeschichte)
-5. [Nebengeschichten und NPC-Entwicklung](#nebengeschichten-und-npc-entwicklung)
-6. [Veränderungen durch Spielerinteraktionen](#veränderungen-durch-spielerinteraktionen)
-7. [NPC-Karrieren und Lebensverläufe](#npc-karrieren-und-lebensverläufe)
-8. [Emotionale Entwicklung der NPCs](#emotionale-entwicklung-der-npcs)
-9. [Testen der NPC-Entwicklungen](#testen-der-npc-entwicklungen)
-10. [Fazit](#fazit)
+
+- [NPC Evolution and Story Integration – LifeVerse](#npc-evolution-and-story-integration--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Evolutionssystem der NPCs](#2-evolutionssystem-der-npcs)
+  - [3. Dynamische NPC-Entwicklung](#3-dynamische-npc-entwicklung)
+  - [4. Integration in die Hauptgeschichte](#4-integration-in-die-hauptgeschichte)
+  - [5. Nebengeschichten und NPC-Entwicklung](#5-nebengeschichten-und-npc-entwicklung)
+  - [6. Veränderungen durch Spielerinteraktionen](#6-veränderungen-durch-spielerinteraktionen)
+  - [7. NPC-Karrieren und Lebensverläufe](#7-npc-karrieren-und-lebensverläufe)
+  - [8. Emotionale Entwicklung der NPCs](#8-emotionale-entwicklung-der-npcs)
+  - [9. Testen der NPC-Entwicklungen](#9-testen-der-npc-entwicklungen)
+  - [10. Fazit](#10-fazit)
 
 ---
 

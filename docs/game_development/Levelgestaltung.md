@@ -1,16 +1,19 @@
 # Level Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Level-Architektur](#level-architektur)
-3. [Umgebungsdesign](#umgebungsdesign)
-4. [Interaktive Elemente](#interaktive-elemente)
-5. [Kampf- und Herausforderungen](#kampf-und-herausforderungen)
-6. [Progression und Belohnung](#progression-und-belohnung)
-7. [Nicht-Spieler-Charaktere (NPCs) und Quests](#nicht-spieler-charaktere-npcs-und-quests)
-8. [Erkundung und Geheimnisse](#erkundung-und-geheimnisse)
-9. [Multiplayer-Interaktion und Welt-Synchronisation](#multiplayer-interaktion-und-welt-synchronisation)
-10. [Zukünftige Level-Design-Überlegungen](#zukünftige-level-design-überlegungen)
+
+- [Level Design – LifeVerse](#level-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Level-Architektur](#2-level-architektur)
+  - [3. Umgebungsdesign](#3-umgebungsdesign)
+  - [4. Interaktive Elemente](#4-interaktive-elemente)
+  - [5. Kampf- und Herausforderungen](#5-kampf--und-herausforderungen)
+  - [6. Progression und Belohnung](#6-progression-und-belohnung)
+  - [7. Nicht-Spieler-Charaktere (NPCs) und Quests](#7-nicht-spieler-charaktere-npcs-und-quests)
+  - [8. Erkundung und Geheimnisse](#8-erkundung-und-geheimnisse)
+  - [9. Multiplayer-Interaktion und Welt-Synchronisation](#9-multiplayer-interaktion-und-welt-synchronisation)
+  - [10. Zukünftige Level-Design-Überlegungen](#10-zukünftige-level-design-überlegungen)
 
 ---
 

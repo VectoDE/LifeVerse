@@ -1,16 +1,20 @@
 # Database Schema Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Datenbank-Architektur](#datenbank-architektur)
-3. [Datenbanktabellen und -beziehungen](#datenbanktabellen-und-beziehungen)
-4. [Datenmodell für Spieler und Spielfortschritt](#datenmodell-für-spieler-und-spielfortschritt)
-5. [Datenmodell für NPCs und Quests](#datenmodell-für-npcs-und-quests)
-6. [Datenmodell für Wirtschaft und Ressourcen](#datenmodell-für-wirtschaft-und-ressourcen)
-7. [Datenmodell für die Welt und Umgebung](#datenmodell-für-die-welt-und-umgebung)
-8. [Datenbank-Optimierung](#datenbank-optimierung)
-9. [Sicherheit und Datenschutz](#sicherheit-und-datenschutz)
-10. [Zukunftsperspektiven und Erweiterungen](#zukunftsperspektiven-und-erweiterungen)
+
+- [Database Schema Design – LifeVerse](#database-schema-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Datenbank-Architektur](#2-datenbank-architektur)
+  - [3. Datenbanktabellen und -beziehungen](#3-datenbanktabellen-und--beziehungen)
+    - [Wichtige Tabellen](#wichtige-tabellen)
+  - [4. Datenmodell für Spieler und Spielfortschritt](#4-datenmodell-für-spieler-und-spielfortschritt)
+  - [5. Datenmodell für NPCs und Quests](#5-datenmodell-für-npcs-und-quests)
+  - [6. Datenmodell für Wirtschaft und Ressourcen](#6-datenmodell-für-wirtschaft-und-ressourcen)
+  - [7. Datenmodell für die Welt und Umgebung](#7-datenmodell-für-die-welt-und-umgebung)
+  - [8. Datenbank-Optimierung](#8-datenbank-optimierung)
+  - [9. Sicherheit und Datenschutz](#9-sicherheit-und-datenschutz)
+  - [10. Zukunftsperspektiven und Erweiterungen](#10-zukunftsperspektiven-und-erweiterungen)
 
 ---
 
@@ -36,7 +40,7 @@ Die Datenbank wird in mehreren Tabellen organisiert, wobei Beziehungen zwischen 
 
 ## 3. Datenbanktabellen und -beziehungen
 
-### Wichtige Tabellen:
+### Wichtige Tabellen
 
 1. **players**:
    - *player_id* (PK): Eindeutige ID des Spielers
@@ -70,13 +74,13 @@ Die Datenbank wird in mehreren Tabellen organisiert, wobei Beziehungen zwischen 
    - *quest_id* (FK): Verknüpfung zu einer Quest
    - *status*: Status der Quest (z.B. "in Arbeit", "abgeschlossen")
    - *progress*: Fortschritt der Quest (z.B. gesammelte Objekte)
-   
+
 5. **resources**:
    - *resource_id* (PK): Eindeutige ID der Ressource
    - *name*: Name der Ressource
    - *amount*: Menge der Ressource
    - *type*: Ressourcentyp (z.B. Holz, Stein, Nahrung)
-   
+
 6. **player_resources**:
    - *player_id* (FK): Verknüpfung zu einem Spieler
    - *resource_id* (FK): Verknüpfung zu einer Ressource
@@ -87,7 +91,7 @@ Die Datenbank wird in mehreren Tabellen organisiert, wobei Beziehungen zwischen 
    - *name*: Name der Welt
    - *type*: Welttyp (z.B. Stadt, Dschungel, Wüste)
    - *status*: Status der Welt (z.B. "aktiv", "inaktiv")
-   
+
 8. **player_worlds**:
    - *player_id* (FK): Verknüpfung zu einem Spieler
    - *world_id* (FK): Verknüpfung zu einer Welt

@@ -1,17 +1,20 @@
 # Artificial Life Simulation Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele der Künstlichen Lebenssimulation](#ziele-der-künstlichen-lebenssimulation)
-3. [Lebenszyklen und Biologische Prozesse](#lebenszyklen-und-biologische-prozesse)
-4. [Künstliche Intelligenz der Lebensformen](#künstliche-intelligenz-der-lebensformen)
-5. [Ökosysteme und Interaktionen](#ökosysteme-und-interaktionen)
-6. [Soziale Strukturen und Verhaltensweisen](#soziale-strukturen-und-verhaltensweisen)
-7. [Fortpflanzung und Vererbung](#fortpflanzung-und-vererbung)
-8. [Evolution und Anpassung](#evolution-und-anpassung)
-9. [Ressourcen und Überlebensstrategien](#ressourcen-und-überlebensstrategien)
-10. [Interaktive Welt und Lebensumgebungen](#interaktive-welt-und-lebensumgebungen)
-11. [Zukunftsperspektiven und Weiterentwicklungen](#zukunftsperspektiven-und-weiterentwicklungen)
+
+- [Artificial Life Simulation Design – LifeVerse](#artificial-life-simulation-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele der Künstlichen Lebenssimulation](#2-ziele-der-künstlichen-lebenssimulation)
+  - [3. Lebenszyklen und Biologische Prozesse](#3-lebenszyklen-und-biologische-prozesse)
+  - [4. Künstliche Intelligenz der Lebensformen](#4-künstliche-intelligenz-der-lebensformen)
+  - [5. Ökosysteme und Interaktionen](#5-ökosysteme-und-interaktionen)
+  - [6. Soziale Strukturen und Verhaltensweisen](#6-soziale-strukturen-und-verhaltensweisen)
+  - [7. Fortpflanzung und Vererbung](#7-fortpflanzung-und-vererbung)
+  - [8. Evolution und Anpassung](#8-evolution-und-anpassung)
+  - [9. Ressourcen und Überlebensstrategien](#9-ressourcen-und-überlebensstrategien)
+  - [10. Interaktive Welt und Lebensumgebungen](#10-interaktive-welt-und-lebensumgebungen)
+  - [11. Zukunftsperspektiven und Weiterentwicklungen](#11-zukunftsperspektiven-und-weiterentwicklungen)
 
 ---
 

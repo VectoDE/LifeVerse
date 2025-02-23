@@ -1,17 +1,20 @@
 # Server Resilience and Failover Planning – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele der Server-Resilienz](#ziele-der-server-resilienz)
-3. [Failover-Strategien](#failover-strategien)
-4. [Redundanz und Hochverfügbarkeit](#redundanz-und-hochverfügbarkeit)
-5. [Datenbank-Resilienz](#datenbank-resilienz)
-6. [Lastverteilung und Skalierbarkeit](#lastverteilung-und-skalierbarkeit)
-7. [Automatisiertes Monitoring und Fehlererkennung](#automatisiertes-monitoring-und-fehlererkennung)
-8. [Disaster Recovery und Notfallwiederherstellung](#disaster-recovery-und-notfallwiederherstellung)
-9. [Server-Architektur und Georedundanz](#server-architektur-und-georedundanz)
-10. [Notfall-Wiederherstellungsplan und -Tests](#notfall-wiederherstellungsplan-und-tests)
-11. [Zukunftsperspektiven und Weiterentwicklungen](#zukunftsperspektiven-und-weiterentwicklungen)
+
+- [Server Resilience and Failover Planning – LifeVerse](#server-resilience-and-failover-planning--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele der Server-Resilienz](#2-ziele-der-server-resilienz)
+  - [3. Failover-Strategien](#3-failover-strategien)
+  - [4. Redundanz und Hochverfügbarkeit](#4-redundanz-und-hochverfügbarkeit)
+  - [5. Datenbank-Resilienz](#5-datenbank-resilienz)
+  - [6. Lastverteilung und Skalierbarkeit](#6-lastverteilung-und-skalierbarkeit)
+  - [7. Automatisiertes Monitoring und Fehlererkennung](#7-automatisiertes-monitoring-und-fehlererkennung)
+  - [8. Disaster Recovery und Notfallwiederherstellung](#8-disaster-recovery-und-notfallwiederherstellung)
+  - [9. Server-Architektur und Georedundanz](#9-server-architektur-und-georedundanz)
+  - [10. Notfall-Wiederherstellungsplan und -Tests](#10-notfall-wiederherstellungsplan-und--tests)
+  - [11. Zukunftsperspektiven und Weiterentwicklungen](#11-zukunftsperspektiven-und-weiterentwicklungen)
 
 ---
 

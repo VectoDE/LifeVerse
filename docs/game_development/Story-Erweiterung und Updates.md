@@ -1,15 +1,18 @@
 # Story Expansion and Updates – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Erweiterung der Hauptgeschichte](#erweiterung-der-hauptgeschichte)
-3. [Nebenquests und Inhalte](#nebenquests-und-inhalte)
-4. [Dynamische Ereignisse und neue Story-Pfade](#dynamische-ereignisse-und-neue-story-pfade)
-5. [Neue Gebiete und Regionen](#neue-gebiete-und-regionen)
-6. [Zusätzliche Spielmechaniken und Systemerweiterungen](#zusätzliche-spielmechaniken-und-systemerweiterungen)
-7. [Community-getriebene Story-Elemente und Modding](#community-getriebene-story-elemente-und-modding)
-8. [Veröffentlichungsstrategie und Zeitplan](#veroeffentlichungsstrategie-und-zeitplan)
-9. [Fazit](#fazit)
+
+- [Story Expansion and Updates – LifeVerse](#story-expansion-and-updates--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Erweiterung der Hauptgeschichte](#2-erweiterung-der-hauptgeschichte)
+  - [3. Nebenquests und Inhalte](#3-nebenquests-und-inhalte)
+  - [4. Dynamische Ereignisse und neue Story-Pfade](#4-dynamische-ereignisse-und-neue-story-pfade)
+  - [5. Neue Gebiete und Regionen](#5-neue-gebiete-und-regionen)
+  - [6. Zusätzliche Spielmechaniken und Systemerweiterungen](#6-zusätzliche-spielmechaniken-und-systemerweiterungen)
+  - [7. Community-getriebene Story-Elemente und Modding](#7-community-getriebene-story-elemente-und-modding)
+  - [8. Veröffentlichungsstrategie und Zeitplan](#8-veröffentlichungsstrategie-und-zeitplan)
+  - [9. Fazit](#9-fazit)
 
 ---
 

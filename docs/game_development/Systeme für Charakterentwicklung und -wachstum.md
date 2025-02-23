@@ -1,16 +1,19 @@
 # Character Progression and Growth Systems – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Charakterentwicklung](#charakterentwicklung)
-3. [Fähigkeiten und Talente](#fähigkeiten-und-talente)
-4. [Berufliche und soziale Entwicklung](#berufliche-und-soziale-entwicklung)
-5. [Gesundheit und Wohlbefinden](#gesundheit-und-wohlbefinden)
-6. [Beziehungen und Emotionen](#beziehungen-und-emotionen)
-7. [Fortschritts-Tracking und Belohnungen](#fortschritts-tracking-und-belohnungen)
-8. [Langfristige Charakterentwicklung](#langfristige-charakterentwicklung)
-9. [Dynamische Anpassung an Entscheidungen](#dynamische-anpassung-an-entscheidungen)
-10. [Fazit](#fazit)
+
+- [Character Progression and Growth Systems – LifeVerse](#character-progression-and-growth-systems--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Charakterentwicklung](#2-charakterentwicklung)
+  - [3. Fähigkeiten und Talente](#3-fähigkeiten-und-talente)
+  - [4. Berufliche und soziale Entwicklung](#4-berufliche-und-soziale-entwicklung)
+  - [5. Gesundheit und Wohlbefinden](#5-gesundheit-und-wohlbefinden)
+  - [6. Beziehungen und Emotionen](#6-beziehungen-und-emotionen)
+  - [7. Fortschritts-Tracking und Belohnungen](#7-fortschritts-tracking-und-belohnungen)
+  - [8. Langfristige Charakterentwicklung](#8-langfristige-charakterentwicklung)
+  - [9. Dynamische Anpassung an Entscheidungen](#9-dynamische-anpassung-an-entscheidungen)
+  - [10. Fazit](#10-fazit)
 
 ---
 

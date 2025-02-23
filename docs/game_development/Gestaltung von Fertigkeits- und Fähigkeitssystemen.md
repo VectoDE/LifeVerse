@@ -1,16 +1,19 @@
 # Skill and Ability System Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Fähigkeiten und Talente](#fähigkeiten-und-talente)
-3. [Fähigkeitenkategorien](#fähigkeitenkategorien)
-4. [Fähigkeitsentwicklung und -verbesserung](#fähigkeitsentwicklung-und-verbesserung)
-5. [Talente und Spezialisierungen](#talente-und-spezialisierungen)
-6. [Berufliche und soziale Fähigkeiten](#berufliche-und-soziale-fähigkeiten)
-7. [Fähigkeiten-Baum und Fortschritt](#fähigkeiten-baum-und-fortschritt)
-8. [Fähigkeitseffekte und Belohnungen](#fähigkeitseffekte-und-belohnungen)
-9. [Fähigkeiten und Spielmechaniken](#fähigkeiten-und-spielmechaniken)
-10. [Fazit](#fazit)
+
+- [Skill and Ability System Design – LifeVerse](#skill-and-ability-system-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Fähigkeiten und Talente](#2-fähigkeiten-und-talente)
+  - [3. Fähigkeitenkategorien](#3-fähigkeitenkategorien)
+  - [4. Fähigkeitenentwicklung und -verbesserung](#4-fähigkeitenentwicklung-und--verbesserung)
+  - [5. Talente und Spezialisierungen](#5-talente-und-spezialisierungen)
+  - [6. Berufliche und soziale Fähigkeiten](#6-berufliche-und-soziale-fähigkeiten)
+  - [7. Fähigkeiten-Baum und Fortschritt](#7-fähigkeiten-baum-und-fortschritt)
+  - [8. Fähigkeitseffekte und Belohnungen](#8-fähigkeitseffekte-und-belohnungen)
+  - [9. Fähigkeiten und Spielmechaniken](#9-fähigkeiten-und-spielmechaniken)
+  - [10. Fazit](#10-fazit)
 
 ---
 

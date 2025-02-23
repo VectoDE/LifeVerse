@@ -1,17 +1,20 @@
 # Player Generated Content and Tools Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele der Spieler-generierten Inhalte](#ziele-der-spieler-generierten-inhalte)
-3. [Erstellungstools und Benutzeroberfläche](#erstellungstools-und-benutzeroberfläche)
-4. [Art der Spieler-generierten Inhalte](#art-der-spieler-generierten-inhalte)
-5. [Technische Anforderungen](#technische-anforderungen)
-6. [Inhalt-Kuration und Moderation](#inhalt-kuration-und-moderation)
-7. [Integration in die Spielwelt](#integration-in-die-spielwelt)
-8. [Speicherung und Zugriff auf Inhalte](#speicherung-und-zugriff-auf-inhalte)
-9. [Veröffentlichung und Teilen von Inhalten](#veröffentlichung-und-teilen-von-inhalten)
-10. [Rechtliche und Urheberrechtsüberlegungen](#rechtliche-und-urheberrechtsüberlegungen)
-11. [Zukunftsperspektiven und Erweiterungen](#zukunftsperspektiven-und-erweiterungen)
+
+- [Player Generated Content and Tools Design – LifeVerse](#player-generated-content-and-tools-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele der Spieler-generierten Inhalte](#2-ziele-der-spieler-generierten-inhalte)
+  - [3. Erstellungstools und Benutzeroberfläche](#3-erstellungstools-und-benutzeroberfläche)
+  - [4. Art der Spieler-generierten Inhalte](#4-art-der-spieler-generierten-inhalte)
+  - [5. Technische Anforderungen](#5-technische-anforderungen)
+  - [6. Inhalt-Kuration und Moderation](#6-inhalt-kuration-und-moderation)
+  - [7. Integration in die Spielwelt](#7-integration-in-die-spielwelt)
+  - [8. Speicherung und Zugriff auf Inhalte](#8-speicherung-und-zugriff-auf-inhalte)
+  - [9. Veröffentlichung und Teilen von Inhalten](#9-veröffentlichung-und-teilen-von-inhalten)
+  - [10. Rechtliche und Urheberrechtsüberlegungen](#10-rechtliche-und-urheberrechtsüberlegungen)
+  - [11. Zukunftsperspektiven und Erweiterungen](#11-zukunftsperspektiven-und-erweiterungen)
 
 ---
 

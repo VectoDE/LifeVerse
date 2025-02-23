@@ -1,16 +1,19 @@
 # Moral and Ethical Decision System – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Grundlagen des Moralsystems](#grundlagen-des-moralsystems)
-3. [Ethik-Simulation und Konsequenzen](#ethik-simulation-und-konsequenzen)
-4. [Moralpunkte & Spielerentwicklung](#moralpunkte--spielerentwicklung)
-5. [Dynamische NPC-Reaktionen](#dynamische-npc-reaktionen)
-6. [Gesellschaftliche Auswirkungen](#gesellschaftliche-auswirkungen)
-7. [Rechtliche Folgen und Strafen](#rechtliche-folgen-und-strafen)
-8. [Moralische Dilemmata & Entscheidungsfreiheit](#moralische-dilemmata--entscheidungsfreiheit)
-9. [Herausforderungen & Balancing](#herausforderungen--balancing)
-10. [Fazit](#fazit)
+
+- [Moral and Ethical Decision System – LifeVerse](#moral-and-ethical-decision-system--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Grundlagen des Moralsystems](#2-grundlagen-des-moralsystems)
+  - [3. Ethik-Simulation und Konsequenzen](#3-ethik-simulation-und-konsequenzen)
+  - [4. Moralpunkte \& Spielerentwicklung](#4-moralpunkte--spielerentwicklung)
+  - [5. Dynamische NPC-Reaktionen](#5-dynamische-npc-reaktionen)
+  - [6. Gesellschaftliche Auswirkungen](#6-gesellschaftliche-auswirkungen)
+  - [7. Rechtliche Folgen und Strafen](#7-rechtliche-folgen-und-strafen)
+  - [8. Moralische Dilemmata \& Entscheidungsfreiheit](#8-moralische-dilemmata--entscheidungsfreiheit)
+  - [9. Herausforderungen \& Balancing](#9-herausforderungen--balancing)
+  - [10. Fazit](#10-fazit)
 
 ---
 

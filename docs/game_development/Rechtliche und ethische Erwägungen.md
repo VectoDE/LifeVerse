@@ -1,16 +1,19 @@
 # Legal and Ethical Considerations – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Spielinterne Gesetze und Rechtssysteme](#spielinterne-gesetze-und-rechtssysteme)
-3. [Moralische Entscheidungsfreiheit](#moralische-entscheidungsfreiheit)
-4. [Wirtschaft und faire Handelsmechaniken](#wirtschaft-und-faire-handelsmechaniken)
-5. [Spielerrechte und Konsequenzen](#spielerrechte-und-konsequenzen)
-6. [KI-Ethik und NPC-Verhalten](#ki-ethik-und-npc-verhalten)
-7. [Realistische Justiz- und Rechtssysteme](#realistische-justiz-und-rechtssysteme)
-8. [Cyberkriminalität und digitale Ethik](#cyberkriminalität-und-digitale-ethik)
-9. [Psychologische Auswirkungen des Spiels](#psychologische-auswirkungen-des-spiels)
-10. [Fazit](#fazit)
+
+- [Legal and Ethical Considerations – LifeVerse](#legal-and-ethical-considerations--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Spielinterne Gesetze und Rechtssysteme](#2-spielinterne-gesetze-und-rechtssysteme)
+  - [3. Moralische Entscheidungsfreiheit](#3-moralische-entscheidungsfreiheit)
+  - [4. Wirtschaft und faire Handelsmechaniken](#4-wirtschaft-und-faire-handelsmechaniken)
+  - [5. Spielerrechte und Konsequenzen](#5-spielerrechte-und-konsequenzen)
+  - [6. KI-Ethik und NPC-Verhalten](#6-ki-ethik-und-npc-verhalten)
+  - [7. Realistische Justiz- und Rechtssysteme](#7-realistische-justiz--und-rechtssysteme)
+  - [8. Cyberkriminalität und digitale Ethik](#8-cyberkriminalität-und-digitale-ethik)
+  - [9. Psychologische Auswirkungen des Spiels](#9-psychologische-auswirkungen-des-spiels)
+  - [10. Fazit](#10-fazit)
 
 ---
 

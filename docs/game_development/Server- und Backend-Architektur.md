@@ -1,18 +1,21 @@
 # Server and Backend Architecture – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Architekturüberblick](#architekturüberblick)
-3. [Serveraufbau und Infrastruktur](#serveraufbau-und-infrastruktur)
-4. [Backend-Komponenten](#backend-komponenten)
-5. [Datenbank-Integration](#datenbank-integration)
-6. [API-Design und Kommunikation](#api-design-und-kommunikation)
-7. [Spieler- und Spielfortschrittsynchronisation](#spieler-und-spielfortschrittsynchronisation)
-8. [Echtzeitkommunikation und Netzwerkmanagement](#echtzeitkommunikation-und-netzwerkmanagement)
-9. [Skalierbarkeit und Lastverteilung](#skalierbarkeit-und-lastverteilung)
-10. [Sicherheit und Datenschutz](#sicherheit-und-datenschutz)
-11. [Fehlerbehandlung und Logging](#fehlerbehandlung-und-logging)
-12. [Zukunftsperspektiven und Erweiterungen](#zukunftsperspektiven-und-erweiterungen)
+
+- [Server and Backend Architecture – LifeVerse](#server-and-backend-architecture--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Architekturüberblick](#2-architekturüberblick)
+  - [3. Serveraufbau und Infrastruktur](#3-serveraufbau-und-infrastruktur)
+  - [4. Backend-Komponenten](#4-backend-komponenten)
+  - [5. Datenbank-Integration](#5-datenbank-integration)
+  - [6. API-Design und Kommunikation](#6-api-design-und-kommunikation)
+  - [7. Spieler- und Spielfortschrittsynchronisation](#7-spieler--und-spielfortschrittsynchronisation)
+  - [8. Echtzeitkommunikation und Netzwerkmanagement](#8-echtzeitkommunikation-und-netzwerkmanagement)
+  - [9. Skalierbarkeit und Lastverteilung](#9-skalierbarkeit-und-lastverteilung)
+  - [10. Sicherheit und Datenschutz](#10-sicherheit-und-datenschutz)
+  - [11. Fehlerbehandlung und Logging](#11-fehlerbehandlung-und-logging)
+  - [12. Zukunftsperspektiven und Erweiterungen](#12-zukunftsperspektiven-und-erweiterungen)
 
 ---
 

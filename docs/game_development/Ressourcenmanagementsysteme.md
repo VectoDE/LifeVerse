@@ -1,17 +1,20 @@
 # Resource Management Systems – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Grundlagen des Ressourcenmanagements](#grundlagen-des-ressourcenmanagements)
-3. [Arten von Ressourcen](#arten-von-ressourcen)
-4. [Erwerb und Produktion](#erwerb-und-produktion)
-5. [Lagerhaltung & Logistik](#lagerhaltung--logistik)
-6. [Verbrauch & Nachhaltigkeit](#verbrauch--nachhaltigkeit)
-7. [Wirtschaftliche Dynamiken](#wirtschaftliche-dynamiken)
-8. [Ressourcenhandel & Marktmechaniken](#ressourcenhandel--marktmechaniken)
-9. [Technologische Fortschritte & Effizienzsteigerung](#technologische-fortschritte--effizienzsteigerung)
-10. [Risiken & Herausforderungen](#risiken--herausforderungen)
-11. [Fazit](#fazit)
+
+- [Resource Management Systems – LifeVerse](#resource-management-systems--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Grundlagen des Ressourcenmanagements](#2-grundlagen-des-ressourcenmanagements)
+  - [3. Arten von Ressourcen](#3-arten-von-ressourcen)
+  - [4. Erwerb und Produktion](#4-erwerb-und-produktion)
+  - [5. Lagerhaltung \& Logistik](#5-lagerhaltung--logistik)
+  - [6. Verbrauch \& Nachhaltigkeit](#6-verbrauch--nachhaltigkeit)
+  - [7. Wirtschaftliche Dynamiken](#7-wirtschaftliche-dynamiken)
+  - [8. Ressourcenhandel \& Marktmechaniken](#8-ressourcenhandel--marktmechaniken)
+  - [9. Technologische Fortschritte \& Effizienzsteigerung](#9-technologische-fortschritte--effizienzsteigerung)
+  - [10. Risiken \& Herausforderungen](#10-risiken--herausforderungen)
+  - [11. Fazit](#11-fazit)
 
 ---
 

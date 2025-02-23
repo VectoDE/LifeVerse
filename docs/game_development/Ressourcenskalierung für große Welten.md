@@ -1,16 +1,19 @@
 # Resource Scaling for Large Worlds – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Herausforderungen bei der Ressourcenskalierung](#herausforderungen-bei-der-ressourcenskalierung)
-3. [Dynamische Ressourcenzuteilung](#dynamische-ressourcenzuteilung)
-4. [Effiziente Verwaltung von großen Datenmengen](#effiziente-verwaltung-von-großen-datenmengen)
-5. [Verteilte Systeme und Cloud-basierte Skalierung](#verteilte-systeme-und-cloud-basierte-skalierung)
-6. [Optimierung der Weltgröße und -komplexität](#optimierung-der-weltgröße-und-komplexität)
-7. [Optimierung von Speicher und Netzwerkbandbreite](#optimierung-von-speicher-und-netzwerkbandbreite)
-8. [Speicher- und Rechenlastverlagerung](#speicher-und-rechenlastverlagerung)
-9. [Lastenverteilung und Skalierbarkeit](#lastenverteilung-und-skalierbarkeit)
-10. [Zukunftsperspektiven und Weiterentwicklungen](#zukunftsperspektiven-und-weiterentwicklungen)
+
+- [Resource Scaling for Large Worlds – LifeVerse](#resource-scaling-for-large-worlds--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Herausforderungen bei der Ressourcenskalierung](#2-herausforderungen-bei-der-ressourcenskalierung)
+  - [3. Dynamische Ressourcenzuteilung](#3-dynamische-ressourcenzuteilung)
+  - [4. Effiziente Verwaltung von großen Datenmengen](#4-effiziente-verwaltung-von-großen-datenmengen)
+  - [5. Verteilte Systeme und Cloud-basierte Skalierung](#5-verteilte-systeme-und-cloud-basierte-skalierung)
+  - [6. Optimierung der Weltgröße und -komplexität](#6-optimierung-der-weltgröße-und--komplexität)
+  - [7. Optimierung von Speicher und Netzwerkbandbreite](#7-optimierung-von-speicher-und-netzwerkbandbreite)
+  - [8. Speicher- und Rechenlastverlagerung](#8-speicher--und-rechenlastverlagerung)
+  - [9. Lastenverteilung und Skalierbarkeit](#9-lastenverteilung-und-skalierbarkeit)
+  - [10. Zukunftsperspektiven und Weiterentwicklungen](#10-zukunftsperspektiven-und-weiterentwicklungen)
 
 ---
 

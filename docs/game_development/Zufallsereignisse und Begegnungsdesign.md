@@ -1,16 +1,19 @@
 # Random Events and Encounter Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Zufällige Ereignisse und Begegnungen](#zufällige-ereignisse-und-begegnungen)
-3. [Typen von Zufallsereignissen](#typen-von-zufallsereignissen)
-4. [Begegnungssystem](#begegnungssystem)
-5. [Auswirkungen von Zufallsereignissen](#auswirkungen-von-zufallsereignissen)
-6. [Dynamische Reaktionen und Konsequenzen](#dynamische-reaktionen-und-konsequenzen)
-7. [Häufigkeit und Trigger von Zufallsereignissen](#häufigkeit-und-trigger-von-zufallsereignissen)
-8. [Integration in die Spielwelt](#integration-in-die-spielwelt)
-9. [Balancing und Zufall](#balancing-und-zufall)
-10. [Fazit](#fazit)
+
+- [Random Events and Encounter Design – LifeVerse](#random-events-and-encounter-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Zufällige Ereignisse und Begegnungen](#2-zufällige-ereignisse-und-begegnungen)
+  - [3. Typen von Zufallsereignissen](#3-typen-von-zufallsereignissen)
+  - [4. Begegnungssystem](#4-begegnungssystem)
+  - [5. Auswirkungen von Zufallsereignissen](#5-auswirkungen-von-zufallsereignissen)
+  - [6. Dynamische Reaktionen und Konsequenzen](#6-dynamische-reaktionen-und-konsequenzen)
+  - [7. Häufigkeit und Trigger von Zufallsereignissen](#7-häufigkeit-und-trigger-von-zufallsereignissen)
+  - [8. Integration in die Spielwelt](#8-integration-in-die-spielwelt)
+  - [9. Balancing und Zufall](#9-balancing-und-zufall)
+  - [10. Fazit](#10-fazit)
 
 ---
 

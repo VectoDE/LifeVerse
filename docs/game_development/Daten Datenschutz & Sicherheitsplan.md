@@ -1,20 +1,23 @@
 # Data Privacy and Security Plan – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des Datenschutz- und Sicherheitsplans](#ziele-des-datenschutz-und-sicherheitsplans)
-3. [Datenschutzrichtlinien](#datenschutzrichtlinien)
-4. [Datenklassifizierung](#datenklassifizierung)
-5. [Datenverschlüsselung](#datenverschlüsselung)
-6. [Zugriffssteuerung und Authentifizierung](#zugriffssteuerung-und-authentifizierung)
-7. [Datenaufbewahrung und Löschung](#datenaufbewahrung-und-löschung)
-8. [Datenübertragung und Kommunikation](#datenübertragung-und-kommunikation)
-9. [Sicherheitsüberwachung und Auditing](#sicherheitsüberwachung-und-auditing)
-10. [Risikoanalyse und Schwachstellenmanagement](#risikoanalyse-und-schwachstellenmanagement)
-11. [Vorbeugung und Reaktion auf Sicherheitsvorfälle](#vorbeugung-und-reaktion-auf-sicherheitsvorfälle)
-12. [Compliance und rechtliche Anforderungen](#compliance-und-rechtliche-anforderungen)
-13. [Schulung und Bewusstseinsbildung](#schulung-und-bewusstseinsbildung)
-14. [Zukunftsperspektiven und Weiterentwicklungen](#zukunftsperspektiven-und-weiterentwicklungen)
+
+- [Data Privacy and Security Plan – LifeVerse](#data-privacy-and-security-plan--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des Datenschutz- und Sicherheitsplans](#2-ziele-des-datenschutz--und-sicherheitsplans)
+  - [3. Datenschutzrichtlinien](#3-datenschutzrichtlinien)
+  - [4. Datenklassifizierung](#4-datenklassifizierung)
+  - [5. Datenverschlüsselung](#5-datenverschlüsselung)
+  - [6. Zugriffssteuerung und Authentifizierung](#6-zugriffssteuerung-und-authentifizierung)
+  - [7. Datenaufbewahrung und Löschung](#7-datenaufbewahrung-und-löschung)
+  - [8. Datenübertragung und Kommunikation](#8-datenübertragung-und-kommunikation)
+  - [9. Sicherheitsüberwachung und Auditing](#9-sicherheitsüberwachung-und-auditing)
+  - [10. Risikoanalyse und Schwachstellenmanagement](#10-risikoanalyse-und-schwachstellenmanagement)
+  - [11. Vorbeugung und Reaktion auf Sicherheitsvorfälle](#11-vorbeugung-und-reaktion-auf-sicherheitsvorfälle)
+  - [12. Compliance und rechtliche Anforderungen](#12-compliance-und-rechtliche-anforderungen)
+  - [13. Schulung und Bewusstseinsbildung](#13-schulung-und-bewusstseinsbildung)
+  - [14. Zukunftsperspektiven und Weiterentwicklungen](#14-zukunftsperspektiven-und-weiterentwicklungen)
 
 ---
 
@@ -61,7 +64,7 @@ Die Daten werden in verschiedene Kategorien unterteilt, um den Zugriff und die S
 ## 6. Zugriffssteuerung und Authentifizierung
 
 - **Benutzerauthentifizierung**: Alle Spieler müssen sich mit einem sicheren Anmeldeprozess (z. B. E-Mail und Passwort oder Zwei-Faktor-Authentifizierung) authentifizieren, um unbefugten Zugriff auf ihre Konten zu verhindern.
-- **Rollenbasierte Zugriffskontrolle**: Nur autorisierte Mitarbeiter und Administratoren haben Zugriff auf bestimmte Daten, basierend auf ihrer Rolle und dem erforderlichen Zugriff. 
+- **Rollenbasierte Zugriffskontrolle**: Nur autorisierte Mitarbeiter und Administratoren haben Zugriff auf bestimmte Daten, basierend auf ihrer Rolle und dem erforderlichen Zugriff.
 - **Eingeschränkter Zugriff auf sensible Daten**: Der Zugriff auf besonders schützenswerte Daten wird auf ein Minimum reduziert und nur autorisierten Personen gewährt.
 
 ---

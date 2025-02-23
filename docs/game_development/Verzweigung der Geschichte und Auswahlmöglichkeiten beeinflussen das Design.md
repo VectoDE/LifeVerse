@@ -1,18 +1,21 @@
 # Story Branching and Choices Impact Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des Story Branching Systems](#ziele-des-story-branching-systems)
-3. [Arten von Entscheidungen](#arten-von-entscheidungen)
-4. [Verzweigungen und Auswirkungen auf die Handlung](#verzweigungen-und-auswirkungen-auf-die-handlung)
-5. [Langfristige Konsequenzen von Entscheidungen](#langfristige-konsequenzen-von-entscheidungen)
-6. [Zufällige und geplante Ereignisse](#zufällige-und-geplante-ereignisse)
-7. [Beziehungen und Auswirkungen auf die Charakterentwicklung](#beziehungen-und-auswirkungen-auf-die-charakterentwicklung)
-8. [Verborgene Entscheidungen und Konsequenzen](#verborgene-entscheidungen-und-konsequenzen)
-9. [Verzweigte Enden und Story-Abschlüsse](#verzweigte-enden-und-story-abschlüsse)
-10. [Balancing der Entscheidungsmöglichkeiten](#balancing-der-entscheidungsmöglichkeiten)
-11. [Testing und Debugging des Story Branching Systems](#testing-und-debugging-des-story-branching-systems)
-12. [Zukunftsperspektiven und Erweiterungen](#zukunftsperspektiven-und-erweiterungen)
+
+- [Story Branching and Choices Impact Design – LifeVerse](#story-branching-and-choices-impact-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des Story Branching Systems](#2-ziele-des-story-branching-systems)
+  - [3. Arten von Entscheidungen](#3-arten-von-entscheidungen)
+  - [4. Verzweigungen und Auswirkungen auf die Handlung](#4-verzweigungen-und-auswirkungen-auf-die-handlung)
+  - [5. Langfristige Konsequenzen von Entscheidungen](#5-langfristige-konsequenzen-von-entscheidungen)
+  - [6. Zufällige und geplante Ereignisse](#6-zufällige-und-geplante-ereignisse)
+  - [7. Beziehungen und Auswirkungen auf die Charakterentwicklung](#7-beziehungen-und-auswirkungen-auf-die-charakterentwicklung)
+  - [8. Verborgene Entscheidungen und Konsequenzen](#8-verborgene-entscheidungen-und-konsequenzen)
+  - [9. Verzweigte Enden und Story-Abschlüsse](#9-verzweigte-enden-und-story-abschlüsse)
+  - [10. Balancing der Entscheidungsmöglichkeiten](#10-balancing-der-entscheidungsmöglichkeiten)
+  - [11. Testing und Debugging des Story Branching Systems](#11-testing-und-debugging-des-story-branching-systems)
+  - [12. Zukunftsperspektiven und Erweiterungen](#12-zukunftsperspektiven-und-erweiterungen)
 
 ---
 

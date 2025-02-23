@@ -1,17 +1,20 @@
 # Game Analytics Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele der Spielanalyse](#ziele-der-spielanalyse)
-3. [Datenerfassung](#datenerfassung)
-4. [Key Performance Indicators (KPIs)](#key-performance-indicators-kpis)
-5. [Datenvisualisierung und Berichterstattung](#datenvisualisierung-und-berichterstattung)
-6. [Datenintegration und -management](#datenintegration-und--management)
-7. [Echtzeit-Analyse und -Feedback](#echtzeit-analyse-und-feedback)
-8. [Spielerverhalten und -interaktionen](#spielerverhalten-und--interaktionen)
-9. [Fehlerbehebung und Optimierung](#fehlerbehebung-und-optimierung)
-10. [Datenschutz und ethische Überlegungen](#datenschutz-und-ethische-überlegungen)
-11. [Zukunftsperspektiven und Weiterentwicklungen](#zukunftsperspektiven-und-weiterentwicklungen)
+
+- [Game Analytics Design – LifeVerse](#game-analytics-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele der Spielanalyse](#2-ziele-der-spielanalyse)
+  - [3. Datenerfassung](#3-datenerfassung)
+  - [4. Key Performance Indicators (KPIs)](#4-key-performance-indicators-kpis)
+  - [5. Datenvisualisierung und Berichterstattung](#5-datenvisualisierung-und-berichterstattung)
+  - [6. Datenintegration und -management](#6-datenintegration-und--management)
+  - [7. Echtzeit-Analyse und -Feedback](#7-echtzeit-analyse-und--feedback)
+  - [8. Spielerverhalten und -interaktionen](#8-spielerverhalten-und--interaktionen)
+  - [9. Fehlerbehebung und Optimierung](#9-fehlerbehebung-und-optimierung)
+  - [10. Datenschutz und ethische Überlegungen](#10-datenschutz-und-ethische-überlegungen)
+  - [11. Zukunftsperspektiven und Weiterentwicklungen](#11-zukunftsperspektiven-und-weiterentwicklungen)
 
 ---
 

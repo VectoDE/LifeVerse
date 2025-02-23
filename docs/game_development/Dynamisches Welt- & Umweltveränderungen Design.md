@@ -1,16 +1,19 @@
 # Dynamic World and Environmental Changes Design – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Dynamische Weltmechanik](#dynamische-weltmechanik)
-3. [Wetter- und Klimasystem](#wetter--und-klimasystem)
-4. [Naturkatastrophen](#naturkatastrophen)
-5. [Jahreszeiten & Umweltveränderungen](#jahreszeiten--umweltveränderungen)
-6. [Städte- & Infrastrukturentwicklung](#städte--infrastrukturentwicklung)
-7. [Ökologische Auswirkungen & Nachhaltigkeit](#ökologische-auswirkungen--nachhaltigkeit)
-8. [Fauna & Flora-Simulation](#fauna--flora-simulation)
-9. [Spielerinteraktion mit der Umwelt](#spielerinteraktion-mit-der-umwelt)
-10. [Fazit](#fazit)
+
+- [Dynamic World and Environmental Changes Design – LifeVerse](#dynamic-world-and-environmental-changes-design--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Dynamische Weltmechanik](#2-dynamische-weltmechanik)
+  - [3. Wetter- und Klimasystem](#3-wetter--und-klimasystem)
+  - [4. Naturkatastrophen](#4-naturkatastrophen)
+  - [5. Jahreszeiten \& Umweltveränderungen](#5-jahreszeiten--umweltveränderungen)
+  - [6. Städte- \& Infrastrukturentwicklung](#6-städte---infrastrukturentwicklung)
+  - [7. Ökologische Auswirkungen \& Nachhaltigkeit](#7-ökologische-auswirkungen--nachhaltigkeit)
+  - [8. Fauna \& Flora-Simulation](#8-fauna--flora-simulation)
+  - [9. Spielerinteraktion mit der Umwelt](#9-spielerinteraktion-mit-der-umwelt)
+  - [10. Fazit](#10-fazit)
 
 ---
 

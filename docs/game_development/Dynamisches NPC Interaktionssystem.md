@@ -1,17 +1,20 @@
 # Dynamic NPC Interaction System – LifeVerse
 
 ## Inhaltsverzeichnis
-1. [Einleitung](#einleitung)
-2. [Ziele des NPC-Interaktionssystems](#ziele-des-npc-interaktionssystems)
-3. [Interaktionsarten mit NPCs](#interaktionsarten-mit-npcs)
-4. [Dialogsystem und Auswahlmöglichkeiten](#dialogsystem-und-auswahlmöglichkeiten)
-5. [Beziehungen und Reaktionen der NPCs](#beziehungen-und-reaktionen-der-npcs)
-6. [Rolle der NPCs im Gameplay](#rolle-der-npcs-im-gameplay)
-7. [Dynamische Anpassung von NPC-Verhalten](#dynamische-anpassung-von-npc-verhalten)
-8. [NPC-Interaktionen basierend auf Spielerentscheidungen](#npc-interaktionen-basierend-auf-spielerentscheidungen)
-9. [System zur NPC-Kommunikation und -Beziehungen](#system-zur-npc-kommunikation-und-beziehungen)
-10. [Fehlerbehandlung und Debugging von NPC-Interaktionen](#fehlerbehandlung-und-debugging-von-npc-interaktionen)
-11. [Zukunftsperspektiven und Erweiterungen](#zukunftsperspektiven-und-erweiterungen)
+
+- [Dynamic NPC Interaction System – LifeVerse](#dynamic-npc-interaction-system--lifeverse)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [1. Einleitung](#1-einleitung)
+  - [2. Ziele des NPC-Interaktionssystems](#2-ziele-des-npc-interaktionssystems)
+  - [3. Interaktionsarten mit NPCs](#3-interaktionsarten-mit-npcs)
+  - [4. Dialogsystem und Auswahlmöglichkeiten](#4-dialogsystem-und-auswahlmöglichkeiten)
+  - [5. Beziehungen und Reaktionen der NPCs](#5-beziehungen-und-reaktionen-der-npcs)
+  - [6. Rolle der NPCs im Gameplay](#6-rolle-der-npcs-im-gameplay)
+  - [7. Dynamische Anpassung von NPC-Verhalten](#7-dynamische-anpassung-von-npc-verhalten)
+  - [8. NPC-Interaktionen basierend auf Spielerentscheidungen](#8-npc-interaktionen-basierend-auf-spielerentscheidungen)
+  - [9. System zur NPC-Kommunikation und -Beziehungen](#9-system-zur-npc-kommunikation-und--beziehungen)
+  - [10. Fehlerbehandlung und Debugging von NPC-Interaktionen](#10-fehlerbehandlung-und-debugging-von-npc-interaktionen)
+  - [11. Zukunftsperspektiven und Erweiterungen](#11-zukunftsperspektiven-und-erweiterungen)
 
 ---
 
