@@ -1,0 +1,40 @@
+.stepper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stepper-steps {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.step {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.step.active {
+    background-color: #3182ce;
+    color: white;
+}
+
+.stepper-controls button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1rem;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stepper-controls button:disabled {
+    background-color: #e2e8f0;
+    cursor: not-allowed;
+}

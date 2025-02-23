@@ -1,0 +1,59 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure modal is on top */
+}
+
+/* Modal container */
+.modal-content {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 24rem; /* Set width of the modal */
+    max-width: 90%; /* Responsive modal size */
+}
+
+/* Modal header */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.modal-close {
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+/* Modal body content */
+.modal-body {
+    margin-top: 1rem;
+}
+
+/* Optional footer section (for action buttons, etc.) */
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
