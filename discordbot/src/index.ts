@@ -12,6 +12,7 @@ import { handleIpTrackingEvent } from './events/ipTracker';
 import { handleBanEvasionEvent } from './events/banEvasion';
 import { handleWelcomeEvent } from './events/welcomeMessage';
 import { commandUsageEvent } from './events/commandUsage';
+import { modalSubmitHandler } from './events/modalSubmitHandler';
 
 export interface ExtendedClient extends Client {
     commands: Collection<string, Command>;
@@ -83,6 +84,10 @@ client.on('interactionCreate', async (interaction: Interaction) => {
             const errorMessage = error instanceof Error ? error.message : String(error);
             LogService.error(`Error executing command: ${errorMessage}`);
         }
+    }
+
+    if (interaction.isModalSubmit()) {
+        await modalSubmitHandler(interaction);
     }
 });
 

@@ -19,6 +19,7 @@ import ServerInfoCommand from '../commands/utility/serverinfo';
 import UserInfoCommand from '../commands/utility/userinfo';
 import TimeoutCommand from '../commands/moderation/timeout';
 import LifeVerseInfoCommand from '../commands/lifeverse/lifeverseinfo';
+import VerificationCommand from '../commands/lifeverse/verification';
 
 dotenv.config();
 
@@ -47,6 +48,7 @@ const commandFiles = [
     UserInfoCommand,
     // LifeVerse Commands
     LifeVerseInfoCommand,
+    VerificationCommand,
 ];
 
 const commands: any[] = [];
