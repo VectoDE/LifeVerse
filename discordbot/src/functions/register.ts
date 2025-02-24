@@ -3,6 +3,7 @@ import { REST, Routes } from 'discord.js';
 import { config } from '../config/config';
 import { LogService } from '../services/logService';
 
+import EconomyCommand from '../commands/general/economy';
 import KickCommand from '../commands/moderation/kick';
 import BanCommand from '../commands/moderation/ban';
 import MuteCommand from '../commands/moderation/mute';
@@ -26,6 +27,8 @@ const clientId = config.application.CLIENT_ID;
 const guildId = config.application.TEST_GUILD_ID;
 
 const commandFiles = [
+    // General Commands
+    EconomyCommand,
     // Moderation Commands
     KickCommand,
     BanCommand,

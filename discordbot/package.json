@@ -22,8 +22,6 @@
     "author": "Vecto. (Tim Hauke)",
     "main": "src/index.ts",
     "scripts": {
-        "start": "node dist/index.ts",
-        "build": "tsc",
         "format": "prettier --write .",
         "dev": "concurrently \"nodemon src/index.ts\""
     },
