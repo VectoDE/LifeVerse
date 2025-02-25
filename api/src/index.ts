@@ -1,4 +1,6 @@
 import express, { Request, Response, NextFunction } from 'express';
+import { createServer } from 'http';
+import { Server } from 'socket.io';
 import helmet from 'helmet';
 import cors from 'cors';
 import rateLimit from 'express-rate-limit';
@@ -15,6 +17,14 @@ import winston from 'winston';
 
 // Initialize Express
 const app = express();
+const server = createServer(app); // HTTP server for Express
+const io = new Server(server, {
+    cors: {
+        origin: ['https://www.lifeversegame.com'],
+        methods: ['GET', 'POST'],
+        credentials: true
+    }
+});
 
 // Configuration
 const PORT = 3000;
@@ -119,7 +129,69 @@ app.use((req, res, next) => {
 
 // Example route
 app.get('/', (req, res) => {
-    res.json({ message: 'API is running securely!' });
+    res.json({ message: 'API is running securely with WebSockets enabled!' });
+});
+
+// ========================
+// SOCKET.IO CHAT SYSTEM
+// ========================
+const users: Record<string, string> = {}; // Stores connected users (socketID -> username)
+const groups: Record<string, string[]> = {}; // Stores group chat rooms (groupName -> user socketIDs)
+
+io.on('connection', (socket) => {
+    console.log(`User connected: ${socket.id}`);
+
+    // User joins with a username
+    socket.on('join', (username: string) => {
+        users[socket.id] = username;
+        console.log(`User joined: ${username}`);
+    });
+
+    // Private message event
+    socket.on('private-message', ({ to, message }) => {
+        const recipientSocketId = Object.keys(users).find(id => users[id] === to);
+        if (recipientSocketId) {
+            io.to(recipientSocketId).emit('private-message', {
+                from: users[socket.id],
+                message
+            });
+        }
+    });
+
+    // Create a group chat
+    socket.on('create-group', (groupName) => {
+        if (!groups[groupName]) {
+            groups[groupName] = [];
+        }
+        groups[groupName].push(socket.id);
+        socket.join(groupName);
+        console.log(`Group created: ${groupName}`);
+    });
+
+    // Join an existing group
+    socket.on('join-group', (groupName) => {
+        if (groups[groupName]) {
+            groups[groupName].push(socket.id);
+            socket.join(groupName);
+            console.log(`${users[socket.id]} joined group: ${groupName}`);
+        }
+    });
+
+    // Send a message to a group
+    socket.on('group-message', ({ groupName, message }) => {
+        if (groups[groupName]) {
+            io.to(groupName).emit('group-message', {
+                from: users[socket.id],
+                message
+            });
+        }
+    });
+
+    // Handle disconnection
+    socket.on('disconnect', () => {
+        console.log(`User disconnected: ${socket.id}`);
+        delete users[socket.id];
+    });
 });
 
 // ========================
@@ -164,6 +236,6 @@ app.use((err: any, req: Request, res: Response, next: NextFunction) => {
 // ========================
 // START SERVER
 // ========================
-app.listen(PORT, () => {
-    console.log(`API is running securely on port ${PORT}`);
+server.listen(PORT, () => {
+    console.log(`API is running securely with WebSockets on port ${PORT}`);
 });
