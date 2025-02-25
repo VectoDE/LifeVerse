@@ -6,6 +6,7 @@ import { LogService } from '../services/logService';
 import EconomyCommand from '../commands/general/economy';
 import LifeVerseInfoCommand from '../commands/lifeverse/lifeverseinfo';
 import VerificationCommand from '../commands/lifeverse/verification';
+import FriendCommand from '../commands/lifeverse/friend';
 import KickCommand from '../commands/moderation/kick';
 import BanCommand from '../commands/moderation/ban';
 import MuteCommand from '../commands/moderation/mute';
@@ -37,6 +38,7 @@ const commandFiles = [
     // LifeVerse Commands
     LifeVerseInfoCommand,
     VerificationCommand,
+    FriendCommand,
     // Moderation Commands
     KickCommand,
     BanCommand,
