@@ -14,6 +14,7 @@ import { handleWelcomeEvent } from './events/welcomeMessage';
 import { commandUsageEvent } from './events/commandUsage';
 import { modalSubmitHandler } from './events/modalSubmitHandler';
 import { handleButtonIneraction } from './events/buttonHandler';
+import { handleAutoMessageRule } from './events/autoModeration';
 
 export interface ExtendedClient extends Client {
     commands: Collection<string, Command>;
@@ -104,6 +105,7 @@ handleReadyEvent(client);
 handleIpTrackingEvent(client);
 handleBanEvasionEvent(client);
 handleWelcomeEvent(client);
+handleAutoMessageRule(client);
 
 // Start Express-Server
 server.listen(config.server.PORT || 3000, () => {
