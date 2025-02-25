@@ -7,6 +7,7 @@ export const config = {
         TOKEN: String(EnvUtil.getEnvVar('TOKEN') || ''),
         CLIENT_ID: String(EnvUtil.getEnvVar('CLIENT_ID') || ''),
         TEST_GUILD_ID: String(EnvUtil.getEnvVar('TEST_GUILD_ID') || ''),
+        OWNER_ID: String(EnvUtil.getEnvVar('OWNER_ID') || ''),
     },
     server: {
         PORT: String(EnvUtil.getEnvVar('SERVER_PORT')),

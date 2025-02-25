@@ -4,6 +4,8 @@ import { config } from '../config/config';
 import { LogService } from '../services/logService';
 
 import EconomyCommand from '../commands/general/economy';
+import LifeVerseInfoCommand from '../commands/lifeverse/lifeverseinfo';
+import VerificationCommand from '../commands/lifeverse/verification';
 import KickCommand from '../commands/moderation/kick';
 import BanCommand from '../commands/moderation/ban';
 import MuteCommand from '../commands/moderation/mute';
@@ -13,13 +15,14 @@ import WelcomeCommand from '../commands/moderation/welcome';
 import RoleCommand from '../commands/moderation/role';
 import AntiLinkCommand from '../commands/moderation/antilink';
 import WarnCommand from '../commands/moderation/warn';
+import PollCommand from '../commands/moderation/poll';
+import EvalCommand from '../commands/owner/eval';
+import LogoutCommand from '../commands/owner/logout';
 import PingCommand from '../commands/utility/ping';
 import InviteCommand from '../commands/utility/invite';
 import ServerInfoCommand from '../commands/utility/serverinfo';
 import UserInfoCommand from '../commands/utility/userinfo';
 import TimeoutCommand from '../commands/moderation/timeout';
-import LifeVerseInfoCommand from '../commands/lifeverse/lifeverseinfo';
-import VerificationCommand from '../commands/lifeverse/verification';
 
 dotenv.config();
 
@@ -30,6 +33,9 @@ const guildId = config.application.TEST_GUILD_ID;
 const commandFiles = [
     // General Commands
     EconomyCommand,
+    // LifeVerse Commands
+    LifeVerseInfoCommand,
+    VerificationCommand,
     // Moderation Commands
     KickCommand,
     BanCommand,
@@ -41,14 +47,15 @@ const commandFiles = [
     RoleCommand,
     AntiLinkCommand,
     WarnCommand,
+    PollCommand,
+    // Owner Commands
+    EvalCommand,
+    LogoutCommand,
     // Utility Commands
     PingCommand,
     InviteCommand,
     ServerInfoCommand,
     UserInfoCommand,
-    // LifeVerse Commands
-    LifeVerseInfoCommand,
-    VerificationCommand,
 ];
 
 const commands: any[] = [];

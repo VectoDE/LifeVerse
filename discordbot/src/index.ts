@@ -13,6 +13,7 @@ import { handleBanEvasionEvent } from './events/banEvasion';
 import { handleWelcomeEvent } from './events/welcomeMessage';
 import { commandUsageEvent } from './events/commandUsage';
 import { modalSubmitHandler } from './events/modalSubmitHandler';
+import { handleButtonIneraction } from './events/buttonHandler';
 
 export interface ExtendedClient extends Client {
     commands: Collection<string, Command>;
@@ -88,6 +89,10 @@ client.on('interactionCreate', async (interaction: Interaction) => {
 
     if (interaction.isModalSubmit()) {
         await modalSubmitHandler(interaction);
+    }
+
+    if (interaction.isButton()) {
+        await handleButtonIneraction(interaction);
     }
 });
 

@@ -22,4 +22,11 @@ const verificationSchema = new Schema<IVerification>({
     timestamp: { type: Date, default: Date.now },
 });
 
+verificationSchema.pre('save', function (next) {
+    if (!this.identifier) {
+        this.identifier = Math.random().toString(36).substring(2, 15);
+    }
+    next();
+});
+
 export const Verification = mongoose.model<IVerification>('Verification', verificationSchema);
