@@ -1,64 +1,72 @@
-import { Clerk } from '@clerk/clerk-sdk-node';
+import Stripe from 'stripe';
 import { Payment } from '../models/Payment';
+import { User } from '../models/User';
+import { config } from '../configs/config';
 
-const clerk = new Clerk({ secretKey: process.env.CLERK_SECRET_KEY });
+const stripe = new Stripe(config.gateways.payment.stripe, {
+    apiVersion: '2025-02-24.acacia',
+});
 
 export class PaymentGatewayService {
-    /**
-     * Erstellt eine Zahlung sowohl in Clerk als auch in der Datenbank
-     */
     static async processPayment(paymentData: {
         paymentMethod: string;
         amount: number;
         currency: string;
         transactionId?: string;
+        userId: string;
+        products: { name: string; quantity: number; price: number }[];
     }) {
         try {
-            // Zahlung über Clerk verarbeiten
-            const transaction = await clerk.payments.create({
+            const user = await User.findById(paymentData.userId);
+            if (!user) {
+                return { success: false, message: 'User not found' };
+            }
+
+            const description = paymentData.products
+                .map(product => `${product.quantity}x ${product.name} ($${product.price * product.quantity})`)
+                .join(', ');
+
+            const paymentIntent = await stripe.paymentIntents.create({
                 amount: paymentData.amount,
                 currency: paymentData.currency,
-                method: paymentData.paymentMethod,
+                payment_method: paymentData.paymentMethod,
+                confirm: true,
+                capture_method: 'automatic',
+                receipt_email: user.email,
+                description,
             });
 
-            if (!transaction || transaction.status !== 'succeeded') {
+            if (!paymentIntent || paymentIntent.status !== 'succeeded') {
                 throw new Error('Payment failed');
             }
 
-            // Zahlung in der Datenbank speichern
             const newPayment = new Payment({
                 paymentMethod: paymentData.paymentMethod,
                 amount: paymentData.amount,
                 currency: paymentData.currency,
-                transactionId: transaction.id,
+                transactionId: paymentIntent.id,
                 paymentDate: new Date(),
             });
 
             await newPayment.save();
 
             return { success: true, message: 'Payment processed successfully', payment: newPayment };
-        } catch (error) {
+        } catch (error: any) {
             console.error('Payment processing error:', error);
-            return { success: false, message: 'Payment processing failed' };
+            return { success: false, message: 'Payment processing failed', error: error.message };
         }
     }
 
-    /**
-     * Holt alle Zahlungen aus der Datenbank
-     */
     static async getAllPayments() {
         try {
             const payments = await Payment.find();
             return { success: true, payments };
-        } catch (error) {
+        } catch (error: any) {
             console.error('Error fetching payments:', error);
-            return { success: false, message: 'Error fetching payments' };
+            return { success: false, message: 'Error fetching payments', error: error.message };
         }
     }
 
-    /**
-     * Holt eine einzelne Zahlung per ID
-     */
     static async getPaymentById(paymentId: string) {
         try {
             const payment = await Payment.findById(paymentId);
@@ -66,43 +74,12 @@ export class PaymentGatewayService {
                 return { success: false, message: 'Payment not found' };
             }
             return { success: true, payment };
-        } catch (error) {
+        } catch (error: any) {
             console.error('Error fetching payment:', error);
-            return { success: false, message: 'Error fetching payment' };
+            return { success: false, message: 'Error fetching payment', error: error.message };
         }
     }
 
-    /**
-     * Aktualisiert eine Zahlung sowohl in Clerk als auch in der Datenbank
-     */
-    static async updatePayment(paymentId: string, updateData: Partial<{ paymentMethod: string; amount: number; currency: string }>) {
-        try {
-            const payment = await Payment.findById(paymentId);
-            if (!payment) {
-                return { success: false, message: 'Payment not found' };
-            }
-
-            // Zahlung in Clerk aktualisieren
-            await clerk.payments.update(payment.transactionId, {
-                amount: updateData.amount ?? payment.amount,
-                currency: updateData.currency ?? payment.currency,
-                method: updateData.paymentMethod ?? payment.paymentMethod,
-            });
-
-            // Zahlung in der Datenbank aktualisieren
-            Object.assign(payment, updateData);
-            await payment.save();
-
-            return { success: true, message: 'Payment updated successfully', payment };
-        } catch (error) {
-            console.error('Error updating payment:', error);
-            return { success: false, message: 'Error updating payment' };
-        }
-    }
-
-    /**
-     * Löscht eine Zahlung sowohl in Clerk als auch in der Datenbank
-     */
     static async deletePayment(paymentId: string) {
         try {
             const payment = await Payment.findById(paymentId);
@@ -110,16 +87,22 @@ export class PaymentGatewayService {
                 return { success: false, message: 'Payment not found' };
             }
 
-            // Zahlung in Clerk löschen
-            await clerk.payments.delete(payment.transactionId);
+            if (!payment.transactionId) {
+                return { success: false, message: 'Transaction ID not found for the payment' };
+            }
 
-            // Zahlung in der Datenbank löschen
+            const canceledPaymentIntent = await stripe.paymentIntents.cancel(payment.transactionId);
+
+            if (canceledPaymentIntent.status !== 'canceled') {
+                return { success: false, message: 'Failed to cancel payment intent' };
+            }
+
             await Payment.findByIdAndDelete(paymentId);
 
             return { success: true, message: 'Payment deleted successfully' };
-        } catch (error) {
+        } catch (error: any) {
             console.error('Error deleting payment:', error);
-            return { success: false, message: 'Error deleting payment' };
+            return { success: false, message: 'Error deleting payment', error: error.message };
         }
     }
 }

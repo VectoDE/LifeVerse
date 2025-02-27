@@ -37,16 +37,6 @@ export const getPaymentById: RequestHandler = async (req: Request, res: Response
     }
 };
 
-export const updatePayment: RequestHandler = async (req: Request, res: Response): Promise<void> => {
-    try {
-        const result = await PaymentGatewayService.updatePayment(req.params.paymentId, req.body);
-        res.status(result.success ? 200 : 404).json(result);
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({ message: 'Internal server error' });
-    }
-};
-
 export const deletePayment: RequestHandler = async (req: Request, res: Response): Promise<void> => {
     try {
         const result = await PaymentGatewayService.deletePayment(req.params.paymentId);

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Settings: React.FC = () => {
+const PrivacyPolicy: React.FC = () => {
     return (
         <div className="">
 
@@ -8,4 +8,4 @@ const Settings: React.FC = () => {
     );
 };
 
-export default Settings;
+export default PrivacyPolicy;

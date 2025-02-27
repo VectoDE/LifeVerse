@@ -9,6 +9,7 @@ export interface IUser extends Document {
     chats: mongoose.Types.ObjectId[];
     groups: mongoose.Types.ObjectId[];
     apiKeys: mongoose.Types.ObjectId[];
+    email: string;
     firstName: string;
     middleName: string;
     lastName: string;
@@ -35,6 +36,7 @@ const userSchema = new Schema<IUser>({
     chats: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Chat' }],
     groups: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Chat' }],
     apiKeys: [{ type: mongoose.Schema.Types.ObjectId, ref: 'ApiKey' }],
+    email: { type: String, default: '' },
     firstName: { type: String, default: '' },
     middleName: { type: String, default: '' },
     lastName: { type: String, default: '' },

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Login: React.FC = () => {
+const ProductView: React.FC = () => {
     return (
         <div className="container mx-auto px-4 py-10">
 
@@ -8,4 +8,4 @@ const Login: React.FC = () => {
     );
 };
 
-export default Login;
+export default ProductView;

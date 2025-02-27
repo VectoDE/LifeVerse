@@ -3,12 +3,15 @@ import React from 'react';
 interface LoadingButtonProps {
     isLoading: boolean;
     label: string;
+    onClick: () => void;
+    className: string;
 }
 
-const LoadingButton: React.FC<LoadingButtonProps> = ({ isLoading, label }) => {
+const LoadingButton: React.FC<LoadingButtonProps> = ({ isLoading, label, onClick, className }) => {
     return (
         <button
-            className="inline-flex h-12 items-center justify-center gap-2.5 rounded-lg bg-primary px-6 py-3 text-base font-medium text-white"
+            className={`inline-flex h-12 items-center justify-center gap-2.5 rounded-lg ${className}`}
+            onClick={onClick}
             disabled={isLoading}
         >
             {isLoading ? (
