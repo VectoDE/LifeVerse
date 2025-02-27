@@ -1,17 +1,5 @@
 import { Request, Response, NextFunction, ErrorRequestHandler } from 'express';
-import winston from 'winston';
-
-export const logger = winston.createLogger({
-    level: 'error',
-    format: winston.format.combine(
-        winston.format.timestamp(),
-        winston.format.json()
-    ),
-    transports: [
-        new winston.transports.File({ filename: 'logs/errors.log', level: 'error' }),
-        new winston.transports.Console()
-    ],
-});
+import { logger } from '../services/logger.service';
 
 export const jsonErrorHandler: ErrorRequestHandler = (
     err: SyntaxError | any,
