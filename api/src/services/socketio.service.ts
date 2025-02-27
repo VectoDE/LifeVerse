@@ -1,7 +1,8 @@
+import mongoose from 'mongoose';
 import { Server, Socket } from 'socket.io';
 import { User, IUser } from '../models/User';
 import { Chat } from '../models/Chat';
-import mongoose from 'mongoose';
+import { logger } from '../services/logger.service';
 
 export class SocketIOService {
     private io: Server;

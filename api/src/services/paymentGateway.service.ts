@@ -2,6 +2,7 @@ import Stripe from 'stripe';
 import { Payment } from '../models/Payment';
 import { User } from '../models/User';
 import { config } from '../configs/config';
+import { logger } from '../services/logger.service';
 
 const stripe = new Stripe(config.gateways.payment.stripe, {
     apiVersion: '2025-02-24.acacia',

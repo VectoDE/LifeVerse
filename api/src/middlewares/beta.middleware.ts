@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { Beta } from '../models/Beta';
+import { logger } from '../services/logger.service';
 
 export const verifyBetaKey = async (req: Request, res: Response, next: NextFunction) => {
     const betaKey = req.headers['X-BETA-KEY'] as string;

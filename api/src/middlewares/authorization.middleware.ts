@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import { ApiKey } from '../models/ApiKey';
 import { User } from '../models/User';
 import { Role } from '../models/Role';
+import { logger } from '../services/logger.service';
 
 interface AuthenticatedRequest extends Request {
     user?: any;

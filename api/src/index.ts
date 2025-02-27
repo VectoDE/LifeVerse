@@ -4,6 +4,7 @@ import mongoSanitize from 'express-mongo-sanitize';
 import passport from 'passport';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
+import { config } from './configs/config';
 import { connectDB } from './database/connectDB';
 import { jsonErrorHandler, notFoundHandler, globalErrorHandler } from './middlewares/errorHandler.middleware';
 import { bodyParserMiddleware } from './middlewares/bodyParser.middleware';
@@ -26,6 +27,7 @@ import blogRouter from './routes/blog.router';
 import paymentRouter from './routes/payment.router';
 import roleRouter from './routes/role.router';
 import userRouter from './routes/user.router';
+import smsRouter from './routes/sms.router';
 
 const app = express();
 const server = createServer(app);
@@ -42,7 +44,7 @@ const io = new Server(server, {
 
 const socketService = new SocketIOService(io);
 
-const PORT = process.env.SERVER_PORT || 3000;
+const PORT = config.application.port || 3000;
 
 connectDB();
 
@@ -67,12 +69,13 @@ app.get('/', (_req, res) => {
 });
 
 app.use('/api/keys', apikeyRouter);
-app.use('/api/auth', authRouter);
 app.use('/api/beta', betaRouter);
-app.use('/api/blogs', blogRouter);
+app.use('/api/auth', authRouter);
+app.use('/api/sms', smsRouter);
 app.use('/api/payments', paymentRouter);
 app.use('/api/roles', roleRouter); 
 app.use('/api/users', userRouter);
+app.use('/api/blogs', blogRouter);
 
 // Error handling middleware
 app.use(jsonErrorHandler);

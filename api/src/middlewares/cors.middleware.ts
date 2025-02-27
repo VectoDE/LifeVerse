@@ -1,5 +1,6 @@
 import cors, { CorsOptions } from 'cors';
 import { Request, Response, NextFunction } from 'express';
+import { logger } from '../services/logger.service';
 
 export const corsMiddleware = (options: CorsOptions = {
     origin: ['https://www.lifeversegame.com'],

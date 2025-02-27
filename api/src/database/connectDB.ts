@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
 import { config } from '../configs/config';
+import { logger } from '../services/logger.service';
 
 const mongoUri = config.database.mongoUri;
 

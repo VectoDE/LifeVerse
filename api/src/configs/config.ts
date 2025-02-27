@@ -25,5 +25,10 @@ export const config = {
         payment: {
             stripe: String(process.env.STRIPE_SECRET_KEY),
         },
+        sms: {
+            accountSid: String(process.env.TWILIO_ACCOUNT_SID),
+            authToken: String(process.env.TWILIO_AUTH_TOKEN),
+            phoneNumber: String(process.env.TWILIO_PHONE_NUMBER),
+        }
     }
 }
