@@ -5,7 +5,7 @@ import { logger } from '../services/logger.service';
 export const logHeaderMiddleware = () => {
     return (req: Request, _res: Response, next: NextFunction) => {
         if (config.application.env === 'development') {
-            console.log('📥 Incoming request headers:', req.headers);
+            logger.info('📥 Incoming request headers:', req.headers);
         }
         next();
     };

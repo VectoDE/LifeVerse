@@ -4,8 +4,9 @@ import './assets/styles/index.css';
 import React, { JSX, lazy, Suspense, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
-import { Provider, useSelector } from "react-redux";
-import store, { RootState } from "./stores/store";
+import { Provider } from "react-redux";
+import store from "./stores/store";
+import { useLocalStorage } from './hooks/useLocalStorage';
 
 import { LogService } from './services/logService';
 
@@ -65,9 +66,9 @@ const LogRouteChanges = () => {
 };
 
 const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
-  const user = useSelector((state: RootState) => state.auth.user);
+  const [storedUser] = useLocalStorage<{ id: string; username: string; name: string; email: string } | null>("user", null);
 
-  if (!user) {
+  if (!storedUser) {
     return <Navigate to="/login" replace />;
   }
 

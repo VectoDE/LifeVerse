@@ -6,16 +6,15 @@ const router = Router();
 
 router.get('/discord', passport.authenticate('discord'));
 
-router.get('/discord/callback', passport.authenticate('discord', { failureRedirect: '/' }), (_req, res) => {
-    res.redirect('/dashboard');
-});
+router.get('/discord/callback', passport.authenticate('discord', { failureRedirect: `/`, successRedirect: 'http://localhost:3000/dashboard' }));
 
-router.get('/logout', (req, res, next) => {
+router.get('/logout', isAuthenticated, (req, res, next) => {
     req.logout((err: any) => {
         if (err) {
             return next(err);
         }
-        res.redirect('/');
+        const redirectTo = req.get('Referer') || '/';
+        res.redirect(redirectTo);
     });
 });
 

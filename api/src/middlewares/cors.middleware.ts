@@ -30,7 +30,7 @@ export const corsMiddleware = (options: CorsOptions = {
 }) => {
     return (req: Request, res: Response, next: NextFunction) => {
         const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress || req.socket.remoteAddress;
-        console.log('User IP:', ip);
+        logger.info('User IP:', ip);
 
         cors(options)(req, res, next);
     };

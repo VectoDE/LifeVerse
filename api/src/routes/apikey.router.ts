@@ -7,8 +7,8 @@ const router = Router();
 
 router.post('/', isAuthenticated, hasRole('Admin', 'Moderator', 'Developer'), createApiKey);
 router.get('/', isAuthenticated, hasRole('Admin', 'Moderator', 'Developer', 'Content', 'Supporter'), getAllApiKeys);
-router.get('/:id', isAuthenticated, hasRole('Admin', 'Moderator', 'Developer', 'Content', 'Supporter'), getApiKeyById);
-router.put('/:id', isAuthenticated, hasRole('Admin', 'Moderator', 'Developer'), updateApiKey);
-router.delete('/:id', isAuthenticated, hasRole('Admin', 'Moderator', 'Developer'), deleteApiKey);
+router.get('/:apiKeyId', isAuthenticated, hasRole('Admin', 'Moderator', 'Developer', 'Content', 'Supporter'), getApiKeyById);
+router.put('/:apiKeyId', isAuthenticated, hasRole('Admin', 'Moderator', 'Developer'), updateApiKey);
+router.delete('/:apiKeyId', isAuthenticated, hasRole('Admin', 'Moderator', 'Developer'), deleteApiKey);
 
 export default router;

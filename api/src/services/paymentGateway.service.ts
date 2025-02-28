@@ -53,7 +53,7 @@ export class PaymentGatewayService {
 
             return { success: true, message: 'Payment processed successfully', payment: newPayment };
         } catch (error: any) {
-            console.error('Payment processing error:', error);
+            logger.error('Payment processing error:', { error: error.message, stack: error.stack });
             return { success: false, message: 'Payment processing failed', error: error.message };
         }
     }
@@ -63,7 +63,7 @@ export class PaymentGatewayService {
             const payments = await Payment.find();
             return { success: true, payments };
         } catch (error: any) {
-            console.error('Error fetching payments:', error);
+            logger.error('Error fetching payments:', { error: error.message, stack: error.stack });
             return { success: false, message: 'Error fetching payments', error: error.message };
         }
     }
@@ -76,7 +76,7 @@ export class PaymentGatewayService {
             }
             return { success: true, payment };
         } catch (error: any) {
-            console.error('Error fetching payment:', error);
+            logger.error('Error fetching payment:', { error: error.message, stack: error.stack });
             return { success: false, message: 'Error fetching payment', error: error.message };
         }
     }
@@ -102,7 +102,7 @@ export class PaymentGatewayService {
 
             return { success: true, message: 'Payment deleted successfully' };
         } catch (error: any) {
-            console.error('Error deleting payment:', error);
+            logger.error('Error deleting payment:', { error: error.message, stack: error.stack });
             return { success: false, message: 'Error deleting payment', error: error.message };
         }
     }

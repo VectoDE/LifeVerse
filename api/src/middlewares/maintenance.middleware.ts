@@ -8,12 +8,17 @@ export const maintenanceMiddleware = () => {
             const maintenance = await Maintenance.findOne();
 
             if (maintenance && maintenance.isActive) {
+                logger.warn('Service unavailable due to maintenance', {
+                    title: maintenance.title,
+                    message: maintenance.message
+                });
                 res.status(503).json({ title: maintenance.title, message: maintenance.message });
                 return;
             }
 
             next();
-        } catch (error) {
+        } catch (error: any) {
+            logger.error('Failed to check maintenance status', { error: error.message, stack: error.stack });
             next(error);
         }
     };
