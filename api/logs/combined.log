@@ -319,3 +319,11 @@
 {"discordUserId":"335228120816943114","level":"info","message":"Discord OAuth callback","timestamp":"2025-02-28T06:32:16.541Z","username":"vecto."}
 {"level":"info","message":"User found, updating tokens","timestamp":"2025-02-28T06:32:16.569Z","userId":"67c14ce8f007e351e842334f"}
 {"level":"info","message":"Serializing user","timestamp":"2025-02-28T06:32:16.602Z","userId":"67c14ce8f007e351e842334f"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-02-28T06:40:04.549Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-02-28T06:40:17.513Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-02-28T06:40:37.452Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-02-28T06:41:07.056Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-02-28T06:41:30.064Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-02-28T06:41:41.739Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-02-28T06:42:03.693Z"}
+{"level":"info","message":"MongoDB connected","timestamp":"2025-02-28T06:42:55.284Z"}
