@@ -3,24 +3,30 @@ import { Strategy as DiscordStrategy } from 'passport-discord';
 import { Request, Response, NextFunction } from 'express';
 import { User } from '../models/User';
 import { config } from '../configs/config';
+import { logger } from '../services/logger.service';
 
 const discordClientId = config.discord.clientId;
 const discordClientSecret = config.discord.clientSecret;
 const discordCallbackUrl = config.discord.callbackUrl;
 
 passport.serializeUser((user: any, done) => {
+    logger.info('Serializing user', { userId: user.id });
     done(null, user.id);
 });
 
 passport.deserializeUser(async (id: string, done) => {
     try {
+        logger.info('Deserializing user', { userId: id });
         const user = await User.findById(id);
         if (user) {
+            logger.info('User found during deserialization', { userId: id });
             return done(null, user);
         }
+        logger.warn('User not found during deserialization', { userId: id });
         return done('User not found');
-    } catch (err) {
-        return done(err);
+    } catch (error: any) {
+        logger.error('Error during user deserialization', { error: error.message, stack: error.stack });
+        return done(error);
     }
 });
 
@@ -31,8 +37,11 @@ passport.use(new DiscordStrategy({
     scope: ['identify', 'email']
 }, async (_accessToken, _refreshToken, profile, done) => {
     try {
+        logger.info('Discord OAuth callback', { discordUserId: profile.id, username: profile.username });
+
         let user = await User.findOne({ userId: profile.id });
         if (!user) {
+            logger.info('No user found, creating new user', { discordUserId: profile.id, username: profile.username });
             user = new User({
                 username: profile.username,
                 userId: profile.id,
@@ -41,21 +50,33 @@ passport.use(new DiscordStrategy({
                 refreshToken: _refreshToken,
             });
             await user.save();
+            logger.info('New user created', { userId: user.id });
         } else {
+            logger.info('User found, updating tokens', { userId: user.id });
             user.accessToken = _accessToken;
             user.refreshToken = _refreshToken;
             await user.save();
         }
 
         return done(null, user);
-    } catch (err) {
-        return done(err);
+    } catch (error: any) {
+        logger.error('Error during Discord OAuth process', { error: error.message, stack: error.stack });
+        return done(error);
     }
 }));
 
 export const isAuthenticated = (req: Request, res: Response, next: NextFunction) => {
+    const user = req.user;
+
     if (req.isAuthenticated()) {
         return next();
     }
+
+    if (user instanceof User) {
+        logger.info('User authenticated', { userId: user.id });
+        return next();
+    }
+
+    logger.warn('User not authenticated', { ip: req.ip, headers: req.headers });
     res.status(401).json({ message: 'Unauthorized' });
 };

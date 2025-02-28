@@ -11,6 +11,6 @@ router.get('/key/:betaKeyId', isAuthenticated, hasRole('Admin', 'Moderator', 'De
 router.put('/key/:betaKeyId', isAuthenticated, hasRole('Admin', 'Moderator', 'Developer'), updateBetaKey);
 router.delete('/key/:betaKeyId', isAuthenticated, hasRole('Admin', 'Moderator'), deleteBetaKey);
 
-router.post('/toggle', toggleBetaSystem);
+router.post('/toggle', isAuthenticated, hasRole('Admin', 'Moderator', 'Developer', 'Content', 'Supporter'), toggleBetaSystem);
 
 export default router;

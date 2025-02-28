@@ -16,7 +16,7 @@ export class SocketIOService {
 
     private setupListeners() {
         this.io.on('connection', (socket: Socket) => {
-            console.log(`User connected: ${socket.id}`);
+            logger.info(`User connected: ${socket.id}`);
 
             socket.on('join', this.handleJoin.bind(this, socket));
             socket.on('private-message', this.handlePrivateMessage.bind(this, socket));
@@ -32,9 +32,9 @@ export class SocketIOService {
             const user = new User({ username, socketId: socket.id });
             await user.save();
             this.users[socket.id] = username;
-            console.log(`User joined: ${username}`);
-        } catch (error) {
-            console.log(`Error joining user: ${error}`);
+            logger.info(`User joined: ${username}`);
+        } catch (error: any) {
+            logger.error(`Error joining user:`, { error: error.message, stack: error.stack });
         }
     }
 
@@ -70,8 +70,8 @@ export class SocketIOService {
                     });
                 }
             }
-        } catch (error) {
-            console.log(`Error handling private message: ${error}`);
+        } catch (error: any) {
+            logger.error(`Error handling private message:`, { error: error.message, stack: error.stack });
         }
     }
 
@@ -86,9 +86,9 @@ export class SocketIOService {
             await groupChat.save();
             this.groups[groupName] = [socket.id];
             socket.join(groupName);
-            console.log(`Group created: ${groupName}`);
-        } catch (error) {
-            console.log(`Error creating group: ${error}`);
+            logger.info(`Group created: ${groupName}`);
+        } catch (error: any) {
+            logger.error(`Error creating group:`, { error: error.message, stack: error.stack });
         }
     }
 
@@ -102,13 +102,13 @@ export class SocketIOService {
                     group.participants.push(user._id); 
                     await group.save();
                     socket.join(groupName);
-                    console.log(`${this.users[socket.id]} joined group: ${groupName}`);
+                    logger.info(`${this.users[socket.id]} joined group: ${groupName}`);
                 } else {
-                    console.log('User does not have a valid _id.');
+                    logger.info('User does not have a valid _id.');
                 }
             }
-        } catch (error) {
-            console.log(`Error joining group: ${error}`);
+        } catch (error: any) {
+            logger.error(`Error joining group:`, { error: error.message, stack: error.stack });
         }
     }
 
@@ -128,13 +128,13 @@ export class SocketIOService {
                     });
                 }
             }
-        } catch (error) {
-            console.log(`Error handling group message: ${error}`);
+        } catch (error: any) {
+            logger.error(`Error handling group message:`, { error: error.message, stack: error.stack });
         }
     }
 
     private async handleDisconnect(socket: Socket) {
-        console.log(`User disconnected: ${socket.id}`);
+        logger.info(`User disconnected: ${socket.id}`);
         await User.findOneAndDelete({ socketId: socket.id });
         delete this.users[socket.id];
     }

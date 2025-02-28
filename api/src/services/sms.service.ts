@@ -15,7 +15,7 @@ export class SmsService {
 
             return { success: true, messageSid: messageResponse.sid };
         } catch (error: any) {
-            console.error('Error sending SMS:', error);
+            logger.error('Error sending SMS:', { error: error.message, stack: error.stack });
             return { success: false, message: 'Error sending SMS', error: error.message };
         }
     }
@@ -31,7 +31,7 @@ export class SmsService {
 
             return { success: true, messageSid: messageResponse.sid };
         } catch (error: any) {
-            console.error('Error sending reminder SMS:', error);
+            logger.error('Error sending reminder SMS:', { error: error.message, stack: error.stack });
             return { success: false, message: 'Error sending reminder SMS', error: error.message };
         }
     }

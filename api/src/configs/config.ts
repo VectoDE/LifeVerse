@@ -20,6 +20,9 @@ export const config = {
         clientId: String(process.env.DISCORD_CLIENT_ID),
         clientSecret: String(process.env.DISCORD_CLIENT_SECRET),
         callbackUrl: String(process.env.DISCORD_CALLBACK_URL),
+        webhook: {
+            logUrl: String(process.env.DISCORD_LOG_WEBHOOK_URL),
+        }
     },
     gateways: {
         payment: {
@@ -29,6 +32,6 @@ export const config = {
             accountSid: String(process.env.TWILIO_ACCOUNT_SID),
             authToken: String(process.env.TWILIO_AUTH_TOKEN),
             phoneNumber: String(process.env.TWILIO_PHONE_NUMBER),
-        }
+        },
     }
 }

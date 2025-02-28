@@ -1,5 +1,6 @@
 import { Request, Response, RequestHandler } from 'express';
 import { Blog } from '../models/Blog';
+import { logger } from '../services/logger.service';
 
 export const createBlogPost: RequestHandler = async (req: Request, res: Response): Promise<void> => {
     try {
@@ -20,9 +21,10 @@ export const createBlogPost: RequestHandler = async (req: Request, res: Response
         });
 
         await newBlogPost.save();
+        logger.info('Blog post created successfully', { title, author });
         res.status(201).json({ message: 'Blog post created successfully', blogPost: newBlogPost });
-    } catch (error) {
-        console.error(error);
+    } catch (error: any) {
+        logger.error('Error creating blog post', { error: error.message, stack: error.stack });
         res.status(500).json({ message: 'Internal server error' });
     }
 };
@@ -30,9 +32,10 @@ export const createBlogPost: RequestHandler = async (req: Request, res: Response
 export const getAllBlogPosts: RequestHandler = async (_req: Request, res: Response): Promise<void> => {
     try {
         const blogPosts = await Blog.find();
+        logger.info('Fetched all blog posts', { count: blogPosts.length });
         res.status(200).json(blogPosts);
-    } catch (error) {
-        console.error(error);
+    } catch (error: any) {
+        logger.error('Error fetching blog posts', { error: error.message, stack: error.stack });
         res.status(500).json({ message: 'Internal server error' });
     }
 };
@@ -43,13 +46,15 @@ export const getBlogPostById: RequestHandler = async (req: Request, res: Respons
     try {
         const blogPost = await Blog.findById(blogId);
         if (!blogPost) {
+            logger.warn('Blog post not found', { blogId });
             res.status(404).json({ message: 'Blog post not found' });
             return;
         }
 
+        logger.info('Fetched blog post by ID', { blogId, title: blogPost.title });
         res.status(200).json(blogPost);
-    } catch (error) {
-        console.error(error);
+    } catch (error: any) {
+        logger.error('Error fetching blog post by ID', { error: error.message, stack: error.stack });
         res.status(500).json({ message: 'Internal server error' });
     }
 };
@@ -61,6 +66,7 @@ export const updateBlogPost: RequestHandler = async (req: Request, res: Response
     try {
         const blogPost = await Blog.findById(blogId);
         if (!blogPost) {
+            logger.warn('Blog post not found for update', { blogId });
             res.status(404).json({ message: 'Blog post not found' });
             return;
         }
@@ -73,9 +79,10 @@ export const updateBlogPost: RequestHandler = async (req: Request, res: Response
         if (image) blogPost.image = image;
 
         await blogPost.save();
+        logger.info('Blog post updated successfully', { blogId, title });
         res.status(200).json({ message: 'Blog post updated successfully', blogPost });
-    } catch (error) {
-        console.error(error);
+    } catch (error: any) {
+        logger.error('Error updating blog post', { error: error.message, stack: error.stack });
         res.status(500).json({ message: 'Internal server error' });
     }
 };
@@ -86,14 +93,16 @@ export const deleteBlogPost: RequestHandler = async (req: Request, res: Response
     try {
         const blogPost = await Blog.findById(blogId);
         if (!blogPost) {
+            logger.warn('Blog post not found for deletion', { blogId });
             res.status(404).json({ message: 'Blog post not found' });
             return;
         }
 
         await blogPost.deleteOne();
+        logger.info('Blog post deleted successfully', { blogId });
         res.status(200).json({ message: 'Blog post deleted successfully' });
-    } catch (error) {
-        console.error(error);
+    } catch (error: any) {
+        logger.error('Error deleting blog post', { error: error.message, stack: error.stack });
         res.status(500).json({ message: 'Internal server error' });
     }
 };
