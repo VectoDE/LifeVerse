@@ -24,7 +24,7 @@ export const logger = winston.createLogger({
 
 logger.on('data', async (log) => {
     const { level, message, timestamp } = log;
-    if (['error', 'warn'].includes(level)) {
+    if (['error', 'warn', 'debug'].includes(level)) {
         await sendToDiscord(`[${timestamp}] ${message}`, level);
     }
 });

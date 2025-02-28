@@ -6,9 +6,7 @@ export interface IUser extends Document {
     socketId: string;
     accessToken: string;
     refreshToken: string;
-    chats: mongoose.Types.ObjectId[];
-    groups: mongoose.Types.ObjectId[];
-    apiKeys: mongoose.Types.ObjectId[];
+    role: string;
     email: string;
     firstName: string;
     middleName: string;
@@ -22,7 +20,10 @@ export interface IUser extends Document {
         postalCode: string;
     };
     payments: mongoose.Types.ObjectId[];
-    role: mongoose.Types.ObjectId;
+    chats: mongoose.Types.ObjectId[];
+    groups: mongoose.Types.ObjectId[];
+    apiKeys: mongoose.Types.ObjectId[];
+    betaKey: mongoose.Types.ObjectId;
     createdAt: Date;
     updatedAt: Date;
 }
@@ -33,9 +34,7 @@ const userSchema = new Schema<IUser>({
     socketId: { type: String, default: '' },
     accessToken: { type: String, required: true },
     refreshToken: { type: String, required: true },
-    chats: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Chat' }],
-    groups: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Chat' }],
-    apiKeys: [{ type: mongoose.Schema.Types.ObjectId, ref: 'ApiKey' }],
+    role: { type: String, default: 'Member', required: true },
     email: { type: String, default: '' },
     firstName: { type: String, default: '' },
     middleName: { type: String, default: '' },
@@ -49,7 +48,10 @@ const userSchema = new Schema<IUser>({
         postalCode: { type: String, default: '' },
     },
     payments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Payment' }],
-    role: { type: mongoose.Schema.Types.ObjectId, ref: 'Role', required: true },
+    chats: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Chat' }],
+    groups: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Chat' }],
+    apiKeys: [{ type: mongoose.Schema.Types.ObjectId, ref: 'ApiKey' }],
+    betaKey: { type: mongoose.Schema.Types.ObjectId, ref: 'BetaKey' },
 }, { timestamps: true });
 
 userSchema.pre<IUser>('save', function (next) {

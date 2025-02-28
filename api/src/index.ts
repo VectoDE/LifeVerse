@@ -1,7 +1,9 @@
+import './strategies/discord.strategy';
 import express from 'express';
 import dotenv from 'dotenv';
 import mongoSanitize from 'express-mongo-sanitize';
 import passport from 'passport';
+import session from 'express-session';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
 import { config } from './configs/config';
@@ -48,8 +50,6 @@ const PORT = config.application.port || 3000;
 
 connectDB();
 
-app.use(passport.initialize());
-
 app.use(hppMiddleware());
 app.use(helmetMiddleware());
 app.use(mongoSanitize());
@@ -62,6 +62,18 @@ app.use(loggerMiddleware());
 app.use(compressionMiddleware());
 app.use(logHeaderMiddleware());
 app.use(maintenanceMiddleware());
+app.use(session({
+    secret: 'some random secret',
+    cookie: {
+        maxAge: 60000 * 60 * 24
+    },
+    resave: false,
+    saveUninitialized: false,
+    name: 'discord-oauth2'
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Example route
 app.get('/', (_req, res) => {
