@@ -3,24 +3,24 @@ import { Schema, model, Document } from 'mongoose';
 interface IVerification extends Document {
     identifier: string;
     userId: string;
-    guildId: string;
+    guildId?: string;
     lifeVerseUrl: string;
     lifeVerseUsername: string;
     code: string;
     verified: boolean;
-    timestamp: Date;
+    createdAt: Date;
+    updatedAt: Date;
 }
 
 const verificationSchema = new Schema<IVerification>({
     identifier: { type: String, required: true, unique: true },
     userId: { type: String, required: true, unique: true },
-    guildId: { type: String, required: true },
-    lifeVerseUrl: { type: String, required: false },
-    lifeVerseUsername: { type: String, required: false },
+    guildId: { type: String, required: false, default: '' },
+    lifeVerseUrl: { type: String, required: true },
+    lifeVerseUsername: { type: String, required: true },
     code: { type: String, required: true },
     verified: { type: Boolean, default: false },
-    timestamp: { type: Date, default: Date.now },
-});
+}, { timestamps: true });
 
 verificationSchema.pre('save', function (next) {
     if (!this.identifier) {
