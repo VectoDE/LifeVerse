@@ -12,7 +12,7 @@
 This project is divided into multiple specialized repositories, all managed under the GitHub organization [LifeVerse-Development](https://github.com/LifeVerse-Development):
 
 ### [Website](https://github.com/LifeVerse-Development/Website)
-The official LifeVerse website – built using **Next.js**, **TypeScript**, and **Tailwind CSS**. This is where players can learn about the game, register, and connect with the community.
+The official LifeVerse website – built using **React.js**, **TypeScript**, and **Tailwind CSS**. This is where players can learn about the game, register, and connect with the community.
 
 ### [API](https://github.com/LifeVerse-Development/API)
 The central backend API for all LifeVerse services – written in **TypeScript** using **Express.js** and **MongoDB**. It handles users, game data, achievements, leaderboards, and more.
