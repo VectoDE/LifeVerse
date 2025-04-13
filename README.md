@@ -2,7 +2,7 @@
 
 [![GitHub Organization](https://img.shields.io/badge/GitHub-LifeVerse--Development-blue?logo=github)](https://github.com/LifeVerse-Development)
 [![License](https://img.shields.io/github/license/LifeVerse-Development/Game)](https://github.com/LifeVerse-Development/Game/blob/main/LICENSE)
-[![Discord](https://img.shields.io/discord/123456789012345678?label=Join%20Discord&logo=discord)](https://dc.lifeversegame.eu)
+[![Discord](https://img.shields.io/discord/123456789012345678?label=Join%20Discord&logo=discord)](https://discord.gg/DHgvcdaZBd)
 [![Issues](https://img.shields.io/github/issues/LifeVerse-Development/Game)](https://github.com/LifeVerse-Development/Game/issues)
 
 **LifeVerse** is an ambitious project with the goal of creating a digital universe that mirrors real life 1:1 — with an open-world structure, a massive story exceeding 1000 hours (expandable to over 5000 hours), and deep interactivity on every level.
