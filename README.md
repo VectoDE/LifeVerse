@@ -69,6 +69,8 @@ The `docs/` directory maintains enterprise-grade playbooks, strategies, and spec
 - [Security-Compliance.md](docs/Security-Compliance.md)
 - [RiskManagementDocument.md](docs/RiskManagementDocument.md)
 - [Legal-and-Ethical-Considerations.md](docs/Legal-and-Ethical-Considerations.md)
+- [Security Compliance Overview](docs/compliance/README.md)
+- [Platform Hardening Guide](docs/hardening/README.md)
 
 ### Quality, Accessibility, and Operations
 - [QAAndTestplan.md](docs/QAAndTestplan.md)
