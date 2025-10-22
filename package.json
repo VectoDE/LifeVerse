@@ -1,5 +1,0 @@
-{
-  "dependencies": {
-    "@clerk/clerk-sdk-node": "^5.1.6"
-  }
-}
