@@ -1,74 +1,68 @@
-Art Design Document (ADD) for LifeVerse
+# Art Design Document Blueprint
+## Document Control
+- **Owner:** Art Director
+- **Version:** 1.0.0
+- **Last Updated:** 2025-10-22
+- **Status:** Approved for Programme Distribution
 
-Introduction
+## Executive Summary
+The Art Design Document craft defines LifeVerse's visual language, world identity, and production
+workflows. It balances fidelity, performance, and artistic cohesion across every environment and
+asset.
 
-1.1 Project Overview
+## Scope & Boundaries
+Includes concept art, modelling, texturing, lighting, animation, and style guides for Art Design
+Document.
 
-Title: LifeVerse
-Genre: Open-World Life Simulation, RPG, Multiplayer
-Goal: Creation of a visually appealing, immersive, and realistic open-world life simulator characterized by photorealistic textures, detailed character models, and a dynamic, lively world.
-1.2 Vision of Art Design
+## Strategic Objectives
+- Set aesthetic pillars and mood boards guiding Art Design Document.
+- Integrate art tooling, shaders, and engine features supporting Art Design Document.
+- Establish content pipelines, review cadences, and quality bars for Art Design Document.
+- Document cultural, accessibility, and localisation considerations for Art Design Document.
 
-The Art Design of LifeVerse will combine photorealistic rendering with stylized elements to create an immersive yet artistically designed world. The goal is to visually depict both the real aspects of life and the fantastic, epic elements of the story.
-Visual Guidelines
+## Capability Highlights
+- Describe how player personas navigate Art Design Document, highlighting the art dimension and design vision variations across platforms.
+- Detail how Art Design Document links the art dimension with broader art production systems to create consistent player expectations.
+- Surface dependencies and escalation paths connecting Art Design Document to documentation footprint and adjacent capabilities.
+- Define authoring guidelines and content taxonomies ensuring every design vision within Art Design Document remains discoverable.
 
-2.1 Color Palette and Mood
+## System Architecture & Components
+- Provide marketing and community teams with renders and breakdowns of Art Design Document.
+- Align with audio, VFX, and UI to build cohesive experiences within Art Design Document.
+- Share asset libraries, metadata, and naming conventions for Art Design Document.
+- Coordinate Art Design Document with narrative, gameplay, and performance budgets.
 
-Main Colors: Warm, natural colors like earth tones (brown, green, beige) for environments and cool, futuristic colors (blue, purple, black) for technological elements and night sequences.
-Light and Shadow: Photorealistic lighting with dynamic day-night cycles, incorporating both bright, sunny environments and dark, atmospheric nights.
-Mood Adjustment: Different color palettes for different regions and cultures in the game. For example, urban areas may be dominated by cool neon colors, while large natural areas feature green and earth tones.
-2.2 Style Guidelines
+## Delivery Workflow
+- Publish postmortems and retrospectives to evolve Art Design Document pipelines.
+- Maintain asset trackers, shot lists, and outsourcing briefs for Art Design Document.
+- Execute optimisation passes ensuring Art Design Document meets platform budgets.
+- Run look-dev reviews, dailies, and art approvals covering Art Design Document.
 
-Realism: The focus is on a photorealistic style for the environment, buildings, and characters to enhance immersion.
-Stylized Details: In details like clothing, stylized elements will be incorporated to simplify the visual style without compromising authenticity.
-Hyper-Realism in Special Scenes: In epic, emotional scenes that drive the story, hyper-realism will be pursued to intensify the dramatic effect.
-Character Design
+## Telemetry & KPIs
+- Player and stakeholder sentiment toward visuals within Art Design Document.
+- Performance metrics such as draw calls and memory footprint associated with Art Design Document.
+- Brand consistency and art direction adherence measured for Art Design Document.
+- Content throughput, review turnaround, and defect rates for Art Design Document.
 
-3.1 Main Characters
+## Risk & Mitigation
+- Evolving platform requirements may invalidate Art Design Document assumptions.
+- Performance constraints could force rework for Art Design Document.
+- Outsourcing or vendor misalignment might break cohesion in Art Design Document.
+- Pipeline bottlenecks or asset debt may delay Art Design Document deliverables.
 
-Player Character: The player can fully customize their character with various skin tones, hairstyles, faces, and clothing styles.
-Style: Natural, realistic features with the possibility of further customization in the game (e.g., through cosmetics or new clothing).
-Details: High fidelity in facial and body textures, with the character being displayed in different lighting scenarios to emphasize emotions and interactions.
-3.2 NPC Designs
+## Roadmap & Expansion
+- Enable player customisation and mod support interfacing with Art Design Document.
+- Scale production with modular kits, procedural tools, and outsourcing for Art Design Document.
+- Introduce new rendering techniques, lighting models, and platform variants for Art Design Document.
+- Ship hero assets, biomes, and style guides defining Art Design Document.
 
-Various NPC Types: From regular citizens to unique story characters.
-Age Diversity: Unique designs and styles for all age groups (from children to seniors).
-Cultural Diversity: NPCs will reflect various cultures and backgrounds, existing in a diverse and dynamic city and country system.
-3.3 Professions and Special Classes
+## Tooling & Automation
+- Documentation archives and art bibles cataloguing Art Design Document.
+- Review platforms, annotation tools, and QA workflows for Art Design Document.
+- Performance analysis tools, build farm automation, and LOD generators for Art Design Document.
+- DCC integrations, shader libraries, and asset management supporting Art Design Document.
 
-Work Attire: Characters will wear specialized clothing based on their profession or occupation (e.g., construction workers, doctors, scientists, businesspeople).
-Accessories: Additional equipment like tools or technological devices may be part of the design to highlight the character's occupation.
-Environment Design
-
-4.1 City Landscapes
-
-Modern Cities: Futuristic city centers representing the technological advancement of the game, blending realism with stylized design elements to enhance the atmosphere.
-Rural Areas: Expansive, green fields, mountains, forests, and rivers. Nature will be detailed with textures of grass, water, trees, and mountain ranges to create breathtaking natural beauty.
-Ruined/Abandoned Places: Areas such as abandoned factories or destroyed landscapes, affected by the game's storyline, will feature detailed textures of decay and age.
-4.2 Map Regions and Micro-Environment
-
-Different Biomes: Each region of the game will have a distinct environment, such as deserts, tropical islands, mountain ranges, or large cities, tailored to different climatic and geographical conditions.
-Changing Landscapes: The world will change through the player's actions, whether by building structures or destroying infrastructure. These changes should be reflected in the visual design of the world.
-Special Design Areas
-
-5.1 User Interface (UI) Design
-
-Minimalistic UI: A simple and clear UI design that does not distract the player and allows for intuitive navigation.
-Dynamic Menus: Menus and inventories will respond dynamically to game progress and the current gameplay situation. The UI will adapt to the game's state, such as displaying relevant information based on the current game condition.
-VR Adaptation: For the VR version, UI elements will be designed to seamlessly integrate into the world, anchored within the environment and giving the player a sense of interactivity.
-5.2 Visual Effects
-
-Weather and Light: Lighting and weather systems (e.g., rain, fog, sunrises) will be equipped with special visual effects that look realistic and dramatic.
-Real-Time Physics: Destruction and interactions with the environment will be supported by detailed visual effects to depict physics realistically (e.g., when trees fall or buildings are destroyed).
-VR Integration and Immersion
-
-6.1 Interactive Environments
-
-Visual Interaction: Players will be able to fully interact with the world in VR, requiring a realistic representation of handling objects, conversations, and tools.
-Interactive Objects: Objects in the game will be marked with interactive visual cues (e.g., shiny surfaces or illuminated areas) signaling to the player that they can interact with them.
-6.2 Immersion and Details
-
-Controlled Immersion: Various environments and scenarios will offer high immersion through intense details, such as changing light conditions, wind movement in trees, or the sound of water that aligns with the visual surroundings.
-Conclusion and Summary
-
-The Art Design for LifeVerse aims to create a visually stunning, believable, and emotional player experience. By blending photorealistic environments, detailed character models, and dynamic elements, the goal is to build a world that is both realistic and engaging. The Art Design will play a central role in creating an immersive atmosphere, helping players deeply engage with the world of LifeVerse.
+## Reference Links
+- See `ArtDesignDocument.md` for complementary guidance.
+- See `Graphics-Pipeline.md` for complementary guidance.
+- See `Material-and-Shader-Handbook.md` for complementary guidance.
