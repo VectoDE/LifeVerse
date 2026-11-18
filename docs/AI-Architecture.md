@@ -65,4 +65,3 @@ Architecture.
 ## Reference Links
 - See `AI-Architecture.md` for complementary guidance.
 - See `Dynamic-NPC-Interaction-System.md` for complementary guidance.
-- See `AI-Pathfinding.md` for complementary guidance.

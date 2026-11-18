@@ -63,6 +63,4 @@ knowledge management for Beta Test Guide.
 - Automated status reporting, risk logs, and compliance evidence for Beta Test Guide.
 
 ## Reference Links
-- See `DevelopmentPlan.md` for complementary guidance.
 - See `QAAndTestplan.md` for complementary guidance.
-- See `Documentation.md` for complementary guidance.

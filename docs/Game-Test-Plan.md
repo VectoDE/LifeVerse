@@ -63,6 +63,4 @@ knowledge management for Game Test Plan.
 - Community forums and office hours dedicated to Game Test Plan.
 
 ## Reference Links
-- See `DevelopmentPlan.md` for complementary guidance.
 - See `QAAndTestplan.md` for complementary guidance.
-- See `Documentation.md` for complementary guidance.

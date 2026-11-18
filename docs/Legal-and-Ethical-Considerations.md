@@ -64,5 +64,3 @@ education for Legal and Ethical Considerations.
 
 ## Reference Links
 - See `Legal-and-Ethical-Considerations.md` for complementary guidance.
-- See `LegislationAndLegalSystems.md` for complementary guidance.
-- See `Moral-and-Ethical-Decisions.md` for complementary guidance.
