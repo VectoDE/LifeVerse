@@ -65,4 +65,3 @@ hand-offs for Story And Quest Design Document.
 ## Reference Links
 - See `StoryAndQuestDesignDocument.md` for complementary guidance.
 - See `QuestSystem.md` for complementary guidance.
-- See `Localization-and-Translation-Plan.md` for complementary guidance.

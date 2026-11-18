@@ -63,6 +63,4 @@ knowledge management for Bug Tracking.
 - Community forums and office hours dedicated to Bug Tracking.
 
 ## Reference Links
-- See `DevelopmentPlan.md` for complementary guidance.
 - See `QAAndTestplan.md` for complementary guidance.
-- See `Documentation.md` for complementary guidance.

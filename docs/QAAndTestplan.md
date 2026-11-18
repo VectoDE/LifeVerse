@@ -63,6 +63,4 @@ knowledge management for QAAnd Testplan.
 - Knowledge bases, onboarding portals, and training curricula explaining QAAnd Testplan.
 
 ## Reference Links
-- See `DevelopmentPlan.md` for complementary guidance.
 - See `QAAndTestplan.md` for complementary guidance.
-- See `Documentation.md` for complementary guidance.

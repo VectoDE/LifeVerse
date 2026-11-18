@@ -64,5 +64,3 @@ linked to Game Design Document.
 
 ## Reference Links
 - See `GameDesignDocument.md` for complementary guidance.
-- See `Game-Analytics-Design.md` for complementary guidance.
-- See `Player-Progression-and-Scaling.md` for complementary guidance.

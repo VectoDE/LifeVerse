@@ -65,4 +65,3 @@ Weather and Day Night Cycle.
 ## Reference Links
 - See `Life-Simulation-System.md` for complementary guidance.
 - See `Dynamic-Weather-and-Day-Night-Cycle.md` for complementary guidance.
-- See `Physics-Implementation.md` for complementary guidance.

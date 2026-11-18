@@ -63,6 +63,4 @@ knowledge management for Git Workflow.
 - Automated status reporting, risk logs, and compliance evidence for Git Workflow.
 
 ## Reference Links
-- See `DevelopmentPlan.md` for complementary guidance.
 - See `QAAndTestplan.md` for complementary guidance.
-- See `Documentation.md` for complementary guidance.

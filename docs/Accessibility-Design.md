@@ -63,6 +63,4 @@ Accessibility Design.
 - Prototyping tools, playtest labs, and analytics dashboards monitoring Accessibility Design.
 
 ## Reference Links
-- See `UI-UX-Design.md` for complementary guidance.
 - See `Accessibility-Design.md` for complementary guidance.
-- See `Control-Schemes.md` for complementary guidance.

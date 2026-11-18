@@ -60,8 +60,3 @@ Includes concept art, modelling, texturing, lighting, animation, and style guide
 - Review platforms, annotation tools, and QA workflows for Worldbuilding.
 - Documentation archives and art bibles cataloguing Worldbuilding.
 - DCC integrations, shader libraries, and asset management supporting Worldbuilding.
-
-## Reference Links
-- See `ArtDesignDocument.md` for complementary guidance.
-- See `Graphics-Pipeline.md` for complementary guidance.
-- See `Material-and-Shader-Handbook.md` for complementary guidance.
